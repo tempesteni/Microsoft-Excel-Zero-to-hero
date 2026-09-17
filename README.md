@@ -451,12 +451,12 @@ Use this dataset to practice PivotTables, sorting, filtering, charts, and data c
 
 After completing this curriculum, you'll be prepared for:
 
-| Certification | Provider | What It Tests | Difficulty |
-|--------------|----------|---------------|------------|
-| MOS: Excel Associate | Microsoft / Certiport | Core functionality, formulas, tables, charts | Beginner-Intermediate |
-| MOS: Excel Expert | Microsoft / Certiport | Advanced formulas, PivotTables, macros | Advanced |
-| Excel Skills for Business | Coursera / Macquarie University | Comprehensive Excel for business | All Levels |
-| CFI Financial Modeling | Corporate Finance Institute | Financial modeling in Excel | Advanced |
+| Certification | Provider | What It Tests | Difficulty | Apply |
+|--------------|----------|---------------|------------|-------|
+| [MOS: Excel Associate](https://www.certiport.com/portal/pages/mos/Overview.aspx) | Microsoft / Certiport | Core functionality, formulas, tables, charts | Beginner-Intermediate | [Register](https://www.certiport.com/portal/pages/mos/Overview.aspx) |
+| [MOS: Excel Expert](https://www.certiport.com/portal/pages/mos/Overview.aspx) | Microsoft / Certiport | Advanced formulas, PivotTables, macros | Advanced | [Register](https://www.certiport.com/portal/pages/mos/Overview.aspx) |
+| [Excel Skills for Business](https://www.coursera.org/specializations/excel-skills-business) | Coursera / Macquarie University | Comprehensive Excel for business | All Levels | [Enroll Free](https://www.coursera.org/specializations/excel-skills-business) |
+| [CFI Financial Modeling](https://corporatefinanceinstitute.com/certifications/fmva/) | Corporate Finance Institute | Financial modeling in Excel | Advanced | [Enroll](https://corporatefinanceinstitute.com/certifications/fmva/) |
 
 ---
 
