@@ -1,0 +1,15 @@
+# Excel Zero to Hero - Git Ignore
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp
+~$*

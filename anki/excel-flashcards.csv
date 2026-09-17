@@ -1,0 +1,134 @@
+Front,Back,Category
+"=SUM(A1:A10)","Adds all values in range A1 to A10",Formulas
+"=AVERAGE(B1:B20)","Returns the arithmetic mean of the range",Formulas
+"=COUNT(C1:C100)","Counts cells containing numbers",Formulas
+"=COUNTA(C1:C100)","Counts non-empty cells",Formulas
+"=MAX(D1:D50)","Returns the largest value in range",Formulas
+"=MIN(D1:D50)","Returns the smallest value in range",Formulas
+"=SUMIF(A:A,""North"",B:B)","Sums B where A equals 'North'",Formulas
+"=SUMIFS(C:C,A:A,""North"",B:B,">100")","Sums C where A='North' AND B>100",Formulas
+"=COUNTIF(A:A,""Yes"")","Counts cells equal to 'Yes'",Formulas
+"=IF(A1>100,""High"",""Low"")","Returns 'High' if A1>100, else 'Low'",Formulas
+"=IFS(A1>90,""A"",A1>80,""B"",A1>70,""C"",TRUE,""F"")","Multiple conditions without nesting",Formulas
+"=VLOOKUP(lookup_value,table,col_index,FALSE)","Vertical lookup; FALSE for exact match",Formulas
+"=HLOOKUP(lookup_value,table,row_index,FALSE)","Horizontal lookup across rows",Formulas
+"=INDEX(range,MATCH(lookup,lookup_range,0))","Flexible lookup; more powerful than VLOOKUP",Formulas
+"=XLOOKUP(lookup,lookup_array,return_array)","Modern lookup; replaces VLOOKUP/INDEX-MATCH",Formulas
+"=XLOOKUP(lookup,range,default,0,-1)","XLOOKUP with default value and search last-to-first",Formulas
+"=FILTER(A2:C100,B2:B100>100)","Returns rows where column B > 100 (dynamic array)",Formulas
+"=SORT(A2:D100,3,-1)","Sorts by column 3 in descending order",Formulas
+"=UNIQUE(A2:A100)","Returns unique values from range",Formulas
+"=LEFT(A1,5)","Extracts first 5 characters from text",Text Functions
+"=RIGHT(A1,3)","Extracts last 3 characters from text",Text Functions
+"=MID(A1,3,4)","Extracts 4 characters starting at position 3",Text Functions
+"=LEN(A1)","Returns number of characters in cell",Text Functions
+"=TRIM(A1)","Removes leading/trailing/extra spaces",Text Functions
+"=UPPER(A1) / LOWER(A1) / PROPER(A1)","Converts text case",Text Functions
+"=CONCATENATE(A1,"" "",B1)","Joins text strings (old method)",Text Functions
+"=A1&"" ""&B1","Joins text with ampersand operator",Text Functions
+"=TEXT(A1,""MM/DD/YYYY"")","Formats number as date string",Text Functions
+"=SUBSTITUTE(A1,""old"",""new"")","Replaces all occurrences of text",Text Functions
+"=TEXTBEFORE(A1,""@"")","Extracts text before delimiter (365/2021)",Text Functions
+"=TEXTAFTER(A1,""@"")","Extracts text after delimiter (365/2021)",Text Functions
+"=TODAY()","Returns current date (volatile)",Date Functions
+"=NOW()","Returns current date and time (volatile)",Date Functions
+"=YEAR(A1) / MONTH(A1) / DAY(A1)","Extracts year/month/day from date",Date Functions
+"=DATEDIF(start,end,""Y"")","Difference between dates in years",Date Functions
+"=EOMONTH(A1,0)","Last day of the month for given date",Date Functions
+"=NETWORKDAYS(start,end)","Working days between two dates (excludes weekends)",Date Functions
+"=NETWORKDAYS(start,end,holidays)","Working days excluding weekends and holidays",Date Functions
+"=WORKDAY(A1,10)","Date that is 10 working days after A1",Date Functions
+"=DATE(2024,12,31)","Creates a date from year/month/day components",Date Functions
+"=IFERROR(formula,""fallback"")","Returns fallback value if formula errors",Error Handling
+"=IFNA(formula,""not found"")","Returns fallback only for #N/A errors",Error Handling
+"=ISERROR(A1)","Returns TRUE if A1 is any error",Error Handling
+"What does #REF! mean?","Invalid cell reference (deleted row/column or bad formula)",Error Handling
+"What does #VALUE! mean?","Wrong data type in formula (text where number expected)",Error Handling
+"What does #N/A mean?","Lookup value not found",Error Handling
+"What does #SPILL! mean?","Dynamic array can't expand (blocked by other data)",Error Handling
+"What does #NAME? mean?","Excel doesn't recognize function name or named range",Error Handling
+"What does #DIV/0! mean?","Division by zero",Error Handling
+"What does #NUM! mean?","Invalid numeric value in formula",Error Handling
+"What does #NULL! mean?","Incorrect range intersection (space instead of comma)",Error Handling
+"INDEX/MATCH vs VLOOKUP: main advantage?","INDEX/MATCH can look LEFT; VLOOKUP only looks right",Lookups
+"XLOOKUP vs VLOOKUP: key differences?","XLOOKUP: left lookup, default values, no col index needed",Lookups
+"What is a volatile function?","Recalculates on EVERY sheet change (OFFSET INDIRECT NOW RAND)",Lookups
+"What is a spilled array?","Dynamic array result that 'spills' into adjacent cells automatically",Lookups
+"What does the $ sign do in formulas?","Makes reference absolute (doesn't change when copied)",Cell References
+"Difference between A1 and $A$1?","A1 is relative (changes when copied); $A$1 is absolute (stays fixed)",Cell References
+"What is $A1 vs A$1?","$A1 locks column only; A$1 locks row only (mixed reference)",Cell References
+"What does F4 do while editing a formula?","Cycles through absolute/relative: A1 → $A$1 → A$1 → $A1",Cell References
+"How to create a table?","Select data → Ctrl+T or Insert → Table",Tables
+"What are structured references?","Table column names in formulas: =SUM(Table1[Sales])",Tables
+"How to add a Total Row to a table?","Table Design tab → check Total Row",Tables
+"What is a PivotTable?","Interactive summary tool that groups/aggregates data by categories",PivotTables
+"How to create a PivotTable?","Select data → Insert → PivotTable → choose location",PivotTables
+"What are the4 PivotTable field areas?","Rows Columns Values Filters",PivotTables
+"How to group dates in PivotTable?","Right-click date field → Group → select Months/Quarters/Years",PivotTables
+"What is a Slicer?","Visual clickable filter button for PivotTables/charts",PivotTables
+"What is a Calculated Field?","Custom formula field added inside a PivotTable",PivotTables
+"How to refresh a PivotTable?","Right-click → Refresh or Alt+F5 (all PivotTables: Ctrl+Alt+F5)",PivotTables
+"What does Goal Seek do?","Finds input value needed to reach a target result",What-If Analysis
+"What is a Data Table?","Shows how formula results change with1 or2 input variables",What-If Analysis
+"What is Scenario Manager?","Saves and compares different sets of input values",What-If Analysis
+"How to enable Solver?","File → Options → Add-ins → Solver Add-in → Go → check",What-If Analysis
+"What is conditional formatting?","Automatically formats cells based on their values or formulas",Formatting
+"How to highlight top10 values?","Home → Conditional Formatting → Top/Bottom Rules → Top10 Items",Formatting
+"How to add data bars?","Home → Conditional Formatting → Data Bars → choose color",Formatting
+"What is a formula-based conditional format?","Rule using custom formula (=A1>AVERAGE($A:$A)) to determine formatting",Formatting
+"How to create a chart?","Select data → Insert → choose chart type",Charts
+"How to add a trendline?","Click chart → Chart Design → Add Chart Element → Trendline",Charts
+"What is a Sparkline?","Tiny chart inside a single cell showing data trend",Charts
+"What is Power Query?","ETL tool for importing transforming and cleaning data",Power Query
+"How to open Power Query?","Data tab → Get Data → choose source OR Data → From Table/Range",Power Query
+"What is Merge Queries?","Joins two tables (like SQL JOIN) by matching columns",Power Query
+"What is Append Queries?","Stacks tables vertically (like UNION in SQL)",Power Query
+"What is Unpivot?","Converts columns to rows (wide to long format)",Power Query
+"What is the M language?","Power Query's formula language for custom transformations",Power Query
+"What is Power Pivot?","Data modeling tool for creating relationships between tables",Power Pivot
+"What is DAX?","Data Analysis Expressions; formula language for Power Pivot/measures",Power Pivot
+"What is a Measure in DAX?","Calculated value that changes based on context (not a column)",Power Pivot
+"What does CALCULATE do in DAX?","Changes filter context for a calculation",Power Pivot
+"What is a Data Model?","Collection of tables with relationships for PivotTable analysis",Power Pivot
+"How to record a macro?","Developer tab → Record Macro → perform actions → Stop Recording",VBA
+"How to open VBA Editor?","Alt+F11",VBA
+"What is a Sub in VBA?","A procedure that performs actions: Sub Name() ... End Sub",VBA
+"What is For Each loop?","Loops through each item in a collection: For Each ws In Worksheets",VBA
+"How to handle errors in VBA?","On Error GoTo ErrorHandler ... ErrorHandler: MsgBox Err.Description",VBA
+"What is a UserForm?","Custom dialog box with input controls (textboxes buttons etc.)",VBA
+"What is the Range object?","Represents a cell or range: Range(""A1:B10"") or Cells(1 1)",VBA
+"How to reference active sheet?","ActiveSheet or Activesheet",VBA
+"What does Option Explicit do?","Forces variable declaration; catches typos",VBA
+"What is a Function in VBA?","Returns a value: Function Name() As Type ... End Function",VBA
+"Ctrl+C / Ctrl+V / Ctrl+X","Copy / Paste / Cut",Shortcuts
+"Ctrl+Z / Ctrl+Y","Undo / Redo",Shortcuts
+"Ctrl+S","Save",Shortcuts
+"Ctrl+B / Ctrl+I / Ctrl+U","Bold / Italic / Underline",Shortcuts
+"Ctrl+1","Format Cells dialog",Shortcuts
+"Ctrl+Shift+L","Toggle AutoFilter",Shortcuts
+"Ctrl+T","Create Table",Shortcuts
+"Ctrl+Space","Select entire column",Shortcuts
+"Shift+Space","Select entire row",Shortcuts
+"Ctrl+Arrow","Jump to edge of data region",Shortcuts
+"Ctrl+Home","Go to cell A1",Shortcuts
+"Ctrl+End","Go to last used cell",Shortcuts
+"F2","Edit active cell",Shortcuts
+"F4","Toggle absolute/relative reference ($)",Shortcuts
+"Alt+=","AutoSum",Shortcuts
+"Alt+F11","Open VBA Editor",Shortcuts
+"Ctrl+`","Show/hide formulas",Shortcuts
+"Ctrl+D","Fill Down (copy cell above)",Shortcuts
+"Ctrl+R","Fill Right (copy cell to left)",Shortcuts
+"Ctrl+;","Insert current date",Shortcuts
+"Ctrl+Shift+;","Insert current time",Shortcuts
+"Ctrl+-","Delete cells/rows/columns",Shortcuts
+"Ctrl+Shift++","Insert cells/rows/columns",Shortcuts
+"Alt+Enter","New line within a cell",Shortcuts
+"Ctrl+Page Up/Down","Switch between worksheets",Shortcuts
+"Ctrl+F","Find",Shortcuts
+"Ctrl+H","Find and Replace",Shortcuts
+"Ctrl+G or F5","Go To dialog",Shortcuts
+"Ctrl+Shift+$","Format as currency",Shortcuts
+"Ctrl+Shift+%","Format as percentage",Shortcuts
+"Ctrl+Shift+#","Format as date",Shortcuts
+"Ctrl+Shift+@","Format as time",Shortcuts
