@@ -503,7 +503,9 @@ Under the following terms:
 
 Created by [tempesteni](https://github.com/tempesteni) with [Hermes Agent](https://hermes-agent.nousresearch.com) by Nous Research
 
-Hermes Agent handled the research, content compilation, dataset creation, quiz generation, cheat sheet authoring, URL verification, and repo preparation.
+**tempesteni** — Original concept, curriculum direction, content review, corrections, quality control, publishing decisions, GitHub setup
+
+**Hermes Agent** — Research, content compilation, dataset creation, quiz generation, cheat sheet authoring, URL verification, README and repo preparation
 
 **Stats:**
 - Estimated study time: 80-120 hours over 12 weeks
