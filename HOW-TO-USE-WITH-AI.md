@@ -13,7 +13,18 @@ This guide explains how to feed the Excel Zero to Hero learning package to diffe
 1. Go to notebooklm.google.com and sign in with your Google account
 2. Click **"Create new notebook"**
 3. Name it: `Excel Zero to Hero`
-4. Upload sources in this order:
+
+### Simplest path: one link, no downloads (recommended)
+
+Skip the download-and-upload dance entirely. Click **Add source > Website** and paste this single link. NotebookLM then holds the whole course at once: every module, quiz, cheat sheet, walkthrough, and answer key.
+
+```
+https://raw.githubusercontent.com/tempesteni/Microsoft-Excel-Zero-to-hero/main/curriculum-full.md
+```
+
+That is it, you are ready to learn. (If a tool ever truncates such a large page, use the per-file path below.)
+
+4. Upload sources in this order (manual path, one file at a time):
 
 | Order | File | Why This Order |
 |-------|------|---------------|

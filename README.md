@@ -145,7 +145,9 @@ EXCEL Learn/
 ├── anki/
 │   └── excel-flashcards.csv              # 120 cards: Front,Back,Category
 │
-├── HOW-TO-USE-WITH-AI.md                 # Detailed AI platform guides + prompts
+├── curriculum-full.md                    # ONE-LINK AI edition: the whole course in one file
+├── make_curriculum_full.py               # Regenerates the one-link edition
+├── HOW-TO-USE-WITH-AI.md                 # Detailed AI usage guides + prompts
 ├── path.md                               # How this package was built (process doc)
 ├── CONTRIBUTORS.md                       # Who did what
 └── README.md                             # This file
@@ -211,6 +213,14 @@ Everything in `samples/` is a real `.xlsx` file you can open, break, and rebuild
 **Step 1:** Go to [notebooklm.google.com](https://notebooklm.google.com) and sign in.
 
 **Step 2:** Click **"Create new notebook"** and name it `Excel Zero to Hero`.
+
+**Want one link instead of many uploads?** Add this single **Website** source and NotebookLM gets the entire course (every module, quiz, cheat sheet, walkthrough, and answer key):
+
+```
+https://raw.githubusercontent.com/tempesteni/Microsoft-Excel-Zero-to-hero/main/curriculum-full.md
+```
+
+(Built by `make_curriculum_full.py`. If a tool truncates very large pages, fall back to the per-file list below.)
 
 **Step 3:** Upload your sources in this order:
 
@@ -527,4 +537,4 @@ Created by **[tempesteni](https://github.com/tempesteni)** with **[Hermes Agent]
 | tempesteni | Concept and curriculum direction, scope decisions, review, corrections, quality control, publishing decisions |
 | Hermes Agent | Research and compilation, module authoring, quiz/flashcard/cheat sheet generation, sample workbook generation, link verification and repair, content and security verification, documentation |
 
-**Stats:** 51 files | ~75,000 words | 8 modules + 8 real-world projects | 8 sample workbooks | 8 quizzes | 120 flashcards | 5 study tracks | estimated study time 40-120 hours depending on track | prerequisites: basic computer literacy, access to Excel (2019, 2021, or Microsoft 365).
+**Stats:** 53 files | ~75,000 words | 8 modules + 8 real-world projects | 8 sample workbooks | 8 quizzes | 120 flashcards | 5 study tracks | estimated study time 40-120 hours depending on track | prerequisites: basic computer literacy, access to Excel (2019, 2021, or Microsoft 365).
