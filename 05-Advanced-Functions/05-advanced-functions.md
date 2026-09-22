@@ -51,7 +51,7 @@ XLOOKUP is Excel's modern, all-in-one lookup function introduced in Microsoft 36
 
 ### Example 1: Basic Exact Match
 
-**Sample Data — Employee Table:**
+**Sample Data - Employee Table:**
 
 | A (Emp ID) | B (Name) | C (Department) | D (Salary) |
 |------------|----------|----------------|------------|
@@ -77,9 +77,9 @@ XLOOKUP is Excel's modern, all-in-one lookup function introduced in Microsoft 36
 
 **Result:** `Employee Not Found` (instead of #N/A)
 
-### Example 3: Approximate Match — Discount Tiers
+### Example 3: Approximate Match - Discount Tiers
 
-**Sample Data — Discount Table:**
+**Sample Data - Discount Table:**
 
 | A (Min Qty) | B (Discount %) |
 |-------------|----------------|
@@ -110,7 +110,7 @@ XLOOKUP can return an entire row of data at once:
 
 Look up a value by matching both a row header AND a column header:
 
-**Sample Data — Sales by Region and Quarter:**
+**Sample Data - Sales by Region and Quarter:**
 
 | | E (Q1) | F (Q2) | G (Q3) | H (Q4) |
 |---|--------|--------|--------|--------|
@@ -274,13 +274,13 @@ To look up a value based on **two criteria** (e.g., Name = "Alice Johnson" AND D
 - MATCH finds the first `1` → position 1
 - INDEX returns the 1st salary → **$95,000**
 
-### Example 5: Return All Matches (with SMALL/IF — Legacy Approach)
+### Example 5: Return All Matches (with SMALL/IF - Legacy Approach)
 
 ```excel
 =INDEX(D2:D6, SMALL(IF(C2:C6="Engineering", ROW(C2:C6)-ROW(C2)+1), ROW(1:1)))
 ```
 
-> ⚠️ Array formula — Ctrl+Shift+Enter in older Excel versions.
+> ⚠️ Array formula - Ctrl+Shift+Enter in older Excel versions.
 
 This returns the 1st Engineering salary. Copy down to get the 2nd, 3rd, etc.
 
@@ -322,7 +322,7 @@ Starting from A1, move **2 rows down** and **3 columns right** → returns the v
 =SUM(OFFSET(A1, 0, 0, 5, 1))
 ```
 
-Returns the sum of A1:A5 — a range that is 5 rows tall and 1 column wide starting from A1.
+Returns the sum of A1:A5 - a range that is 5 rows tall and 1 column wide starting from A1.
 
 ### Example 3: Dynamic Named Range
 
@@ -360,7 +360,7 @@ Returns the average of the **last 7 values** in column A.
 
 ### What is INDIRECT?
 
-INDIRECT converts a **text string** into a valid cell reference. This allows you to build cell references dynamically — for example, pulling data from different sheets based on a dropdown selection.
+INDIRECT converts a **text string** into a valid cell reference. This allows you to build cell references dynamically - for example, pulling data from different sheets based on a dropdown selection.
 
 ### Syntax
 
@@ -419,7 +419,7 @@ Now B1's dropdown changes based on A1's selection!
 
 - **Volatile function** (recalculates on every change)
 - **Cannot reference closed workbooks**
-- **Text-based references are fragile** — typos in sheet names cause #REF! errors
+- **Text-based references are fragile** - typos in sheet names cause #REF! errors
 
 ---
 
@@ -463,7 +463,7 @@ If A1 is a date, this returns the day name.
 =SUM(CHOOSE({1,2,3}, B2:B10, D2:D10, F2:F10))
 ```
 
-This sums columns B, D, and F together — useful when column selection needs to be dynamic.
+This sums columns B, D, and F together - useful when column selection needs to be dynamic.
 
 ---
 
@@ -562,7 +562,7 @@ Filters for Engineering employees, then sorts by salary (column 4) in **descendi
 | `sort_order` | 1 (ascending) | 1 = ascending, -1 = descending |
 | `by_col` | FALSE | FALSE = sort by rows, TRUE = sort by columns |
 
-**Example — Sort employees by salary descending:**
+**Example - Sort employees by salary descending:**
 
 ```excel
 =SORT(A2:D6, 4, -1)
@@ -585,7 +585,7 @@ Sort by a column that is **not in the output range**:
 =SORTBY(array, by_array1, [sort_order1], [by_array2], [sort_order2], ...)
 ```
 
-**Example — Sort names alphabetically but return salary column:**
+**Example - Sort names alphabetically but return salary column:**
 
 ```excel
 =SORTBY(D2:D6, B2:B6, 1)
@@ -593,7 +593,7 @@ Sort by a column that is **not in the output range**:
 
 Returns salaries sorted by employee name (A→Z).
 
-**Multi-level sort — Department ascending, then Salary descending:**
+**Multi-level sort - Department ascending, then Salary descending:**
 
 ```excel
 =SORTBY(A2:D6, C2:C6, 1, D2:D6, -1)
@@ -613,7 +613,7 @@ Returns salaries sorted by employee name (A→Z).
 | `by_col` | FALSE (default) = unique rows, TRUE = unique columns |
 | `exactly_once` | FALSE (default) = all unique values, TRUE = values that appear exactly once |
 
-**Example 1 — Unique departments:**
+**Example 1 - Unique departments:**
 
 ```excel
 =UNIQUE(C2:C6)
@@ -621,13 +621,13 @@ Returns salaries sorted by employee name (A→Z).
 
 **Result:** `Engineering | Marketing | Sales`
 
-**Example 2 — Unique rows (full records):**
+**Example 2 - Unique rows (full records):**
 
 ```excel
 =UNIQUE(A2:D6)
 ```
 
-**Example 3 — Combine with SORT:**
+**Example 3 - Combine with SORT:**
 
 ```excel
 =SORT(UNIQUE(C2:C6))
@@ -645,7 +645,7 @@ Generates an array of sequential numbers.
 =SEQUENCE(rows, [columns], [start], [step])
 ```
 
-**Example 1 — Numbers 1 to 10:**
+**Example 1 - Numbers 1 to 10:**
 
 ```excel
 =SEQUENCE(10)
@@ -653,7 +653,7 @@ Generates an array of sequential numbers.
 
 **Result:** `{1; 2; 3; 4; 5; 6; 7; 8; 9; 10}` (spills down)
 
-**Example 2 — 4×5 multiplication table:**
+**Example 2 - 4×5 multiplication table:**
 
 ```excel
 =SEQUENCE(4, 5, 1, 1)
@@ -661,13 +661,13 @@ Generates an array of sequential numbers.
 
 Creates a 4-row, 5-column grid of numbers.
 
-**Example 3 — Generate dates for 30 days:**
+**Example 3 - Generate dates for 30 days:**
 
 ```excel
 =TODAY() + SEQUENCE(30) - 1
 ```
 
-**Example 4 — Odd numbers from 1 to 19:**
+**Example 4 - Odd numbers from 1 to 19:**
 
 ```excel
 =SEQUENCE(10, 1, 1, 2)
@@ -685,19 +685,19 @@ Generates an array of random numbers.
 =RANDARRAY([rows], [columns], [min], [max], [whole_number])
 ```
 
-**Example 1 — 5 random decimals between 0 and 1:**
+**Example 1 - 5 random decimals between 0 and 1:**
 
 ```excel
 =RANDARRAY(5)
 ```
 
-**Example 2 — 10 random integers between 1 and 100:**
+**Example 2 - 10 random integers between 1 and 100:**
 
 ```excel
 =RANDARRAY(10, 1, 1, 100, TRUE)
 ```
 
-**Example 3 — Random sample (shuffle a list):**
+**Example 3 - Random sample (shuffle a list):**
 
 ```excel
 =SORTBY(A2:A100, RANDARRAY(COUNTA(A2:A100)))
@@ -712,9 +712,9 @@ Randomly shuffles the list in A2:A100.
 ### What is LET?
 
 The LET function lets you **define named variables inside a formula**. This makes complex formulas:
-- **Easier to read** — meaningful variable names instead of repeated expressions
-- **Faster to calculate** — expensive sub-calculations run only once
-- **Easier to maintain** — change a value in one place instead of multiple
+- **Easier to read** - meaningful variable names instead of repeated expressions
+- **Faster to calculate** - expensive sub-calculations run only once
+- **Easier to maintain** - change a value in one place instead of multiple
 
 ### Syntax
 
@@ -837,13 +837,13 @@ Applies a LAMBDA to each element of an array and returns an array of results.
 =MAP(array1, [array2, ...], LAMBDA(parameter, calculation))
 ```
 
-**Example — Convert temperatures from Celsius to Fahrenheit:**
+**Example - Convert temperatures from Celsius to Fahrenheit:**
 
 ```excel
 =MAP(A2:A10, LAMBDA(c, c * 9/5 + 32))
 ```
 
-**Example — Concatenate first and last name:**
+**Example - Concatenate first and last name:**
 
 ```excel
 =MAP(A2:A10, B2:B10, LAMBDA(first, last, first & " " & last))
@@ -857,7 +857,7 @@ Reduces an array to a **single value** by applying a LAMBDA cumulatively.
 =REDUCE(initial_value, array, LAMBDA(accumulator, value, calculation))
 ```
 
-**Example — Sum of all values:**
+**Example - Sum of all values:**
 
 ```excel
 =REDUCE(0, A2:A10, LAMBDA(acc, val, acc + val))
@@ -865,7 +865,7 @@ Reduces an array to a **single value** by applying a LAMBDA cumulatively.
 
 (This is equivalent to `=SUM(A2:A10)` but demonstrates the concept.)
 
-**Example — Count values greater than 100:**
+**Example - Count values greater than 100:**
 
 ```excel
 =REDUCE(0, A2:A10, LAMBDA(acc, val, acc + IF(val > 100, 1, 0)))
@@ -879,7 +879,7 @@ Like REDUCE, but returns **every intermediate result** (running total).
 =SCAN(initial_value, array, LAMBDA(accumulator, value, calculation))
 ```
 
-**Example — Running total:**
+**Example - Running total:**
 
 ```excel
 =SCAN(0, A2:A10, LAMBDA(acc, val, acc + val))
@@ -895,13 +895,13 @@ Applies a LAMBDA to each **row** of an array and returns one result per row.
 =BYROW(array, LAMBDA(row, calculation))
 ```
 
-**Example — Sum of each row:**
+**Example - Sum of each row:**
 
 ```excel
 =BYROW(A2:D10, LAMBDA(row, SUM(row)))
 ```
 
-**Example — Max value per row:**
+**Example - Max value per row:**
 
 ```excel
 =BYROW(A2:D10, LAMBDA(row, MAX(row)))
@@ -915,7 +915,7 @@ Applies a LAMBDA to each **column** of an array and returns one result per colum
 =BYCOL(array, LAMBDA(col, calculation))
 ```
 
-**Example — Average of each column:**
+**Example - Average of each column:**
 
 ```excel
 =BYCOL(A2:D10, LAMBDA(col, AVERAGE(col)))
@@ -965,7 +965,7 @@ Splits text into rows and/or columns based on delimiters.
 =TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with])
 ```
 
-**Example 1 — Split into columns:**
+**Example 1 - Split into columns:**
 
 ```excel
 =TEXTSPLIT("Apple,Banana,Cherry", ",")
@@ -973,15 +973,15 @@ Splits text into rows and/or columns based on delimiters.
 
 **Result:** `Apple | Banana | Cherry` (spills across 3 cells)
 
-**Example 2 — Split into rows:**
+**Example 2 - Split into rows:**
 
 ```excel
 =TEXTSPLIT("Apple;Banana;Cherry", , ";")
 ```
 
-**Result:** Spills down — Apple, Banana, Cherry in separate rows.
+**Result:** Spills down - Apple, Banana, Cherry in separate rows.
 
-**Example 3 — Split a CSV-like block:**
+**Example 3 - Split a CSV-like block:**
 
 ```excel
 =TEXTSPLIT("A1,B1,C1;A2,B2,C2", ",", ";")
@@ -997,7 +997,7 @@ Splits text into rows and/or columns based on delimiters.
 
 ## 12. VSTACK and HSTACK
 
-### VSTACK — Stack Arrays Vertically
+### VSTACK - Stack Arrays Vertically
 
 ```
 =VSTACK(array1, [array2], ...)
@@ -1013,7 +1013,7 @@ Splits text into rows and/or columns based on delimiters.
 
 **Use case:** Consolidate data from multiple sheets/regions into one view.
 
-### HSTACK — Stack Arrays Horizontally
+### HSTACK - Stack Arrays Horizontally
 
 ```
 =HSTACK(array1, [array2], ...)
@@ -1031,7 +1031,7 @@ Splits text into rows and/or columns based on delimiters.
 
 ## 13. TOCOL and TOROW
 
-### TOCOL — Convert Array to Single Column
+### TOCOL - Convert Array to Single Column
 
 ```
 =TOCOL(array, [ignore], [scan_by_col])
@@ -1052,7 +1052,7 @@ Splits text into rows and/or columns based on delimiters.
 
 Converts a 3×3 range into a single column of 9 values.
 
-### TOROW — Convert Array to Single Row
+### TOROW - Convert Array to Single Row
 
 ```
 =TOROW(array, [ignore], [scan_by_col])
@@ -1070,7 +1070,7 @@ Converts a 3×3 range into a single row of 9 values.
 
 ## 14. WRAPCOLS and WRAPROWS
 
-### WRAPCOLS — Wrap Values into Columns
+### WRAPCOLS - Wrap Values into Columns
 
 ```
 =WRAPCOLS(vector, wrap_count, [pad_with])
@@ -1089,7 +1089,7 @@ Wraps numbers 1-10 into a table with 3 rows per column:
 | 2 | 5 | 8 | N/A |
 | 3 | 6 | 9 | N/A |
 
-### WRAPROWS — Wrap Values into Rows
+### WRAPROWS - Wrap Values into Rows
 
 ```
 =WRAPROWS(vector, wrap_count, [pad_with])
@@ -1175,37 +1175,37 @@ Wraps numbers 1-10 into a table with 4 columns per row:
 ## 16. Sources and Further Reading
 
 ### Microsoft Official Documentation
-- [XLOOKUP Function — Microsoft Support](https://support.microsoft.com/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929)
-- [XMATCH Function — Microsoft Support](https://support.microsoft.com/office/xmatch-function-d966da31-7a6b-4a13-a1c6-5a33ed6a0312)
-- [FILTER Function — Microsoft Support](https://support.microsoft.com/office/filter-function-f4f7cb26-8a68-4e68-8e2d-4466e6e5dca3)
-- [SORT Function — Microsoft Support](https://support.microsoft.com/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c)
-- [UNIQUE Function — Microsoft Support](https://support.microsoft.com/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e)
-- [SEQUENCE Function — Microsoft Support](https://support.microsoft.com/office/sequence-function-57467a98-57e0-4817-9f14-2eb78519ca90)
-- [LET Function — Microsoft Support](https://support.microsoft.com/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f99089fe)
-- [LAMBDA Function — Microsoft Support](https://support.microsoft.com/office/lambda-function-bd212d27-1cd1-4321-a34a-ccbf254b8b67)
-- [TEXTBEFORE, TEXTAFTER, TEXTSPLIT — Microsoft Support](https://support.microsoft.com/office/textbefore-function-d099c28a-dba8-448e-ac6c-f086d0fa1188)
+- [XLOOKUP Function - Microsoft Support](https://support.microsoft.com/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929)
+- [XMATCH Function - Microsoft Support](https://support.microsoft.com/office/xmatch-function-d966da31-7a6b-4a13-a1c6-5a33ed6a0312)
+- [FILTER Function - Microsoft Support](https://support.microsoft.com/en-us/excel)
+- [SORT Function - Microsoft Support](https://support.microsoft.com/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c)
+- [UNIQUE Function - Microsoft Support](https://support.microsoft.com/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e)
+- [SEQUENCE Function - Microsoft Support](https://support.microsoft.com/office/sequence-function-57467a98-57e0-4817-9f14-2eb78519ca90)
+- [LET Function - Microsoft Support](https://support.microsoft.com/en-us/excel)
+- [LAMBDA Function - Microsoft Support](https://support.microsoft.com/office/lambda-function-bd212d27-1cd1-4321-a34a-ccbf254b8b67)
+- [TEXTBEFORE, TEXTAFTER, TEXTSPLIT - Microsoft Support](https://support.microsoft.com/en-us/excel)
 
 ### Exceljet (Recommended for Examples and Videos)
-- [XLOOKUP Function — Exceljet](https://exceljet.net/functions/xlookup-function)
-- [FILTER Function — Exceljet](https://exceljet.net/functions/filter-function)
-- [LET Function — Exceljet](https://exceljet.net/functions/let-function)
-- [Dynamic Array Functions — Exceljet](https://exceljet.net/dynamic-array-functions-in-excel)
+- [XLOOKUP Function - Exceljet](https://exceljet.net/functions/xlookup-function)
+- [FILTER Function - Exceljet](https://exceljet.net/functions/filter-function)
+- [LET Function - Exceljet](https://exceljet.net/functions/let-function)
+- [Dynamic Array Functions - Exceljet](https://exceljet.net/)
 
 ### Community Resources
-- [XLOOKUP vs INDEX/MATCH — Chandoo.org](https://chandoo.org/wp/xlookup-vs-index-match/)
-- [Dynamic Arrays Guide — MyOnlineTrainingHub](https://www.myonlinetraininghub.com/excel-dynamic-array-functions)
-- [LAMBDA Function Tutorial — Excel Off The Grid](https://exceloffthegrid.com/excel-lambda-function/)
+- [XLOOKUP vs INDEX/MATCH - Chandoo.org](https://chandoo.org/?s=xlookup)
+- [Dynamic Arrays Guide - MyOnlineTrainingHub](https://www.myonlinetraininghub.com/excel-dynamic-array-functions)
+- [LAMBDA Function Tutorial - Excel Off The Grid](https://exceloffthegrid.com/)
 
 ### YouTube Video References
-- [XLOOKUP — ExcelIsFun (Mike Girvin)](https://www.youtube.com/watch?v=GPSY2lE7PSA)
-- [Dynamic Arrays — Leila Gharani](https://www.youtube.com/watch?v=0EiOaCMq_FA)
-- [FILTER Function Deep Dive — ExcelIsFun](https://www.youtube.com/watch?v=MQ3WqK5eJzI)
-- [LET and LAMBDA — Leila Gharani](https://www.youtube.com/watch?v=JTXixVvfSZU)
-- [INDEX/MATCH vs XLOOKUP — MyOnlineTrainingHub](https://www.youtube.com/watch?v=PN8nUASSEm4)
-- [TEXTBEFORE, TEXTAFTER, TEXTSPLIT — Excel Off The Grid](https://www.youtube.com/watch?v=xl_8DLK9oXw)
-- [Dynamic Arrays Crash Course — Chandoo](https://www.youtube.com/watch?v=ZP1HjV4M4Y4)
-- [LAMBDA Functions Explained — Curbal](https://www.youtube.com/watch?v=miMjEFMNE0Y)
+- [XLOOKUP - ExcelIsFun (Mike Girvin)](https://www.youtube.com/watch?v=GPSY2lE7PSA)
+- [Dynamic Arrays - Leila Gharani](https://www.youtube.com/watch?v=0EiOaCMq_FA)
+- [FILTER Function Deep Dive - ExcelIsFun](https://www.youtube.com/watch?v=MQ3WqK5eJzI)
+- [LET and LAMBDA - Leila Gharani](https://www.youtube.com/watch?v=JTXixVvfSZU)
+- [INDEX/MATCH vs XLOOKUP - MyOnlineTrainingHub](https://www.youtube.com/watch?v=PN8nUASSEm4)
+- [TEXTBEFORE, TEXTAFTER, TEXTSPLIT - Excel Off The Grid](https://www.youtube.com/watch?v=xl_8DLK9oXw)
+- [Dynamic Arrays Crash Course - Chandoo](https://www.youtube.com/watch?v=ZP1HjV4M4Y4)
+- [LAMBDA Functions Explained - Curbal](https://www.youtube.com/watch?v=miMjEFMNE0Y)
 
 ---
 
-> **Next Module:** [Module 6 — Power Query & Power Pivot](../06-Power-Query-Pivot/06-power-query-power-pivot.md)
+> **Next Module:** [Module 6 - Power Query & Power Pivot](../06-Power-Query-Pivot/06-power-query-power-pivot.md)

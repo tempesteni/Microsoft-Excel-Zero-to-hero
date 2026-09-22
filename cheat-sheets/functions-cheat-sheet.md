@@ -1,4 +1,4 @@
-# Excel Functions Cheat Sheet — Top 50
+# Excel Functions Cheat Sheet - Top 50
 
 > **Quick Reference** | Print on A4/Letter | 2 pages
 

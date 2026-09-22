@@ -1,4 +1,4 @@
-# Quiz 05 — Advanced Lookup & Dynamic Arrays
+# Quiz 05 - Advanced Lookup & Dynamic Arrays
 
 **Module:** INDEX/MATCH, XLOOKUP, Dynamic Arrays, OFFSET/INDIRECT
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -96,7 +96,7 @@
 - A) `OFFSET` with `COUNTA`
 - B) `INDEX` with `COUNTA`
 - C) Both A and B
-- D) Neither — dynamic ranges must be Excel Tables
+- D) Neither - dynamic ranges must be Excel Tables
 
 ---
 

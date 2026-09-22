@@ -1,4 +1,4 @@
-# Quiz 03 — Data Visualization & Formatting
+# Quiz 03 - Data Visualization & Formatting
 
 **Module:** Conditional Formatting, Charts, Tables, Sparklines
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -12,7 +12,7 @@
 - A) Only B2 is highlighted if it's over 100
 - B) Each cell in B2:B50 is highlighted independently if its value exceeds 100
 - C) All cells highlight because B2 is checked against 100
-- D) An error — formulas can't be used in conditional formatting
+- D) An error - formulas can't be used in conditional formatting
 
 **2.** You convert a data range to an Excel Table (Ctrl+T). Which of these is NOT an automatic benefit?
 - A) Auto-filling formulas in new columns
@@ -33,13 +33,13 @@
 - D) Data Bars
 
 **5.** What happens when you add a new row below an Excel Table?
-- A) Nothing — you need to manually extend the table
+- A) Nothing - you need to manually extend the table
 - B) The table auto-expands to include the new row
 - C) A dialog asks if you want to extend
 - D) The new row stays outside the table
 
 **6.** You create a line chart but the x-axis labels show numbers instead of your month names. What's the fix?
-- A) The months are in the wrong row — move them above the data
+- A) The months are in the wrong row - move them above the data
 - B) Right-click the chart > Select Data > Edit Horizontal Axis Labels
 - C) Change the chart type to a bar chart
 - D) Format cells as Text
@@ -130,7 +130,7 @@ Write the formula or describe the action needed.
 
 | # | Answer | Explanation |
 |---|--------|-------------|
-| 1 | **B** | Relative reference `B2` adjusts per row — each cell is evaluated independently. |
+| 1 | **B** | Relative reference `B2` adjusts per row - each cell is evaluated independently. |
 | 2 | **C** | Tables don't auto-create PivotTables; you must insert one manually. |
 | 3 | **C** | Pie charts are designed for part-to-whole with a small number of categories. |
 | 4 | **C** | Top/Bottom Rules have a "Top 10%" preset. |
@@ -140,15 +140,15 @@ Write the formula or describe the action needed.
 | 8 | **B** | Color Scales apply gradient fills based on cell values. |
 | 9 | **D** | All three are valid structured reference syntaxes. |
 | 10 | **B** | Combo charts with dual axes handle data with vastly different scales. |
-| 11 | **B** | "Clear Rules" only removes conditional formatting — not data or charts. |
-| 12 | **B** | `$C2` locks the column (C) but lets the row change — highlights the entire row. |
+| 11 | **B** | "Clear Rules" only removes conditional formatting - not data or charts. |
+| 12 | **B** | `$C2` locks the column (C) but lets the row change - highlights the entire row. |
 | 13 | **D** | Both Line and Column sparklines show trends; Win/Loss shows positive/negative only. |
 | 14 | **A** | Format Data Labels has checkboxes for Category Name, Percentage, Value, etc. |
 | 15 | **D** | Date columns default to MAX in the Total Row. |
 | 16 | `=SEARCH("URGENT",A1)>0` or `=ISNUMBER(SEARCH("URGENT",A1))` | SEARCH is case-insensitive; ISNUMBER converts the result to TRUE/FALSE. |
 | 17 | `=MOD(ROW(),2)=0` | Even-numbered rows get the format; use `=1` for odd rows. |
 | 18 | `=SUMIF(SalesData[Region],"North",SalesData[Amount])` | SUMIF with structured references. |
-| 19 | Click anywhere in the `Orders` Table → Insert tab → PivotChart → choose location → configure fields. | — |
+| 19 | Click anywhere in the `Orders` Table → Insert tab → PivotChart → choose location → configure fields. | - |
 | 20 | `=AVERAGE(Inventory[Price])` | Structured reference for the Price column average. |
 
 ---

@@ -199,7 +199,7 @@ ws1.freeze_panes = "A2"
 ws2.freeze_panes = "A2"
 
 # Save
-output_path = "/home/ennycares/EXCEL Learn/exercises/sales-data-practice.xlsx"
+output_path = "~/EXCEL Learn/exercises/sales-data-practice.xlsx"
 wb.save(output_path)
 print(f"✅ Saved to {output_path}")
 print(f"   Sheet 'Sales-Data': 200 data rows + 2 duplicates + header = 203 rows")

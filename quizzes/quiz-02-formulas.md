@@ -1,4 +1,4 @@
-# Quiz 02 — Formulas & Functions
+# Quiz 02 - Formulas & Functions
 
 **Module:** Formulas, SUM/IF/VLOOKUP, Text/Date Functions, Error Handling
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -142,7 +142,7 @@ Write the formula that produces the required result.
 | 10 | **B** | COUNTA counts non-blank cells: 7 numbers + 2 text = 9. |
 | 11 | **D** | All three concatenation methods work. |
 | 12 | **B** | ROUND(3.456, 2) rounds to 2 decimal places → 3.46. |
-| 13 | **D** | Both SEARCH and FIND locate "@" — FIND is case-sensitive, SEARCH supports wildcards. |
+| 13 | **D** | Both SEARCH and FIND locate "@" - FIND is case-sensitive, SEARCH supports wildcards. |
 | 14 | **B** | Excel rolls over month 14 to February of the next year. |
 | 15 | **D** | IFERROR catches all errors; IFNA catches only #N/A. Both can provide fallback values. |
 | 16 | `=VLOOKUP("Widget",A:B,2,FALSE)` | Exact match lookup on "Widget", returns column 2 (price). |

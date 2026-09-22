@@ -11,7 +11,7 @@
 ## Process Log
 
 ### Step 1: Directory Structure Created
-- Created `/home/ennycares/EXCEL Learn/` with 10 subdirectories:
+- Created `~/EXCEL Learn/` with 10 subdirectories:
   - `01-Fundamentals/` - Excel basics, interface, navigation
   - `02-Formulas-Functions/` - Core formulas and functions
   - `03-Formatting-Visualization/` - Charts, conditional formatting, design

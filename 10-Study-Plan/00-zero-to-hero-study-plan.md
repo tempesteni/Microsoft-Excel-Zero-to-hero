@@ -1,278 +1,147 @@
-# From Zero to Hero in Microsoft Excel
-## Complete Study Plan & Curriculum Guide
+# Zero to Hero Study Plans: 12 / 8 / 6 / 4 / 2 Weeks
 
-**Duration:** 12 Weeks (self-paced) | **Level:** Absolute Beginner to Advanced
-**Prerequisites:** Basic computer literacy, access to Microsoft Excel (2019, 2021, or 365)
+**Choose the track that fits your schedule.** The content never changes, only the pace. Every track covers all 8 modules, the real-world projects, the sample workbooks, and all quizzes.
 
----
+| Track | Weeks | Hours per week | Best for |
+|------|-------|----------------|----------|
+| [12-Week Mastery Track](#track-a-12-week-mastery) | 12 | 6-8 h | Beginners who want deep, lasting skill |
+| [8-Week Standard Track](#track-b-8-week-standard) | 8 | 8-10 h | Most learners with a day job |
+| [6-Week Accelerated Track](#track-c-6-week-accelerated) | 6 | 10-12 h | Learners with some Office experience |
+| [4-Week Sprint Track](#track-d-4-week-sprint) | 4 | 12-15 h | Fast upskilling for a job or project |
+| [2-Week Crash Track](#track-e-2-week-crash) | 2 | 18-25 h | Emergency prep (interview, certification, deadline) |
 
-## How to Use This Study Plan
+## How to Use Any Track
 
-This plan is designed for someone with **zero Excel knowledge**. Each week builds on the previous one. Follow the modules in order. Each module contains:
+1. Pick a track below and copy its schedule into your own calendar.
+2. Every study session follows the same rhythm:
 
-- **Learning materials** (detailed guides with examples)
-- **Practice exercises** (hands-on activities within each module)
-- **Video references** (supplementary YouTube content)
-- **Milestone projects** (real-world application)
+| Step | Time | Activity |
+|------|------|----------|
+| 1 | 10 min | Review flashcards (Anki) from previous sessions |
+| 2 | 40-60 min | Read the module section, follow along in Excel |
+| 3 | 30-45 min | Do the exercises and the matching sample workbook |
+| 4 | 20 min | Take the module quiz, score it, note weak areas |
+| 5 | 10 min | Log progress in the [Progress Tracker](progress-tracker.md) |
 
-**Study Tip:** Spend 1-2 hours per day. Practice is more important than reading. Open Excel alongside the materials and try every example yourself.
-
----
-
-## PHASE 1: FOUNDATION (Weeks 1-3)
-
-### Week 1: Getting Started with Excel
-**Module:** `01-Fundamentals/01-excel-fundamentals.md`
-
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | What is Excel? Interface Tour | 1 hr | Explore the Ribbon, identify all tabs. Open a blank workbook. |
-| Day 2 | Cells, Rows, Columns, Navigation | 1 hr | Practice clicking cells, typing data, navigating with keyboard (Arrow keys, Ctrl+Arrow, Ctrl+Home). |
-| Day 3 | Data Entry & Basic Formatting | 1.5 hrs | Enter text, numbers, dates. Format font, alignment, borders. |
-| Day 4 | Cell References (Relative, Absolute, Mixed) | 1.5 hrs | Create formulas that copy correctly. Use $ signs. |
-| Day 5 | Saving Files & File Formats | 1 hr | Save as .xlsx, .csv, .xlsb. Understand differences. |
-| Day 6 | Practice & Review | 1.5 hrs | Complete all exercises in Module 1. |
-| Day 7 | Rest / Video Supplement | 30 min | Watch: "Excel Tutorial for Beginners" by Kevin Stratvert |
-
-**Milestone:** Can navigate Excel, enter data, and understand the interface confidently.
+3. **Score rule (same in every track):** quiz 90%+ advance, 70-89% review weak areas then advance, below 70% restudy the module before moving on.
+4. Work in the sample workbooks in `../samples/` as you go: each one is paired with a walkthrough.
+5. Want variety? Swap in the AI-assisted prompts from `../HOW-TO-USE-WITH-AI.md`.
 
 ---
 
-### Week 2: Formulas & Functions (Part 1)
-**Module:** `02-Formulas-Functions/02-formulas-functions.md`
+## Track A: 12-Week Mastery
 
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | Formula Basics & Order of Operations | 1.5 hrs | Write basic formulas. Understand PEMDAS. |
-| Day 2 | SUM, AVERAGE, COUNT, COUNTA, MIN, MAX | 1.5 hrs | Practice on sample sales data. |
-| Day 3 | SUMIF, SUMIFS, COUNTIF, COUNTIFS | 1.5 hrs | Apply criteria-based calculations. |
-| Day 4 | IF, Nested IF, IFS, SWITCH | 2 hrs | Build logic-based formulas. Grade calculator exercise. |
-| Day 5 | TEXT Functions | 1.5 hrs | LEFT, RIGHT, MID, TRIM, CONCATENATE. Clean messy data. |
-| Day 6 | DATE Functions | 1.5 hrs | TODAY, NOW, DATEDIF, EOMONTH. Age calculator. |
-| Day 7 | VLOOKUP & Error Handling | 2 hrs | VLOOKUP basics, IFERROR. Product lookup exercise. |
+**Total: 72-96 hours. 5 study days per week (4 study + 1 review/build).**
 
-**Milestone:** Can write formulas confidently and use 20+ functions.
+| Week | Focus | Study Days (Mon-Thu) | Friday: Review & Build |
+|------|-------|----------------------|------------------------|
+| 1 | Module 1: Fundamentals | Interface, navigation, data entry, references, formats | Quiz 1 + `sample-01-data-entry-practice.xlsx` |
+| 2 | Module 2: Formulas & Functions | SUM family, IF, COUNTIF/SUMIF, text/date functions | Quiz 2 + `sample-02-formula-challenges.xlsx` (tasks 1-6) |
+| 3 | Module 3: Formatting & Visualization | Number formats, conditional formatting, tables, charts | Quiz 3 + `sample-03-dashboard-before-after.xlsx` rebuild |
+| 4 | Module 4: Data Analysis | Sorting, filtering, validation, PivotTables, what-if | Quiz 4 + `sample-04-pivottable-source.xlsx` tasks |
+| 5 | Module 5: Advanced Functions | INDEX/MATCH, XLOOKUP, dynamic arrays, LET/LAMBDA | Quiz 5 + `sample-05-lookup-challenges.xlsx` |
+| 6 | Module 6: Power Query & Power Pivot | Query Editor, transforms, merge/append, DAX basics | Quiz 6 + `sample-06-powerquery-messy.xlsx` |
+| 7 | Module 7: VBA & Macros | Recorder, editor, Subs, loops, error handling | Quiz 7 + `samples/07-vba-toolkit/` import and run |
+| 8 | Module 8: Real-World Projects (start) | Budget tracker + Sales dashboard projects | Mid-course: `exercise-fix-this-workbook.xlsx` challenge |
+| 9 | Projects (cont.) | Inventory system + Invoice generator | Peer review with the pitfalls tables |
+| 10 | Projects (cont.) | Data cleaning pipeline + Financial model | Rebuild the fix-me workbook cleanly |
+| 11 | Projects (finish) | Automated report generator + portfolio polish | Consistent formatting across all your workbooks |
+| 12 | Capstone & Assessment | Review weak areas from quiz scores | Final: build a workbook for a real need, show it to a real human |
 
----
-
-### Week 3: Formatting & Visualization (Part 1)
-**Module:** `03-Formatting-Visualization/03-formatting-visualization.md`
-
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | Number Formats & Cell Styles | 1 hr | Currency, %, date, custom formats (#,##0.00). |
-| Day 2 | Conditional Formatting | 1.5 hrs | Highlight rules, color scales, data bars, icon sets. |
-| Day 3 | Tables & Structured References | 1.5 hrs | Create tables, add total row, use structured refs. |
-| Day 4 | Charts: Column, Bar, Line, Pie | 1.5 hrs | Create 4 chart types from same data set. |
-| Day 5 | Chart Formatting & Best Practices | 1 hr | Titles, legends, data labels, trendlines. |
-| Day 6 | Sparklines & Slicers | 1 hr | In-cell charts. Interactive filtering. |
-| Day 7 | Practice & Review | 1.5 hrs | Build a mini-dashboard with charts. |
-
-**Milestone:** Can present data visually and format spreadsheets professionally.
+**12-week extras:** read one 'Further Learning' source per week beyond the modules. By week 12 you should have 8+ portfolio workbooks.
 
 ---
 
-## PHASE 2: INTERMEDIATE (Weeks 4-6)
+## Track B: 8-Week Standard
 
-### Week 4: Data Analysis (Part 1)
-**Module:** `04-Data-Analysis/04-data-analysis.md`
+**Total: 64-80 hours. 5 study days per week. Modules pair up.**
 
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | Sorting & AutoFilter | 1.5 hrs | Sort by multiple columns. Filter with criteria. |
-| Day 2 | Advanced Filtering | 1.5 hrs | Criteria ranges, AND/OR logic, copy to location. |
-| Day 3 | Data Validation | 1.5 hrs | Drop-down lists, custom formulas, input messages. |
-| Day 4 | PivotTables (Part 1) | 2 hrs | Create PivotTable, add fields, summarize data. |
-| Day 5 | PivotTables (Part 2) | 2 hrs | Grouping, value field settings, show values as %. |
-| Day 6 | PivotCharts & Slicers | 1.5 hrs | Interactive PivotTable dashboards. |
-| Day 7 | Practice & Review | 1.5 hrs | Analyze a full dataset with PivotTables. |
+| Week | Focus | Study Days (Mon-Thu) | Friday: Review & Build |
+|------|-------|----------------------|------------------------|
+| 1 | Modules 1-2 | Mon-Tue: Module 1 core. Wed-Thu: Module 2 core | Quizzes 1-2 + samples 01-02 |
+| 2 | Module 3 | Formatting, conditional formatting, tables, charts | Quiz 3 + `sample-03` rebuild |
+| 3 | Module 4 | Sorting, filtering, validation, PivotTables | Quiz 4 + `sample-04` tasks |
+| 4 | Modules 5-6 | Mon-Tue: lookups + arrays. Wed-Thu: Power Query | Quizzes 5-6 + samples 05-06 |
+| 5 | Module 7 | VBA basics + the toolkit macros | Quiz 7 + run and break a macro |
+| 6 | Module 8 (half) | Budget tracker, sales dashboard, invoice generator | Fix-this-workbook challenge |
+| 7 | Module 8 (half) | Cleaning pipeline, financial model, report generator | Rebuild the fix-me workbook |
+| 8 | Capstone | Final real-need workbook + presentation to a human | Portfolio polish |
 
-**Milestone:** Can analyze large datasets and create interactive reports.
-
----
-
-### Week 5: What-If Analysis & Advanced Formatting
-**Modules:** `04-Data-Analysis/` + `03-Formatting-Visualization/`
-
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | Goal Seek | 1 hr | Break-even analysis, target calculations. |
-| Day 2 | Scenario Manager & Data Tables | 2 hrs | 1-variable and 2-variable sensitivity analysis. |
-| Day 3 | Subtotals & Grouping | 1 hr | Automatic subtotals, outline view. |
-| Day 4 | Advanced Conditional Formatting | 1.5 hrs | Formula-based rules, multi-condition formatting. |
-| Day 5 | Dashboard Design Principles | 1.5 hrs | Layout, color theory, KPI cards. |
-| Day 6 | Build a Sales Dashboard | 2 hrs | Combine charts, PivotTables, slicers into dashboard. |
-| Day 7 | Review & Refine Dashboard | 1 hr | Polish and optimize. |
-
-**Milestone:** Can build interactive dashboards and perform what-if analysis.
+**8-week rule:** skip nothing, but do the 3 most relevant practice projects per module instead of all 5.
 
 ---
 
-### Week 6: Advanced Lookups & Reference Functions
-**Module:** `05-Advanced-Functions/05-advanced-functions.md`
+## Track C: 6-Week Accelerated
 
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | INDEX/MATCH (Single Criteria) | 1.5 hrs | Two-way lookups, replacing VLOOKUP. |
-| Day 2 | INDEX/MATCH (Multiple Criteria) | 1.5 hrs | Array formulas for multi-condition lookups. |
-| Day 3 | XLOOKUP (Excel 365/2021) | 2 hrs | Full syntax, approximate match, nested XLOOKUP. |
-| Day 4 | OFFSET & INDIRECT | 1.5 hrs | Dynamic ranges, indirect references. |
-| Day 5 | Dynamic Arrays (FILTER, SORT, UNIQUE) | 2 hrs | Spill ranges, combining functions. |
-| Day 6 | LET, LAMBDA, TEXTBEFORE/AFTER | 1.5 hrs | Modern Excel functions. |
-| Day 7 | Practice: Multi-sheet Lookup Challenge | 2 hrs | Complex lookup exercises. |
+**Total: 60-72 hours. 6 study days per week. For people who already know Word/PowerPoint well.**
 
-**Milestone:** Can write advanced lookup formulas and use dynamic arrays.
+| Week | Focus | Daily Split |
+|------|-------|-------------|
+| 1 | Modules 1-2 | 3 days per module. Quizzes Fri-Sat |
+| 2 | Modules 3-4 | 3 days per module. Samples 03-04 as practice |
+| 3 | Modules 5-6 | 3 days per module. Samples 05-06 as practice |
+| 4 | Module 7 + Projects 1-2 | Toolkit macros, then 2 build projects |
+| 5 | Projects 3-5 | One project per 2 days |
+| 6 | Projects 6-8 + Capstone | 1 day each project, final real-need workbook |
 
----
-
-## PHASE 3: ADVANCED (Weeks 7-9)
-
-### Week 7: Power Query
-**Module:** `06-Power-Query-Pivot/06-power-query-power-pivot.md` (Part 1)
-
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | What is Power Query? Getting Data | 1.5 hrs | Import from CSV, text, web. Query Editor tour. |
-| Day 2 | Basic Transformations | 2 hrs | Remove/change columns, filter rows, change types. |
-| Day 3 | Split/Merge, Pivot/Unpivot | 1.5 hrs | Text transformations. Reshape data. |
-| Day 4 | Merge Queries (JOINs) | 2 hrs | Left, Right, Inner, Full joins. |
-| Day 5 | Append Queries & Custom Columns | 1.5 hrs | Stack tables, M language basics. |
-| Day 6 | Parameters & Refresh | 1 hr | Dynamic queries. Auto-refresh setup. |
-| Day 7 | Practice: Clean a Messy Dataset | 2 hrs | Full ETL pipeline exercise. |
-
-**Milestone:** Can transform and clean data using Power Query.
+**6-week rule:** read every module fully, but do the 3 most relevant practice projects per module. Sunday off.
 
 ---
 
-### Week 8: Power Pivot & DAX Basics
-**Module:** `06-Power-Query-Pivot/06-power-query-power-pivot.md` (Part 2)
+## Track D: 4-Week Sprint
 
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | Data Model & Relationships | 1.5 hrs | Star schema, creating relationships. |
-| Day 2 | Power Pivot PivotTables | 2 hrs | PivotTables from Data Model. |
-| Day 3 | DAX Basics: Calculated Columns | 2 hrs | SUMX, RELATED, basic DAX expressions. |
-| Day 4 | DAX: Measures & CALCULATE | 2 hrs | Measures vs columns, CALCULATE function. |
-| Day 5 | KPIs & Hierarchies | 1.5 hrs | Performance indicators, drill-down hierarchies. |
-| Day 6 | Power Query to Power Pivot Pipeline | 1.5 hrs | Full data pipeline: Source > PQ > Model > Pivot. |
-| Day 7 | Practice: Multi-table Sales Analysis | 2 hrs | Build complete data model. |
+**Total: 48-60 hours. 6-7 study days per week. Intense but complete.**
 
-**Milestone:** Can build data models with relationships and write DAX measures.
+| Week | Focus | Daily Split |
+|------|-------|-------------|
+| 1 | Modules 1-2-3 (2 days each) | Fundamentals, formulas, formatting. Quizzes day 6 |
+| 2 | Modules 4-5-6 (2 days each) | Analysis, lookups, Power Query. Samples 04-06 |
+| 3 | Module 7 + Projects 1-3 | VBA day 1-2, then one project per day |
+| 4 | Projects 4-8 (1 day each) | 5 mini-projects at speed, day 7: capstone + show it |
+
+**4-week rule:** do 2 practice projects per module, review flashcards daily (20 cards/day), treat every quiz as a gate.
 
 ---
 
-### Week 9: VBA & Macros
-**Module:** `07-VBA-Macros/07-vba-macros.md`
+## Track E: 2-Week Crash
 
-| Day | Topic | Time | Activity |
-|-----|-------|------|----------|
-| Day 1 | Recording Macros & Developer Tab | 1.5 hrs | Record, run, edit macros. |
-| Day 2 | VBA Editor & Basic Syntax | 2 hrs | Sub/Function, variables, MsgBox, InputBox. |
-| Day 3 | Range Objects & Loops | 2 hrs | Range, Cells, For Next, For Each. |
-| Day 4 | If/Select Case & Error Handling | 1.5 hrs | Conditional logic in VBA. |
-| Day 5 | Working with Sheets & Workbooks | 2 hrs | Activate, add, delete sheets. Open/close workbooks. |
-| Day 6 | Practical Automation Tasks | 2 hrs | Auto-format, loop through files, export. |
-| Day 7 | UserForms Intro & Practice | 2 hrs | Basic input form. |
+**Total: 36-50 hours. 7 days a week, 2-3 sessions per day. For deadlines: interviews, certification exams, a big review.**
 
-**Milestone:** Can write VBA macros to automate repetitive tasks.
+| Days | Focus | Sessions per day |
+|------|-------|------------------|
+| Day 1 | Module 1 + Module 2 (core sections only) | 3 |
+| Day 2 | Module 3 (formats, conditional formatting, charts) | 3 |
+| Day 3 | Module 4 (sorting, filtering, PivotTables) | 3 |
+| Day 4 | Module 5 (XLOOKUP, INDEX/MATCH) + Module 6 (Power Query core) | 3 |
+| Day 5 | Module 7 (record + edit simple macros) + Quiz 7 | 3 |
+| Day 6 | Quizzes 1-6 retakes, fix weak areas | 3 |
+| Day 7 | Projects 1-2 (budget tracker + sales dashboard) | 3 |
+| Day 8 | Projects 3-4 (inventory + invoice generator) | 3 |
+| Day 9 | Projects 5-6 (cleaning pipeline + financial model) | 2 |
+| Day 10 | Project 7 (report generator) + `exercise-fix-this-workbook.xlsx` | 2 |
+| Day 11 | Rebuild the fix-me workbook cleanly end to end | 2 |
+| Day 12 | Capstone: build your real-need workbook | 2 |
+| Day 13 | Rehearse presenting it (Module 8 delivery tips) | 2 |
+| Day 14 | Buffer: retake lowest quiz, polish portfolio, present | 2 |
 
----
-
-## PHASE 4: MASTERY (Weeks 10-12)
-
-### Week 10: Real-World Projects (Part 1)
-**Module:** `08-Real-World-Projects/08-real-world-projects.md`
-
-| Day | Project | Time | Skills Applied |
-|-----|---------|------|----------------|
-| Day 1-2 | Personal Budget Tracker | 4 hrs | SUM, SUMIF, charts, conditional formatting |
-| Day 3-4 | Sales Dashboard | 4 hrs | PivotTables, slicers, dashboard design |
-| Day 5-6 | Inventory Management System | 4 hrs | XLOOKUP, data validation, VBA |
-| Day 7 | Review & Polish Projects | 2 hrs | Refine all 3 projects |
+**2-week rule:** read only the sections listed in each day's goal, skip 'Further Learning' reading, do 1 practice project per module, and use the AI tutor prompts to compress review time.
 
 ---
 
-### Week 11: Real-World Projects (Part 2)
-**Module:** `08-Real-World-Projects/08-real-world-projects.md`
+## After Any Track: Keep Growing
 
-| Day | Project | Time | Skills Applied |
-|-----|---------|------|----------------|
-| Day 1 | Employee Schedule Tracker | 2 hrs | Date functions, conditional formatting |
-| Day 2 | Invoice Generator | 2 hrs | Templates, named ranges, print setup |
-| Day 3-4 | Data Cleaning Pipeline | 4 hrs | Power Query, text functions |
-| Day 5-6 | Financial Model | 4 hrs | NPV, IRR, what-if, data tables |
-| Day 7 | Automated Report Generator | 3 hrs | VBA, PivotTables, charts |
+- Rebuild the sample workbooks in a different industry context (swap YourCompany Inc data for your own)
+- Turn real work needs into workbooks every week (practice is the real teacher)
+- Read one 'Further Learning' source per week from any module
+- Retake quizzes after 30 days to test retention
+- Explore LAMBDA and DAX further once the fundamentals are automatic
 
----
+## Files You Need
 
-### Week 12: Certification Prep & Mastery Review
-
-| Day | Activity | Time |
-|-----|----------|------|
-| Day 1 | Self-assessment: Complete all module exercises | 3 hrs |
-| Day 2 | MOS Associate Practice Test prep | 2 hrs |
-| Day 3 | MOS Expert Practice Test prep | 2 hrs |
-| Day 4 | Review weak areas identified in practice tests | 2 hrs |
-| Day 5 | Build a portfolio project combining ALL skills | 3 hrs |
-| Day 6 | Explore Power BI as the next step | 1.5 hrs |
-| Day 7 | Final review and certification exam (if ready) | 2 hrs |
-
----
-
-## Quick Reference: Keyboard Shortcuts to Memorize
-
-| Shortcut | Action |
-|----------|--------|
-| Ctrl+C / Ctrl+V / Ctrl+X | Copy / Paste / Cut |
-| Ctrl+Z / Ctrl+Y | Undo / Redo |
-| Ctrl+S | Save |
-| Ctrl+B / Ctrl+I / Ctrl+U | Bold / Italic / Underline |
-| Ctrl+1 | Format Cells dialog |
-| Ctrl+Shift+L | Toggle AutoFilter |
-| Ctrl+T | Create Table |
-| Ctrl+Space | Select entire column |
-| Shift+Space | Select entire row |
-| Ctrl+Arrow | Jump to edge of data |
-| Ctrl+Home / Ctrl+End | Go to start / end of data |
-| F2 | Edit active cell |
-| F4 | Toggle absolute/relative reference |
-| Alt+= | AutoSum |
-| Alt+F11 | Open VBA Editor |
-| Ctrl+` | Show formulas |
-
----
-
-## Learning Resources Summary
-
-| Module | File | Level |
-|--------|------|-------|
-| 1 - Fundamentals | `01-Fundamentals/01-excel-fundamentals.md` | Beginner |
-| 2 - Formulas & Functions | `02-Formulas-Functions/02-formulas-functions.md` | Beginner-Intermediate |
-| 3 - Formatting & Visualization | `03-Formatting-Visualization/03-formatting-visualization.md` | Beginner-Intermediate |
-| 4 - Data Analysis | `04-Data-Analysis/04-data-analysis.md` | Intermediate |
-| 5 - Advanced Functions | `05-Advanced-Functions/05-advanced-functions.md` | Intermediate-Advanced |
-| 6 - Power Query & Pivot | `06-Power-Query-Pivot/06-power-query-power-pivot.md` | Advanced |
-| 7 - VBA & Macros | `07-VBA-Macros/07-vba-macros.md` | Advanced |
-| 8 - Real-World Projects | `08-Real-World-Projects/08-real-world-projects.md` | All Levels |
-| Sources & References | `09-Sources-References/sources-references-index.md` | Reference |
-
----
-
-## NotebookLM Instructions
-
-To use this package with Google's **NotebookLM** (https://notebooklm.google.com):
-
-1. **Create a new notebook** for your Excel learning
-2. **Upload sources** in order: Study Plan first, then Modules 1-8, then Sources Index
-3. **Ask questions** like:
-   - "Explain the difference between VLOOKUP and XLOOKUP"
-   - "Give me a step-by-step guide to creating a PivotTable"
-   - "Summarize the key VBA concepts from Module 7"
-   - "What are the best practices for dashboard design?"
-   - "Create practice exercises for INDEX/MATCH"
-4. **Generate study guides** from the uploaded content
-5. **Create flashcards** for keyboard shortcuts and function syntax
-6. **Use Audio Overview** feature to listen to summaries while practicing
-
-**Total Content:** ~200KB of learning material across 9 comprehensive guides
-**Estimated Study Time:** 80-120 hours over 12 weeks
+| File | Purpose |
+|------|---------|
+| [progress-tracker.md](progress-tracker.md) | Checkbox checklist for every skill |
+| `../quizzes/quiz-01-fundamentals.md` to `quiz-08-projects.md` | Module quizzes with answer keys |
+| `../anki/excel-flashcards.csv` | Daily spaced repetition |
+| `../samples/` | 8 practice workbooks + walkthroughs |
+| `../HOW-TO-USE-WITH-AI.md` | AI tutor prompts to speed up any track |

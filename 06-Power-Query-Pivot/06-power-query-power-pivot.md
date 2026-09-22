@@ -50,9 +50,9 @@ Power Query is Excel's built-in **ETL** (Extract, Transform, Load) tool. ETL is 
 
 | Stage | What It Does | Power Query Equivalent |
 |-------|-------------|----------------------|
-| **Extract** | Pull data from various sources | **Get Data** — connect to files, databases, web, APIs |
-| **Transform** | Clean, reshape, and prepare data | **Query Editor** — remove columns, filter, split, merge, pivot |
-| **Load** | Load the cleaned data into your workbook | **Close & Load** — output to worksheet table or Data Model |
+| **Extract** | Pull data from various sources | **Get Data** - connect to files, databases, web, APIs |
+| **Transform** | Clean, reshape, and prepare data | **Query Editor** - remove columns, filter, split, merge, pivot |
+| **Load** | Load the cleaned data into your workbook | **Close & Load** - output to worksheet table or Data Model |
 
 ### Why Power Query?
 
@@ -110,10 +110,10 @@ Power Query is Excel's built-in **ETL** (Extract, Transform, Load) tool. ETL is 
 
 1. **Data** → **Get Data** → **From Database**
 2. Choose your database type:
-   - **SQL Server** — enter server name, optional database
-   - **Access** — select `.accdb` file
-   - **SQL Server Analysis Services** — for OLAP cubes
-   - **Oracle, MySQL, PostgreSQL** — via connectors
+   - **SQL Server** - enter server name, optional database
+   - **Access** - select `.accdb` file
+   - **SQL Server Analysis Services** - for OLAP cubes
+   - **Oracle, MySQL, PostgreSQL** - via connectors
 3. Navigator shows available tables and views
 4. Select and load
 
@@ -157,7 +157,7 @@ When you click **Transform Data**, the **Power Query Editor** opens:
 |------|---------|
 | **Queries Pane** (left) | Lists all queries in the workbook |
 | **Preview Pane** (center) | Shows a preview of the data at the current step |
-| **Query Settings** (right) | **Applied Steps** — lists every transformation step in order |
+| **Query Settings** (right) | **Applied Steps** - lists every transformation step in order |
 | **Formula Bar** | Shows the M language formula for the selected step |
 | **Ribbon Tabs** | Home (common tasks), Transform (reshape), Add Column (new columns), View (display options) |
 
@@ -166,7 +166,7 @@ When you click **Transform Data**, the **Power Query Editor** opens:
 Every action you take in Power Query is recorded as a **step**. You can:
 - **Click any step** to see the data state at that point
 - **Delete a step** to undo that transformation
-- **Reorder steps** by dragging (be careful — order matters!)
+- **Reorder steps** by dragging (be careful - order matters!)
 - **Rename steps** for clarity (right-click → Rename)
 
 **Example Applied Steps:**
@@ -189,7 +189,7 @@ Every action you take in Power Query is recorded as a **step**. You can:
 **Method 2:** Right-click column header → **Remove**
 **Method 3:** Select columns to KEEP → **Home** → **Remove Other Columns**
 
-> 💡 **Best Practice:** Use "Remove Other Columns" when you want to keep only specific columns — it's more resilient to source data changes.
+> 💡 **Best Practice:** Use "Remove Other Columns" when you want to keep only specific columns - it's more resilient to source data changes.
 
 ### 4.2 Change Data Types
 
@@ -261,7 +261,7 @@ Right-click a column → **Replace Values**
 | **By Lowercase to Uppercase** | Split "excelPower" → "excel" and "Power" |
 | **By Digit to Non-Digit** | Split "ABC123DEF" → "ABC", "123", "DEF" |
 
-**Example — Split Full Name:**
+**Example - Split Full Name:**
 
 | Before | After (Split by space) |
 |--------|----------------------|
@@ -332,12 +332,12 @@ Select two or more columns → **Transform** → **Merge Columns**
 > 💡 Rename "Attribute" to "Quarter" and "Value" to "Sales" for clarity.
 
 **Variants:**
-- **Unpivot Columns** — unpivot only selected columns
-- **Unpivot Other Columns** — unpivot everything except selected columns
+- **Unpivot Columns** - unpivot only selected columns
+- **Unpivot Other Columns** - unpivot everything except selected columns
 
 ### 6.2 Pivot Columns (Long → Wide)
 
-**Use case:** Reverse of unpivot — convert a flat list into a cross-tab.
+**Use case:** Reverse of unpivot - convert a flat list into a cross-tab.
 
 Select the column whose values should become headers → **Transform** → **Pivot Column**
 
@@ -376,7 +376,7 @@ A **Merge** combines two queries side-by-side (horizontally), similar to a **SQL
 
 ### Example: Merge Orders with Customer Details
 
-**Table 1 — Orders:**
+**Table 1 - Orders:**
 
 | OrderID | CustomerID | Amount |
 |---------|------------|--------|
@@ -385,7 +385,7 @@ A **Merge** combines two queries side-by-side (horizontally), similar to a **SQL
 | 1003 | C05 | $450 |
 | 1004 | C01 | $200 |
 
-**Table 2 — Customers:**
+**Table 2 - Customers:**
 
 | CustomerID | Name | City |
 |------------|------|------|
@@ -427,8 +427,8 @@ An **Append** stacks queries on top of each other (vertically), similar to a **S
 
 1. **Home** → **Append Queries**
 2. Choose:
-   - **Two tables** — append one table to another
-   - **Three or more tables** — append multiple tables
+   - **Two tables** - append one table to another
+   - **Three or more tables** - append multiple tables
 3. Select the tables to append
 4. Click **OK**
 
@@ -479,7 +479,7 @@ Every Power Query transformation is written in **M language** (also called Power
 
 **Add Column** → **Custom Column**
 
-**Example 1 — Simple Calculation:**
+**Example 1 - Simple Calculation:**
 
 ```m
 = [Price] * [Quantity]
@@ -487,7 +487,7 @@ Every Power Query transformation is written in **M language** (also called Power
 
 Column name: `Revenue`
 
-**Example 2 — Conditional Logic:**
+**Example 2 - Conditional Logic:**
 
 ```m
 if [Amount] > 1000 then "High"
@@ -497,7 +497,7 @@ else "Low"
 
 Column name: `Priority`
 
-**Example 3 — Text Manipulation:**
+**Example 3 - Text Manipulation:**
 
 ```m
 Text.Upper(Text.Start([FirstName], 1)) & Text.Lower(Text.End([FirstName], Text.Length([FirstName]) - 1))
@@ -562,13 +562,13 @@ Parameters make your queries **flexible and reusable**. Instead of hardcoding va
 
 ### Using Parameters in Queries
 
-**Example — Filter by Year:**
+**Example - Filter by Year:**
 
 ```m
 = Table.SelectRows(Source, each Date.Year([OrderDate]) = FilterYear)
 ```
 
-**Example — Dynamic File Path:**
+**Example - Dynamic File Path:**
 
 ```m
 = Csv.Document(File.Contents("C:\Data\" & DataFile & ".csv"))
@@ -610,7 +610,7 @@ For cloud-hosted workbooks via Power BI:
 |-------|----------|
 | Source file moved | Update the file path in the Source step |
 | Column names changed | Update the relevant transformation steps |
-| New columns added | "Remove Other Columns" step may exclude them — update |
+| New columns added | "Remove Other Columns" step may exclude them - update |
 | Slow refresh | Consider **query folding** (pushes transformations to the source) |
 | Credentials expired | **Data** → **Queries & Connections** → enter credentials |
 
@@ -634,7 +634,7 @@ Right-click a query → **Properties**:
 | Feature | Regular PivotTable | Power Pivot |
 |---------|-------------------|-------------|
 | Data source | Single table/range | Multiple tables via Data Model |
-| Relationships | Not supported | Yes — define table relationships |
+| Relationships | Not supported | Yes - define table relationships |
 | Row limit | ~1,048,576 rows (worksheet limit) | Millions of rows (in-memory engine) |
 | Calculations | Standard formulas in cells | DAX (Data Analysis Expressions) |
 | Calculated fields | Limited | Rich DAX measures and calculated columns |
@@ -719,8 +719,8 @@ Instead of one massive flat table, you use a **star schema**:
 └──────────┘
 ```
 
-- **Fact table** (center): Contains measurable data — sales amounts, quantities
-- **Dimension tables** (surrounding): Contain descriptive data — dates, products, customers
+- **Fact table** (center): Contains measurable data - sales amounts, quantities
+- **Dimension tables** (surrounding): Contain descriptive data - dates, products, customers
 
 ### Creating Relationships
 
@@ -759,7 +759,7 @@ Instead of one massive flat table, you use a **star schema**:
 
 **Relationship:** FactSales[ProductID] → DimProduct[ProductID] (Many-to-One)
 
-Now you can create PivotTables that show Sales by Category — even though "Category" lives in DimProduct, not FactSales.
+Now you can create PivotTables that show Sales by Category - even though "Category" lives in DimProduct, not FactSales.
 
 ---
 
@@ -786,13 +786,13 @@ Exists when a formula is being evaluated **row by row** (calculated columns, ite
 
 ### Essential DAX Functions
 
-#### SUM — Simple Aggregation
+#### SUM - Simple Aggregation
 
 ```dax
 Total Sales = SUM(FactSales[Amount])
 ```
 
-#### SUMX — Iterator (Row-by-Row Calculation)
+#### SUMX - Iterator (Row-by-Row Calculation)
 
 ```dax
 Revenue = SUMX(FactSales, FactSales[Price] * FactSales[Quantity])
@@ -800,13 +800,13 @@ Revenue = SUMX(FactSales, FactSales[Price] * FactSales[Quantity])
 
 SUMX iterates through each row, calculates `Price * Quantity`, then sums the results.
 
-#### COUNTX — Count with Expression
+#### COUNTX - Count with Expression
 
 ```dax
 Order Count = COUNTX(FactSales, FactSales[OrderID])
 ```
 
-#### RELATED — Pull from Related Table
+#### RELATED - Pull from Related Table
 
 ```dax
 Category = RELATED(DimProduct[Category])
@@ -814,7 +814,7 @@ Category = RELATED(DimProduct[Category])
 
 Used in **calculated columns** to bring in a value from a related table.
 
-#### CALCULATE — The Most Important DAX Function
+#### CALCULATE - The Most Important DAX Function
 
 ```dax
 Electronics Sales = CALCULATE(
@@ -829,11 +829,11 @@ CALCULATE modifies the **filter context**:
 3. Evaluates the expression in the modified context
 
 **Key uses:**
-- **Override filters:** `CALCULATE(SUM(...), ALL(DimProduct))` — ignores product filters
-- **Add filters:** `CALCULATE(SUM(...), DimDate[Year] = 2024)` — adds year filter
-- **Time intelligence:** `CALCULATE(SUM(...), DATEADD(DimDate[Date], -1, YEAR))` — prior year
+- **Override filters:** `CALCULATE(SUM(...), ALL(DimProduct))` - ignores product filters
+- **Add filters:** `CALCULATE(SUM(...), DimDate[Year] = 2024)` - adds year filter
+- **Time intelligence:** `CALCULATE(SUM(...), DATEADD(DimDate[Date], -1, YEAR))` - prior year
 
-#### FILTER — Return Filtered Table
+#### FILTER - Return Filtered Table
 
 ```dax
 High Value Orders = CALCULATE(
@@ -844,7 +844,7 @@ High Value Orders = CALCULATE(
 
 FILTER returns a table that is a subset of the original, used inside CALCULATE.
 
-#### RELATEDTABLE — Count/Sum Related Rows
+#### RELATEDTABLE - Count/Sum Related Rows
 
 ```dax
 Product Sales Count = COUNTROWS(RELATEDTABLE(FactSales))
@@ -852,7 +852,7 @@ Product Sales Count = COUNTROWS(RELATEDTABLE(FactSales))
 
 Counts the sales rows related to each product.
 
-#### DIVIDE — Safe Division
+#### DIVIDE - Safe Division
 
 ```dax
 Avg Order Value = DIVIDE(SUM(FactSales[Amount]), COUNTROWS(FactSales), 0)
@@ -883,7 +883,7 @@ DIVIDE handles division by zero gracefully (returns 0 instead of error).
 **Calculated:** When data is loaded/refreshed (stored in the model)
 **Context:** Row context (evaluates per row)
 
-**Example — Profit calculated column:**
+**Example - Profit calculated column:**
 
 ```dax
 = [Revenue] - [Cost]
@@ -900,7 +900,7 @@ DIVIDE handles division by zero gracefully (returns 0 instead of error).
 **Calculated:** At query time (when the PivotTable is rendered)
 **Context:** Filter context (evaluates based on slicers, rows, columns)
 
-**Example — Profit margin measure:**
+**Example - Profit margin measure:**
 
 ```dax
 Profit Margin = DIVIDE(
@@ -1163,45 +1163,45 @@ Excel auto-generates: Year, Quarter, Month, Day hierarchies.
 ## 21. Sources and Further Reading
 
 ### Microsoft Official Documentation
-- [Power Query Overview — Microsoft Support](https://support.microsoft.com/en-us/office/power-query-overview-and-learning-edf99b15-3e22-4d82-a9e3-62e51b3c7d4f)
-- [Connect to Data Sources — Microsoft Support](https://support.microsoft.com/en-us/office/connect-to-a-data-source-power-query-602d9167-1a20-4789-a034-a0f1d6a5e8ee)
-- [Merge Queries — Microsoft Support](https://support.microsoft.com/en-us/office/merge-queries-power-query-e2a5b288-4d34-4a26-8bf0-8c3c0e5c8e49)
-- [Power Pivot Overview — Microsoft Support](https://support.microsoft.com/en-us/office/power-pivot-overview-and-learning-1a0d8b5e-2e48-4d4f-8a4b-2c0e5f6a7b8c)
-- [DAX Reference — Microsoft Support](https://learn.microsoft.com/en-us/dax/)
-- [CALCULATE Function — Microsoft DAX Reference](https://learn.microsoft.com/en-us/dax/calculate-function-dax)
-- [Data Model in Excel — Microsoft Support](https://support.microsoft.com/en-us/office/the-data-model-in-excel-1a0d8b5e-2e48-4d4f-8a4b-2c0e5f6a7b8c)
+- [Power Query Overview - Microsoft Support](https://support.microsoft.com/en-us/excel)
+- [Connect to Data Sources - Microsoft Support](https://support.microsoft.com/en-us/excel)
+- [Merge Queries - Microsoft Support](https://support.microsoft.com/en-us/excel)
+- [Power Pivot Overview - Microsoft Support](https://support.microsoft.com/en-us/excel)
+- [DAX Reference - Microsoft Support](https://learn.microsoft.com/en-us/dax/)
+- [CALCULATE Function - Microsoft DAX Reference](https://learn.microsoft.com/en-us/dax/calculate-function-dax)
+- [Data Model in Excel - Microsoft Support](https://support.microsoft.com/en-us/excel)
 
 ### Exceljet
-- [Power Query Overview — Exceljet](https://exceljet.net/power-query)
-- [DAX Functions Reference — Exceljet](https://exceljet.net/dax-functions)
+- [Power Query Overview - Exceljet](https://exceljet.net/)
+- [DAX Functions Reference - Exceljet](https://exceljet.net/)
 
 ### Community Resources
-- [Power Query Tutorial — MyOnlineTrainingHub](https://www.myonlinetraininghub.com/power-query-overview)
-- [DAX Guide — Curbal](https://www.curbal.com/dax-guide)
-- [Power Query Tips — Chandoo.org](https://chandoo.org/wp/power-query-tutorials/)
-- [Power Pivot and DAX — Excel Off The Grid](https://exceloffthegrid.com/power-pivot-and-dax/)
-- [M Language Reference — Microsoft](https://learn.microsoft.com/en-us/powerquery-m/)
+- [Power Query Tutorial - MyOnlineTrainingHub](https://www.myonlinetraininghub.com/power-query-overview)
+- [DAX Guide - Curbal](https://www.curbal.com/)
+- [Power Query Tips - Chandoo.org](https://chandoo.org/?s=power+query)
+- [Power Pivot and DAX - Excel Off The Grid](https://exceloffthegrid.com/)
+- [M Language Reference - Microsoft](https://learn.microsoft.com/en-us/powerquery-m/)
 
 ### YouTube Video References
-- [Power Query Full Tutorial — Leila Gharani](https://www.youtube.com/watch?v=ohG6zAslhXM)
-- [Power Query for Beginners — ExcelIsFun](https://www.youtube.com/watch?v=fHF6ZMPiFmI)
-- [Merge Queries (JOIN) Explained — Curbal](https://www.youtube.com/watch?v=YBzFgt5qWOc)
-- [Append Queries — Curbal](https://www.youtube.com/watch?v=kwtmE5sMf6k)
-- [M Language Basics — Curbal](https://www.youtube.com/watch?v=0yCyxjPFGAM)
-- [Power Pivot Full Tutorial — Leila Gharani](https://www.youtube.com/watch?v=Q3EiNBMPxHg)
-- [DAX for Beginners — Curbal](https://www.youtube.com/watch?v=TMR2MBKDOuI)
-- [CALCULATE Function Deep Dive — Curbal](https://www.youtube.com/watch?v=Jb2DxhfDCb8)
-- [Data Model and Relationships — MyOnlineTrainingHub](https://www.youtube.com/watch?v=Yb-Sahv0K3g)
-- [Power Query Parameters — Excel Off The Grid](https://www.youtube.com/watch?v=5D3K0CbOFoM)
-- [DAX SUMX vs SUM — Curbal](https://www.youtube.com/watch?v=ciHIenRJaKI)
-- [Power Query Folder Connection — ExcelIsFun](https://www.youtube.com/watch?v=dHxNdVJSPCE)
+- [Power Query Full Tutorial - Leila Gharani](https://www.youtube.com/watch?v=ohG6zAslhXM)
+- [Power Query for Beginners - ExcelIsFun](https://www.youtube.com/watch?v=fHF6ZMPiFmI)
+- [Merge Queries (JOIN) Explained - Curbal](https://www.youtube.com/watch?v=YBzFgt5qWOc)
+- [Append Queries - Curbal](https://www.youtube.com/watch?v=kwtmE5sMf6k)
+- [M Language Basics - Curbal](https://www.youtube.com/watch?v=0yCyxjPFGAM)
+- [Power Pivot Full Tutorial - Leila Gharani](https://www.youtube.com/watch?v=Q3EiNBMPxHg)
+- [DAX for Beginners - Curbal](https://www.youtube.com/watch?v=TMR2MBKDOuI)
+- [CALCULATE Function Deep Dive - Curbal](https://www.youtube.com/watch?v=Jb2DxhfDCb8)
+- [Data Model and Relationships - MyOnlineTrainingHub](https://www.youtube.com/watch?v=Yb-Sahv0K3g)
+- [Power Query Parameters - Excel Off The Grid](https://www.youtube.com/watch?v=5D3K0CbOFoM)
+- [DAX SUMX vs SUM - Curbal](https://www.youtube.com/watch?v=ciHIenRJaKI)
+- [Power Query Folder Connection - ExcelIsFun](https://www.youtube.com/watch?v=dHxNdVJSPCE)
 
 ### Books
-- *Power Query for Power BI and Excel* — Chris Webb
-- *The Definitive Guide to DAX* — Alberto Ferrari & Marco Russo
-- *Power Pivot and Power BI* — Rob Collie & Avichal Singh
-- *M Is for (Data) Monkey* — Ken Puls & Miguel Escobar
+- *Power Query for Power BI and Excel* - Chris Webb
+- *The Definitive Guide to DAX* - Alberto Ferrari & Marco Russo
+- *Power Pivot and Power BI* - Rob Collie & Avichal Singh
+- *M Is for (Data) Monkey* - Ken Puls & Miguel Escobar
 
 ---
 
-> **Previous Module:** [Module 5 — Advanced Functions](../05-Advanced-Functions/05-advanced-functions.md)
+> **Previous Module:** [Module 5 - Advanced Functions](../05-Advanced-Functions/05-advanced-functions.md)

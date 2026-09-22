@@ -1,4 +1,4 @@
-# Quiz 08 — Real-World Projects & Dashboards
+# Quiz 08 - Real-World Projects & Dashboards
 
 **Module:** Real-World Projects, Dashboards, Financial Models
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -90,7 +90,7 @@
 - A) Conditional formatting (red when stock < reorder point)
 - B) A separate "reorder" sheet with manual checks
 - C) A macro that deletes items below threshold
-- D) Nothing — just print the full list
+- D) Nothing - just print the full list
 
 **15.** What is "model auditing" in Excel?
 - A) Checking the model for errors, tracing precedents/dependents, and validating logic
@@ -132,7 +132,7 @@
 | 2 | **B** | Color-coding (blue=input, black=formula) + sheet protection is financial modeling best practice. |
 | 3 | **B** | Reduce data, use data model, avoid volatile functions (NOW, INDIRECT, OFFSET in excess). |
 | 4 | **A** | A Data Validation dropdown lets users select scenarios; formulas reference the selection. |
-| 5 | **C** | Dashboards should show summaries — raw data belongs in a separate data sheet. |
+| 5 | **C** | Dashboards should show summaries - raw data belongs in a separate data sheet. |
 | 6 | **A** | Gross Profit = Revenue − COGS. |
 | 7 | **A** | Sensitivity analysis shows how outputs respond to changes in input assumptions. |
 | 8 | **B** | INDEX/MATCH or XLOOKUP dynamically pull data for the selected item into a chart-ready range. |
@@ -147,7 +147,7 @@
 | 17 | `=SUMIF(Expenses[Department],D1,Expenses[Amount])` | SUMIF with the dropdown value as criteria. |
 | 18 | `=(B1/A1)^(1/C1)-1` | CAGR formula: (End/Begin)^(1/years) − 1. |
 | 19 | `=AND(D2<TODAY(),E2<>"Complete")` | Use in a helper column or conditional formatting. Returns TRUE for overdue incomplete tasks. |
-| 20 | The 3 statements are: **Income Statement** (revenue, expenses, net income), **Balance Sheet** (assets, liabilities, equity), and **Cash Flow Statement** (operating, investing, financing). Net Income flows from the IS to the BS (retained earnings) and to the CFS (starting point for operating cash flow). The BS balances: Assets = Liabilities + Equity. Cash from CFS links back to the BS cash balance. | — |
+| 20 | The 3 statements are: **Income Statement** (revenue, expenses, net income), **Balance Sheet** (assets, liabilities, equity), and **Cash Flow Statement** (operating, investing, financing). Net Income flows from the IS to the BS (retained earnings) and to the CFS (starting point for operating cash flow). The BS balances: Assets = Liabilities + Equity. Cash from CFS links back to the BS cash balance. | - |
 
 ---
 

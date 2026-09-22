@@ -1,6 +1,8 @@
-# Excel Zero to Hero — Progress Tracker
+# Excel Zero to Hero - Progress Tracker
 
 Use this checklist to track your learning journey. Check off each item as you complete it.
+
+**Pace note:** the daily checklist below follows the 12-week Mastery track. On the 8/6/4/2-week tracks in [00-zero-to-hero-study-plan.md](00-zero-to-hero-study-plan.md), compress the same items into your schedule: the skills are identical, only the calendar changes.
 
 **Rating Scale:** 1 = Don't understand | 3 = Can do with help | 5 = Confident independently
 
@@ -182,6 +184,20 @@ Use this checklist to track your learning journey. Check off each item as you co
 - [ ] Can write VBA Sub procedures
 - [ ] Can use loops and conditional logic in VBA
 - [ ] Can create basic UserForms
+
+---
+
+## Sample Workbooks
+
+- [ ] `sample-01-data-entry-practice.xlsx` cleaned with zero green triangles
+- [ ] `sample-02-formula-challenges.xlsx` all 12 tasks matched expected results
+- [ ] `sample-03-dashboard-before-after.xlsx` After sheet rebuilt from Before
+- [ ] `sample-04-pivottable-source.xlsx` all 6 pivot tasks done
+- [ ] `sample-05-lookup-challenges.xlsx` lookups filled + answers matched
+- [ ] `sample-06-powerquery-messy.xlsx` clean refreshable table built
+- [ ] `samples/07-vba-toolkit/` macros imported, run, and one broken-then-fixed
+- [ ] `exercise-fix-this-workbook.xlsx` all 20 planted issues found
+- [ ] Fix-me workbook rebuilt cleanly
 
 ---
 

@@ -37,7 +37,7 @@ Build a comprehensive personal finance tracker that records income and expenses 
 
 ## Step-by-Step Instructions
 
-### Step 1 — Set Up the Workbook Structure
+### Step 1 - Set Up the Workbook Structure
 
 Create four sheets:
 
@@ -48,7 +48,7 @@ Create four sheets:
 | `Monthly Summary` | Aggregated totals by month and category |
 | `Dashboard` | Charts and KPIs |
 
-### Step 2 — Build the Categories Sheet
+### Step 2 - Build the Categories Sheet
 
 In the `Categories` sheet, create two tables:
 
@@ -84,7 +84,7 @@ In the `Categories` sheet, create two tables:
 - Select Income Categories → Formulas → Define Name → `IncomeCategories`
 - Select Expense Categories → Define Name → `ExpenseCategories`
 
-### Step 3 — Build the Transactions Sheet
+### Step 3 - Build the Transactions Sheet
 
 Set up headers in Row 1:
 
@@ -108,7 +108,7 @@ Set up headers in Row 1:
 ```
 Drag down. Set G1 to your starting balance.
 
-### Step 4 — Build the Monthly Summary Sheet
+### Step 4 - Build the Monthly Summary Sheet
 
 Create a summary table:
 
@@ -151,7 +151,7 @@ Difference: =B10-C10
 % of Budget: =IF(B10>0, C10/B10, 0)
 ```
 
-### Step 5 — Apply Conditional Formatting
+### Step 5 - Apply Conditional Formatting
 
 **Budget vs Actual (Difference column):**
 
@@ -165,26 +165,26 @@ Difference: =B10-C10
 Select the % of Budget column → Conditional Formatting → Color Scale:
 - Green (0%) → Yellow (80%) → Red (100%+)
 
-### Step 6 — Build the Dashboard
+### Step 6 - Build the Dashboard
 
-**Chart 1 — Monthly Income vs Expenses (Clustered Bar)**
+**Chart 1 - Monthly Income vs Expenses (Clustered Bar)**
 1. Select Month, Total Income, Total Expenses columns from Monthly Summary
 2. Insert → Chart → Clustered Bar
 3. Title: "Monthly Income vs Expenses"
 
-**Chart 2 — Expense Breakdown (Pie/Donut)**
+**Chart 2 - Expense Breakdown (Pie/Donut)**
 1. Select Category and Actual from the category breakdown table
 2. Insert → Chart → Doughnut
 3. Title: "Spending by Category"
 4. Add data labels with percentages
 
-**Chart 3 — Savings Trend (Line)**
+**Chart 3 - Savings Trend (Line)**
 1. Select Month and Net Savings
 2. Insert → Chart → Line with Markers
 3. Title: "Monthly Savings Trend"
 4. Add a trendline (Linear)
 
-**Chart 4 — Budget Gauge (for single month)**
+**Chart 4 - Budget Gauge (for single month)**
 Use a stacked bar showing spent vs remaining:
 ```
 =BudgetUsed  |  =BudgetRemaining
@@ -229,7 +229,7 @@ Savings Rate:    =NetSavings/TotalIncome
 
 ## Tips & Tricks
 
-- **Use Excel Tables** (Ctrl+T) for the Transactions range — formulas auto-expand
+- **Use Excel Tables** (Ctrl+T) for the Transactions range - formulas auto-expand
 - **Freeze Row 1** on the Transactions sheet for scrolling
 - Use `TEXT(A2, "MMM YYYY")` to group transactions by month in pivot-style summaries
 - Add a **"Quick Add"** section at the top of Transactions for rapid data entry
@@ -239,9 +239,9 @@ Savings Rate:    =NetSavings/TotalIncome
 
 - ❌ **Forgetting to lock the date range** in SUMIFS (use absolute references for the summary sheet)
 - ❌ **Circular references** in running balance if row 1 formula references itself
-- ❌ **Not using consistent category names** — always use the dropdown, never type manually
+- ❌ **Not using consistent category names** - always use the dropdown, never type manually
 - ❌ **Including the header row** in SUMIFS ranges
-- ❌ **Date format mismatches** — ensure all dates are actual Excel dates, not text
+- ❌ **Date format mismatches** - ensure all dates are actual Excel dates, not text
 
 ---
 
@@ -257,7 +257,7 @@ Build an interactive sales analytics dashboard using PivotTables, PivotCharts, s
 
 ## Step-by-Step Instructions
 
-### Step 1 — Prepare the Sales Data
+### Step 1 - Prepare the Sales Data
 
 Create a `SalesData` sheet with the following columns:
 
@@ -285,7 +285,7 @@ L2: =IF(I2>0, K2/I2, 0)  (Profit Margin)
 
 Convert to Excel Table (Ctrl+T) and name it `SalesTable`.
 
-### Step 2 — Create the PivotTable
+### Step 2 - Create the PivotTable
 
 1. Insert → PivotTable → From Table/Range
 2. Place on a new sheet called `PivotAnalysis`
@@ -298,33 +298,33 @@ Convert to Excel Table (Ctrl+T) and name it `SalesTable`.
    - Check "Show items with no data"
    - Set "For empty cells show: 0"
 
-### Step 3 — Add Calculated Fields
+### Step 3 - Add Calculated Fields
 
 In the PivotTable:
 1. PivotTable Analyze → Fields, Items & Sets → Calculated Field
 2. Add `AvgOrderValue` = `Revenue / Quantity`
 3. Add `ProfitMargin` = `Profit / Revenue`
 
-### Step 4 — Create PivotCharts
+### Step 4 - Create PivotCharts
 
-**Chart 1 — Revenue by Region (Clustered Bar)**
+**Chart 1 - Revenue by Region (Clustered Bar)**
 1. Click inside PivotTable → Insert → PivotChart → Clustered Bar
 2. Move chart to `Dashboard` sheet
 
-**Chart 2 — Monthly Revenue Trend (Line)**
+**Chart 2 - Monthly Revenue Trend (Line)**
 1. Create a second PivotTable with OrderDate grouped by Month
 2. Values: Sum of Revenue, Sum of Profit
 3. Insert Line Chart with markers
 
-**Chart 3 — Product Category Mix (Pie)**
+**Chart 3 - Product Category Mix (Pie)**
 1. Create a PivotChart → Pie Chart
 2. Show percentage data labels
 
-**Chart 4 — Salesperson Performance (Horizontal Bar)**
+**Chart 4 - Salesperson Performance (Horizontal Bar)**
 1. Rows: Salesperson, Values: Sum of Revenue
 2. Sort descending by revenue
 
-### Step 5 — Add Slicers and Timeline
+### Step 5 - Add Slicers and Timeline
 
 **Slicers:**
 1. Click PivotTable → PivotTable Analyze → Insert Slicer
@@ -337,7 +337,7 @@ In the PivotTable:
 2. Set to show by Quarter (dropdown in timeline)
 3. Connect to all PivotTables
 
-### Step 6 — Build KPI Cards
+### Step 6 - Build KPI Cards
 
 Above the charts, create KPI cards using GETPIVOTDATA:
 
@@ -360,7 +360,7 @@ Format KPIs with:
 - Icon indicators (▲/▼) for comparison to previous period
 - Color coding (green for up, red for down)
 
-### Step 7 — Dashboard Layout and Formatting
+### Step 7 - Dashboard Layout and Formatting
 
 1. Set the `Dashboard` sheet to a fixed view: View → Page Layout
 2. Arrange elements in a grid:
@@ -408,9 +408,9 @@ Format KPIs with:
 ## Common Pitfalls
 
 - ❌ **Slicers not connected** to all PivotTables (must do manually)
-- ❌ **Dates not recognized** — ensure column is formatted as Date, not Text
+- ❌ **Dates not recognized** - ensure column is formatted as Date, not Text
 - ❌ **PivotTable doesn't refresh** when source data changes (right-click → Refresh)
-- ❌ **Overcrowding the dashboard** — leave white space between elements
+- ❌ **Overcrowding the dashboard** - leave white space between elements
 - ❌ **GETPIVOTDATA errors** when PivotTable field names change
 
 ---
@@ -427,7 +427,7 @@ Build a product inventory database with automated stock tracking, reorder alerts
 
 ## Step-by-Step Instructions
 
-### Step 1 — Create the Product Database Sheet
+### Step 1 - Create the Product Database Sheet
 
 Headers for `Products` sheet:
 
@@ -443,10 +443,10 @@ Headers for `Products` sheet:
 ```
 
 **Named Ranges:**
-- `SKUList` — Column A of Products
-- `ProductTable` — entire Products table
+- `SKUList` - Column A of Products
+- `ProductTable` - entire Products table
 
-### Step 2 — Add Reorder Conditional Formatting
+### Step 2 - Add Reorder Conditional Formatting
 
 Select the Status column (I2:I500):
 
@@ -466,7 +466,7 @@ Select A2:I500 → New Rule → Use formula:
 ```
 Format: Light red fill
 
-### Step 3 — Create the Transaction Log Sheet
+### Step 3 - Create the Transaction Log Sheet
 
 Headers for `Transactions` sheet:
 
@@ -478,7 +478,7 @@ Headers for `Transactions` sheet:
 
 **Auto-fill Product Info using XLOOKUP:**
 ```excel
-E2 (Product Name lookup — in a helper column or use XLOOKUP):
+E2 (Product Name lookup - in a helper column or use XLOOKUP):
 =XLOOKUP(C2, Products!A:A, Products!B:B, "Unknown SKU")
 
 F2 (Unit Cost):
@@ -488,7 +488,7 @@ G2 (Total):
 =IF(D2="Stock In", E2*F2, -E2*F2)
 ```
 
-### Step 4 — Build the Stock Summary with Running Totals
+### Step 4 - Build the Stock Summary with Running Totals
 
 Create a `StockSummary` sheet using SUMIFS:
 
@@ -510,17 +510,17 @@ Total Stock Out:
 Current Stock: =TotalIn - TotalOut
 ```
 
-### Step 5 — Build the Dashboard
+### Step 5 - Build the Dashboard
 
-**Chart 1 — Stock by Category (Bar)**
+**Chart 1 - Stock by Category (Bar)**
 Group products by category, show total current stock.
 
-**Chart 2 — Top 10 Products by Value (Horizontal Bar)**
+**Chart 2 - Top 10 Products by Value (Horizontal Bar)**
 ```excel
 Stock Value: =CurrentStock * UnitCost
 ```
 
-**Chart 3 — Transactions Over Time (Line)**
+**Chart 3 - Transactions Over Time (Line)**
 Sum of stock in and stock out by month.
 
 **KPI Cards:**
@@ -528,7 +528,7 @@ Sum of stock in and stock out by month.
 - Items to Reorder: `=COUNTIF(Products!I:I, "REORDER NOW")+COUNTIF(Products!I:I, "OUT OF STOCK")`
 - Total Inventory Value: `=SUMPRODUCT(Products!G:G, Products!E:E)`
 
-### Step 6 — Basic VBA: One-Click Stock Update
+### Step 6 - Basic VBA: One-Click Stock Update
 
 Press **Alt+F11** → Insert → Module:
 
@@ -613,10 +613,10 @@ End Sub
 
 ## Common Pitfalls
 
-- ❌ **XLOOKUP returns #N/A** for new SKUs — always use the `if_not_found` argument
-- ❌ **Stock going negative** — add a check: `=MAX(0, calculated_stock)`
-- ❌ **Transaction types inconsistent** — always use the dropdown, never free-text
-- ❌ **Not backing up before running VBA** — macros can't be undone (Ctrl+Z)
+- ❌ **XLOOKUP returns #N/A** for new SKUs - always use the `if_not_found` argument
+- ❌ **Stock going negative** - add a check: `=MAX(0, calculated_stock)`
+- ❌ **Transaction types inconsistent** - always use the dropdown, never free-text
+- ❌ **Not backing up before running VBA** - macros can't be undone (Ctrl+Z)
 - ❌ **Forgetting to refresh** stock levels after manual transaction edits
 
 ---
@@ -633,7 +633,7 @@ Create a workforce management tool that handles weekly schedules, tracks leave b
 
 ## Step-by-Step Instructions
 
-### Step 1 — Set Up the Employee Database
+### Step 1 - Set Up the Employee Database
 
 Create an `Employees` sheet:
 
@@ -643,7 +643,7 @@ Create an `Employees` sheet:
 | EMP001 | John Smith | Engineering | 2020-03-15 | 15 | 10 | 3 |
 | EMP002 | Maria Garcia | Marketing | 2021-07-01 | 15 | 10 | 3 |
 
-### Step 2 — Create the Holiday Calendar
+### Step 2 - Create the Holiday Calendar
 
 Create a `Holidays` sheet with a named range `HolidayList`:
 
@@ -659,7 +659,7 @@ Create a `Holidays` sheet with a named range `HolidayList`:
 | 2025-11-28 | Day After Thanksgiving |
 | 2025-12-25 | Christmas Day |
 
-### Step 3 — Build the Weekly Schedule Grid
+### Step 3 - Build the Weekly Schedule Grid
 
 Create a `Schedule` sheet:
 
@@ -676,7 +676,7 @@ Create a `Schedule` sheet:
 - `Leave - Personal` → Purple fill
 - Holiday dates → Red fill with holiday name
 
-### Step 4 — Build the Leave Tracker
+### Step 4 - Build the Leave Tracker
 
 Create a `LeaveTracker` sheet:
 
@@ -704,7 +704,7 @@ Annual Used:
 Annual Remaining: =C2-E2
 ```
 
-### Step 5 — Create the Monthly Calendar View
+### Step 5 - Create the Monthly Calendar View
 
 Build a visual calendar for each month:
 
@@ -716,7 +716,7 @@ Build a visual calendar for each month:
 3. Use INDEX/MATCH to pull schedule data for each employee/day
 4. Apply conditional formatting based on shift type
 
-### Step 6 — Dashboard: Attendance Overview
+### Step 6 - Dashboard: Attendance Overview
 
 **Charts:**
 1. **Leave Usage by Type (Pie):** Annual vs Sick vs Personal usage
@@ -761,9 +761,9 @@ Build a visual calendar for each month:
 
 ## Common Pitfalls
 
-- ❌ **Holiday list not updated** annually — set a reminder for January
+- ❌ **Holiday list not updated** annually - set a reminder for January
 - ❌ **NETWORKDAYS including the holiday list range but missing new holidays**
-- ❌ **Leave spanning month boundaries** — ensure SUMIFS covers the full year
+- ❌ **Leave spanning month boundaries** - ensure SUMIFS covers the full year
 - ❌ **Time zones not considered** for remote workers in different zones
 - ❌ **Not distinguishing between "Pending" and "Approved"** leave in balance calculations
 
@@ -781,7 +781,7 @@ Build a professional, print-ready invoice template that auto-calculates subtotal
 
 ## Step-by-Step Instructions
 
-### Step 1 — Create Supporting Sheets
+### Step 1 - Create Supporting Sheets
 
 **Sheet 1: `CompanyInfo`**
 
@@ -813,11 +813,11 @@ Build a professional, print-ready invoice template that auto-calculates subtotal
 | P003 | Shipping | 15.00 | No |
 
 **Named Ranges:**
-- `CustomerTable` — CustomerDB data
-- `ProductTable` — ProductCatalog data
-- `CompanyName`, `CompanyAddress`, etc. — from CompanyInfo
+- `CustomerTable` - CustomerDB data
+- `ProductTable` - ProductCatalog data
+- `CompanyName`, `CompanyAddress`, etc. - from CompanyInfo
 
-### Step 2 — Design the Invoice Layout
+### Step 2 - Design the Invoice Layout
 
 Create the `Invoice` sheet with the following layout:
 
@@ -878,7 +878,7 @@ Bank: First National Bank | Acct: XXXX-XXXX-1234 | Routing: XXXXXXXXX
 Thank you for your business!
 ```
 
-### Step 3 — Professional Formatting
+### Step 3 - Professional Formatting
 
 - **Company name:** 18pt bold, dark blue
 - **"INVOICE" title:** 24pt bold, centered
@@ -888,7 +888,7 @@ Thank you for your business!
 - **Currency format:** `$#,##0.00` for all money fields
 - **Date format:** `MMMM D, YYYY` (e.g., "January 15, 2025")
 
-### Step 4 — Print Setup
+### Step 4 - Print Setup
 
 1. Page Layout → Size: Letter
 2. Margins: Narrow (0.5" all sides)
@@ -899,7 +899,7 @@ Thank you for your business!
 7. Gridlines: Uncheck (for clean print)
 8. **Test print** to PDF before using
 
-### Step 5 — Make It Reusable
+### Step 5 - Make It Reusable
 
 1. **Save as template:** File → Save As → Excel Template (.xltx)
 2. **Invoice number auto-increment:** Use a helper cell:
@@ -945,10 +945,10 @@ Thank you for your business!
 
 ## Common Pitfalls
 
-- ❌ **Tax calculated on non-taxable items** — use SUMPRODUCT with a taxable flag
-- ❌ **Print area not set** — prints blank pages or cuts off content
-- ❌ **Currency formatting inconsistent** — apply to entire columns at once
-- ❌ **Invoice number not unique** — use a separate counter sheet
+- ❌ **Tax calculated on non-taxable items** - use SUMPRODUCT with a taxable flag
+- ❌ **Print area not set** - prints blank pages or cuts off content
+- ❌ **Currency formatting inconsistent** - apply to entire columns at once
+- ❌ **Invoice number not unique** - use a separate counter sheet
 - ❌ **Forgetting to update the year** in invoice numbering
 
 ---
@@ -965,7 +965,7 @@ Build a repeatable data cleaning workflow using Power Query and text functions. 
 
 ## Step-by-Step Instructions
 
-### Step 1 — Import Messy Data
+### Step 1 - Import Messy Data
 
 **Source:** Download or create a messy CSV with common data issues:
 
@@ -973,7 +973,7 @@ Build a repeatable data cleaning workflow using Power Query and text functions. 
 2. Select the file → Preview dialog appears
 3. Check encoding (UTF-8 usually correct) → Load
 
-### Step 2 — Identify Data Quality Issues
+### Step 2 - Identify Data Quality Issues
 
 Open Power Query Editor (Data → Get Data → Launch Power Query Editor):
 
@@ -987,7 +987,7 @@ Open Power Query Editor (Data → Get Data → Launch Power Query Editor):
 - Addresses with abbreviations
 - Special characters and encoding artifacts
 
-### Step 3 — Power Query Transformations
+### Step 3 - Power Query Transformations
 
 **In Power Query Editor, apply these steps:**
 
@@ -1043,7 +1043,7 @@ FullName → Split Column by Delimiter (space) → First, Last
 Address → Split Column by Delimiter (comma) → Street, City, State ZIP
 ```
 
-### Step 4 — Advanced: Fuzzy Matching for Deduplication
+### Step 4 - Advanced: Fuzzy Matching for Deduplication
 
 Power Query supports fuzzy matching:
 
@@ -1060,7 +1060,7 @@ Select join columns → Check "Use fuzzy matching"
 Set similarity threshold
 ```
 
-### Step 5 — Text Function Alternatives (Without Power Query)
+### Step 5 - Text Function Alternatives (Without Power Query)
 
 If not using Power Query, use these formulas on a helper column:
 
@@ -1075,14 +1075,14 @@ Standardize phone:    ="("&MID(A2,1,3)&") "&MID(A2,4,3)&"-"&MID(A2,7,4)
 Clean email:          =LOWER(TRIM(SUBSTITUTE(A2, " ", "")))
 ```
 
-### Step 6 — Output Clean Dataset
+### Step 6 - Output Clean Dataset
 
 1. In Power Query: Home → Close & Load → To new worksheet
 2. Rename the output sheet: `CleanData`
 3. **Verify:** Spot-check 10-20 rows against the original
 4. **Document changes:** Create a `CleaningLog` sheet listing all transformations applied
 
-### Step 7 — Build a Reusable Cleaning Template
+### Step 7 - Build a Reusable Cleaning Template
 
 1. Save the Power Query steps as a reusable query
 2. Create parameters for file path so you can change the source
@@ -1093,10 +1093,10 @@ Clean email:          =LOWER(TRIM(SUBSTITUTE(A2, " ", "")))
 
 | FullName | Email | Phone | City | State | ZipCode | DateJoined |
 |---|---|---|---|---|---|---|
-| john smith | John.Smith@Gmail.COM | (555)123-4567 | new york | NY | 10001 | 01/15/2023 |
-| JANE DOE | jane.doe@yahoo.com | 555.234.5678 | Los Angeles | ca | 90001 | 2023-03-20 |
+| john smith | John.Smith@acme.example | (555)123-4567 | new york | NY | 10001 | 01/15/2023 |
+| JANE DOE | jane.doe@acme.example | 555.234.5678 | Los Angeles | ca | 90001 | 2023-03-20 |
 | bob  Johnson | BOB@company.org | 5553456789 | chicago | Illinois | 60601 | 03/15/2023 |
-| John Smith | john.smith@gmail.com | (555) 123-4567 | New York | NY | 10001 | 01/15/2023 |
+| John Smith | john.smith@acme.example | (555) 123-4567 | New York | NY | 10001 | 01/15/2023 |
 | Alice Brown | alice.brown@ | 555.456.7890 |  | TX | 75001 | - |
 | null | - | N/A | Miami | FL | 33101 | 2023-06-01 |
 | María García | maria@email.com | +1-555-567-8901 | San Antonio | TX | 78201 | 07/04/2023 |
@@ -1125,18 +1125,18 @@ Clean email:          =LOWER(TRIM(SUBSTITUTE(A2, " ", "")))
 
 ## Tips & Tricks
 
-- **Always keep the original data** — clean into a new sheet/table
+- **Always keep the original data** - clean into a new sheet/table
 - Use `TRIM(CLEAN(SUBSTITUTE(A2,CHAR(160)," ")))` for stubborn spaces (non-breaking)
 - **Flash Fill** (Ctrl+E) can auto-detect patterns for name splitting
-- Power Query's **Applied Steps** pane is your undo history — review each step
+- Power Query's **Applied Steps** pane is your undo history - review each step
 - Use `=IFERROR(VALUE(A2), A2)` to convert text-numbers to numbers
 
 ## Common Pitfalls
 
-- ❌ **Deleting rows** instead of cleaning them — you lose data
-- ❌ **Not checking for fuzzy duplicates** — "Jon Smith" vs "John Smith"
-- ❌ **Changing data types before cleaning** — clean first, then set types
-- ❌ **Power Query case sensitivity** — "New York" ≠ "new york" in some operations
+- ❌ **Deleting rows** instead of cleaning them - you lose data
+- ❌ **Not checking for fuzzy duplicates** - "Jon Smith" vs "John Smith"
+- ❌ **Changing data types before cleaning** - clean first, then set types
+- ❌ **Power Query case sensitivity** - "New York" ≠ "new york" in some operations
 - ❌ **Not refreshing the query** after source data changes
 
 ---
@@ -1153,7 +1153,7 @@ Build a 5-year financial projection model with revenue forecasting, expense mode
 
 ## Step-by-Step Instructions
 
-### Step 1 — Model Structure
+### Step 1 - Model Structure
 
 Create five sheets:
 
@@ -1165,7 +1165,7 @@ Create five sheets:
 | `Financials` | Income statement, cash flow |
 | `Analysis` | NPV, IRR, break-even, sensitivity |
 
-### Step 2 — Build the Assumptions Sheet
+### Step 2 - Build the Assumptions Sheet
 
 **Revenue Assumptions:**
 
@@ -1192,7 +1192,7 @@ Create five sheets:
 
 **Name each cell** for easy reference (e.g., `GrowthRate`, `ChurnRate`, `ARPU`)
 
-### Step 3 — Revenue Projections
+### Step 3 - Revenue Projections
 
 **Monthly Customer Model:**
 ```excel
@@ -1208,7 +1208,7 @@ Month N Customers: =Month(N-1) * (1 + GrowthRate - ChurnRate)
 
 **Annual Revenue:** Sum of monthly revenues for the year.
 
-### Step 4 — Expense Model
+### Step 4 - Expense Model
 
 **Monthly Expenses:**
 ```excel
@@ -1217,7 +1217,7 @@ Variable: =Customers * VariableCostPerCustomer
 Total:   =Fixed + Variable
 ```
 
-### Step 5 — Income Statement
+### Step 5 - Income Statement
 
 | | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
 |---|---|---|---|---|---|
@@ -1244,7 +1244,7 @@ Taxes:           =MAX(0, EBT * TaxRate)
 Net Income:      =EBT - Taxes
 ```
 
-### Step 6 — Loan Amortization Schedule
+### Step 6 - Loan Amortization Schedule
 
 | Month | Beginning Balance | Payment | Principal | Interest | Ending Balance |
 |---|---|---|---|---|---|
@@ -1263,7 +1263,7 @@ Principal in month 13: =PPMT(Rate/12, 13, Term*12, -LoanAmount)
 Interest in month 13:  =IPMT(Rate/12, 13, Term*12, -LoanAmount)
 ```
 
-### Step 7 — NPV and IRR Analysis
+### Step 7 - NPV and IRR Analysis
 
 **Net Present Value:**
 ```excel
@@ -1278,7 +1278,7 @@ Cash Flows: Year 0 = -InitialInvestment, Years 1-5 = Net Income + Depreciation
 
 **Payback Period:** Use cumulative cash flow to find when it turns positive.
 
-### Step 8 — Break-Even Analysis
+### Step 8 - Break-Even Analysis
 
 **Break-Even Point (units):**
 ```excel
@@ -1292,7 +1292,7 @@ Cash Flows: Year 0 = -InitialInvestment, Years 1-5 = Net Income + Depreciation
 4. By changing: Growth Rate
 5. Click OK → Excel finds the minimum growth rate for profitability
 
-### Step 9 — Sensitivity Analysis with Data Tables
+### Step 9 - Sensitivity Analysis with Data Tables
 
 **1-Variable Data Table (Revenue sensitivity to growth rate):**
 
@@ -1327,7 +1327,7 @@ Set up:
 - Color scale: Red (low) → Green (high)
 - Highlight profitable combinations in green
 
-### Step 10 — Scenario Manager
+### Step 10 - Scenario Manager
 
 1. Data → What-If Analysis → Scenario Manager
 2. Create three scenarios:
@@ -1371,10 +1371,10 @@ Set up:
 
 ## Tips & Tricks
 
-- **Keep all assumptions on one sheet** — never hardcode numbers in formulas
+- **Keep all assumptions on one sheet** - never hardcode numbers in formulas
 - Use **named ranges** for every assumption cell
 - Color code: Blue font = input, Black font = formula (financial modeling convention)
-- **Ctrl+`** (backtick) toggles formula view — useful for auditing
+- **Ctrl+`** (backtick) toggles formula view - useful for auditing
 - Use `IFERROR` to handle division by zero in margin calculations
 
 ## Common Pitfalls
@@ -1382,8 +1382,8 @@ Set up:
 - ❌ **Circular references** in interest calculations (interest depends on balance, which depends on payments)
 - ❌ **Not using absolute references** for assumptions in data tables
 - ❌ **Forgetting to add back depreciation** in cash flow (it's non-cash)
-- ❌ **Data tables recalculating slowly** — use Ctrl+Alt+F9 to force recalc
-- ❌ **Inconsistent time periods** — don't mix monthly and annual figures
+- ❌ **Data tables recalculating slowly** - use Ctrl+Alt+F9 to force recalc
+- ❌ **Inconsistent time periods** - don't mix monthly and annual figures
 
 ---
 
@@ -1399,7 +1399,7 @@ Build a VBA-powered macro that automatically refreshes data, generates PivotTabl
 
 ## Step-by-Step Instructions
 
-### Step 1 — Design the Report Template
+### Step 1 - Design the Report Template
 
 Create a `Report` sheet with:
 - Header section: Title, date, prepared by
@@ -1408,13 +1408,13 @@ Create a `Report` sheet with:
 - Chart section
 - Footer: Page numbers, confidentiality notice
 
-### Step 2 — Create the Data Connection
+### Step 2 - Create the Data Connection
 
 1. Data → Get Data → From your data source (SQL, CSV, SharePoint, etc.)
 2. Load to PivotTable cache
 3. Name the query: `ReportData`
 
-### Step 3 — Build the VBA Macro
+### Step 3 - Build the VBA Macro
 
 Press **Alt+F11** → Insert → Module:
 
@@ -1543,7 +1543,7 @@ Sub UpdateStatus(statusMsg As Application.StatusBar)
 End Sub
 ```
 
-### Step 4 — Create the Recipients Sheet
+### Step 4 - Create the Recipients Sheet
 
 | Email | Status | Department |
 |---|---|---|
@@ -1552,14 +1552,14 @@ End Sub
 | analyst@company.com | Active | Finance |
 | former-employee@company.com | Inactive | Former |
 
-### Step 5 — Add a Run Button
+### Step 5 - Add a Run Button
 
 1. Insert → Shapes → Rounded Rectangle
 2. Right-click → Assign Macro → `GenerateReport`
 3. Format the button with color and text "📊 Generate Report"
 4. Place it at the top of the Report sheet
 
-### Step 6 — Error Handling and Logging
+### Step 6 - Error Handling and Logging
 
 Add a `Log` sheet and logging subroutine:
 
@@ -1576,7 +1576,7 @@ Sub LogAction(action As String)
 End Sub
 ```
 
-### Step 7 — Schedule Automatic Execution (Optional)
+### Step 7 - Schedule Automatic Execution (Optional)
 
 To run the report on a schedule, use Windows Task Scheduler:
 
@@ -1613,17 +1613,17 @@ To run the report on a schedule, use Windows Task Scheduler:
 
 - **Always test with `.Display` first**, then switch to `.Send` when confident
 - Use `Application.StatusBar` for progress updates during long operations
-- **Save as .xlsm** (macro-enabled) — regular .xlsx won't save VBA code
+- **Save as .xlsm** (macro-enabled) - regular .xlsx won't save VBA code
 - Add `Application.CutCopyMode = False` after paste operations to clear clipboard
 - Use `DoEvents` to keep Excel responsive during long operations
 
 ## Common Pitfalls
 
-- ❌ **Forgetting to save as .xlsm** — macros disappear when saved as .xlsx
-- ❌ **Outlook security prompts** — user may need to allow programmatic access
+- ❌ **Forgetting to save as .xlsm** - macros disappear when saved as .xlsx
+- ❌ **Outlook security prompts** - user may need to allow programmatic access
 - ❌ **PDF export failing** if the report sheet has print area issues
-- ❌ **Not handling "no data" scenarios** — add checks before PivotTable refresh
-- ❌ **Macro security blocking execution** — ensure trusted location or signed macro
+- ❌ **Not handling "no data" scenarios** - add checks before PivotTable refresh
+- ❌ **Macro security blocking execution** - ensure trusted location or signed macro
 
 ---
 
@@ -1693,7 +1693,7 @@ To run the report on a schedule, use Windows Task Scheduler:
 
 # Excel Certification Paths
 
-## Microsoft Office Specialist (MOS) — Excel Associate
+## Microsoft Office Specialist (MOS) - Excel Associate
 
 **Exam:** MO-200 (Excel 2019) or MO-210 (Microsoft 365 Apps)
 
@@ -1712,7 +1712,7 @@ To run the report on a schedule, use Windows Task Scheduler:
 
 **Career Value:** Entry-level validation, good for administrative and analyst roles
 
-## Microsoft Office Specialist (MOS) — Excel Expert
+## Microsoft Office Specialist (MOS) - Excel Expert
 
 **Exam:** MO-201 (Excel 2019) or MO-211 (Microsoft 365 Apps)
 
@@ -1736,7 +1736,7 @@ To run the report on a schedule, use Windows Task Scheduler:
 
 **Career Value:** Strong differentiator for data analysts and finance professionals
 
-## Microsoft Office Specialist (MOS) — Master
+## Microsoft Office Specialist (MOS) - Master
 
 **Requirements:** Pass 4 exams:
 1. Excel Expert (MO-201 or MO-211)
@@ -1789,23 +1789,23 @@ To run the report on a schedule, use Windows Task Scheduler:
 
 ## When to Use Excel
 
-- **Financial modeling** — What-If Analysis, Data Tables, Scenario Manager
-- **Large datasets** — Power Query, Power Pivot, millions of rows
-- **Complex automation** — VBA is more mature and capable than Apps Script
-- **Enterprise environments** — Microsoft 365 integration, compliance features
-- **Advanced analytics** — Power Pivot, DAX, Python integration
-- **Offline-heavy work** — Full desktop application with no internet dependency
-- **Professional reports** — Better charting, formatting, and print controls
+- **Financial modeling** - What-If Analysis, Data Tables, Scenario Manager
+- **Large datasets** - Power Query, Power Pivot, millions of rows
+- **Complex automation** - VBA is more mature and capable than Apps Script
+- **Enterprise environments** - Microsoft 365 integration, compliance features
+- **Advanced analytics** - Power Pivot, DAX, Python integration
+- **Offline-heavy work** - Full desktop application with no internet dependency
+- **Professional reports** - Better charting, formatting, and print controls
 
 ## When to Use Google Sheets
 
-- **Team collaboration** — Real-time editing is seamless and intuitive
-- **Simple data tracking** — Inventory, to-do lists, basic budgets
-- **Web-based workflows** — No installation, accessible from any device
-- **Cost-sensitive** — Free for personal use
-- **Integration with Google ecosystem** — Forms, BigQuery, Apps Script
-- **Quick sharing** — Link sharing without file attachments
-- **Education** — Easy distribution to students, no license needed
+- **Team collaboration** - Real-time editing is seamless and intuitive
+- **Simple data tracking** - Inventory, to-do lists, basic budgets
+- **Web-based workflows** - No installation, accessible from any device
+- **Cost-sensitive** - Free for personal use
+- **Integration with Google ecosystem** - Forms, BigQuery, Apps Script
+- **Quick sharing** - Link sharing without file attachments
+- **Education** - Easy distribution to students, no license needed
 
 ## Migration Tips
 
@@ -1817,8 +1817,8 @@ To run the report on a schedule, use Windows Task Scheduler:
 
 **Google Sheets → Excel:**
 1. File → Download → .xlsx
-2. Apps Script won't transfer — rewrite in VBA
-3. QUERY/IMPORTDATA functions won't work — use Power Query
+2. Apps Script won't transfer - rewrite in VBA
+3. QUERY/IMPORTDATA functions won't work - use Power Query
 4. Check conditional formatting rules
 
 ---
@@ -1876,29 +1876,29 @@ To run the report on a schedule, use Windows Task Scheduler:
 # YouTube Video References
 
 ## Beginner Projects
-- "How to Create a Personal Budget in Excel" — Leila Gharani
-- "Excel Budget Template Tutorial" — ExcelIsFun
-- "Invoice Template in Excel" — Leila Gharani
-- "Excel for Beginners Full Course" — freeCodeCamp
+- "How to Create a Personal Budget in Excel" - Leila Gharani
+- "Excel Budget Template Tutorial" - ExcelIsFun
+- "Invoice Template in Excel" - Leila Gharani
+- "Excel for Beginners Full Course" - freeCodeCamp
 
 ## Intermediate Projects
-- "Excel Sales Dashboard Tutorial" — MyOnlineTrainingHub
-- "PivotTable Tutorial for Beginners" — Leila Gharani
-- "Excel Inventory Management System" — ExcelIsFun
-- "Employee Schedule in Excel" — MyOnlineTrainingHub
-- "Data Cleaning in Excel — Full Tutorial" — Leila Gharani
+- "Excel Sales Dashboard Tutorial" - MyOnlineTrainingHub
+- "PivotTable Tutorial for Beginners" - Leila Gharani
+- "Excel Inventory Management System" - ExcelIsFun
+- "Employee Schedule in Excel" - MyOnlineTrainingHub
+- "Data Cleaning in Excel - Full Tutorial" - Leila Gharani
 
 ## Advanced Projects
-- "Financial Modeling in Excel — Full Tutorial" — Aswath Damodaran
-- "Excel VBA Tutorial for Beginners" — Leila Gharani
-- "Power Query Tutorial" — ExcelIsFun
-- "Excel Dashboard Course" — MyOnlineTrainingHub
-- "Automate Excel with VBA" — WiseOwlTutorials
+- "Financial Modeling in Excel - Full Tutorial" - Aswath Damodaran
+- "Excel VBA Tutorial for Beginners" - Leila Gharani
+- "Power Query Tutorial" - ExcelIsFun
+- "Excel Dashboard Course" - MyOnlineTrainingHub
+- "Automate Excel with VBA" - WiseOwlTutorials
 
 ## Certification Prep
-- "MOS Excel Associate Exam Prep" — Certiport
-- "MOS Excel Expert Exam Tips" — Leila Gharani
-- "Excel Certification Study Guide" — Simon Sez IT
+- "MOS Excel Associate Exam Prep" - Certiport
+- "MOS Excel Expert Exam Tips" - Leila Gharani
+- "Excel Certification Study Guide" - Simon Sez IT
 
 ---
 
@@ -1922,7 +1922,7 @@ To run the report on a schedule, use Windows Task Scheduler:
 > **Next Steps:** After completing all 8 projects, you should be comfortable using Excel for any professional task. Consider pursuing MOS certification, exploring Power BI for advanced visualization, or learning Python integration for data science workflows.
 
 > **Practice Dataset Sources:**
-> - Kaggle (kaggle.com/datasets) — free datasets for practice
-> - data.gov — U.S. government open data
+> - Kaggle (kaggle.com/datasets) - free datasets for practice
+> - data.gov - U.S. government open data
 > - Google Dataset Search (datasetsearch.research.google.com)
-> - UCI Machine Learning Repository — classic datasets
+> - UCI Machine Learning Repository - classic datasets

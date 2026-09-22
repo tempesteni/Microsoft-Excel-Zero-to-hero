@@ -1,4 +1,4 @@
-# Quiz 06 — Power Query, Power Pivot & DAX
+# Quiz 06 - Power Query, Power Pivot & DAX
 
 **Module:** Power Query, Power Pivot, DAX, Data Modeling
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -16,7 +16,7 @@
 
 **2.** In Power Query, you apply a "Remove Duplicates" step on column A. The result:
 - A) Deletes duplicate rows from the original data
-- B) Creates a new query result with duplicates removed — original data unchanged
+- B) Creates a new query result with duplicates removed - original data unchanged
 - C) Highlights duplicates with color
 - D) Moves duplicates to a new sheet
 
@@ -36,7 +36,7 @@
 - A) OrderID to CustomerID
 - B) CustomerID in Orders to CustomerID in Customers
 - C) Amount to Name
-- D) Any column — Excel figures it out
+- D) Any column - Excel figures it out
 
 **6.** What is the difference between "Close & Load" and "Close & Load To..." in Power Query?
 - A) There's no difference
@@ -90,7 +90,7 @@
 - A) Modify the data transformation steps
 - B) Change the PivotTable layout
 - C) Write SQL queries
-- D) Nothing — it's read-only
+- D) Nothing - it's read-only
 
 **15.** In DAX, `SUMX` differs from `SUM` because:
 - A) SUMX is faster
@@ -129,15 +129,15 @@
 | # | Answer | Explanation |
 |---|--------|-------------|
 | 1 | **B** | Power Query is Excel's ETL tool for data import and transformation. |
-| 2 | **B** | Power Query is non-destructive — it creates a new output from transformation steps. |
+| 2 | **B** | Power Query is non-destructive - it creates a new output from transformation steps. |
 | 3 | **B** | The data model stores tables and their relationships for cross-table analysis. |
-| 4 | **B** | CALCULATE modifies the filter context — here it filters to Region="East". |
+| 4 | **B** | CALCULATE modifies the filter context - here it filters to Region="East". |
 | 5 | **B** | Relationships require matching key columns between tables. |
 | 6 | **B** | "Close & Load To..." gives options: Table, PivotTable, Connection Only, etc. |
 | 7 | **A** | RANKX iterates over a table and ranks based on an expression. |
 | 8 | **D** | Power Pivot leverages the data model, DAX, and handles large datasets efficiently. |
 | 9 | **B** | Left Outer keeps all left rows; right rows are null when no match exists. |
-| 10 | **B** | ALL removes filters — used to calculate totals ignoring the current filter. |
+| 10 | **B** | ALL removes filters - used to calculate totals ignoring the current filter. |
 | 11 | **B** | Table.AddColumn adds a new computed column to the table. |
 | 12 | **A** | TOTALYTD computes year-to-date totals with a date column reference. |
 | 13 | **B** | Append requires compatible columns (names and types). |
@@ -145,7 +145,7 @@
 | 15 | **B** | SUMX iterates row by row evaluating an expression; SUM just adds a column. |
 | 16 | `Total Sales = SUM(Sales[Amount])` | Simple aggregation measure. |
 | 17 | `Sales Pct = DIVIDE(SUM(Sales[Amount]), CALCULATE(SUM(Sales[Amount]), ALL(Sales)))` | DIVIDE handles division by zero; ALL removes filters for the denominator. |
-| 18 | Select the column → Transform tab → Split Column → By Delimiter → choose Comma → set "At each occurrence" → OK. This creates two columns. Rename as needed. | — |
+| 18 | Select the column → Transform tab → Split Column → By Delimiter → choose Comma → set "At each occurrence" → OK. This creates two columns. Rename as needed. | - |
 | 19 | `Order Flag = IF(Sales[Amount] > 1000, "High", "Low")` | Calculated column with IF. |
 | 20 | Home > New Source > Blank Query → In Advanced Editor, enter: `= List.Dates(#date(2023,1,1), 1096, #duration(1,0,0,0))` → Convert to Table → Add date-related columns (Year, Month, etc.) → Close & Load. | 1096 days covers 2023-01-01 to 2025-12-31. |
 

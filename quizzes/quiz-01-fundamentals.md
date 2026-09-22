@@ -1,4 +1,4 @@
-# Quiz 01 — Excel Fundamentals
+# Quiz 01 - Excel Fundamentals
 
 **Module:** Interface, Navigation, Cell References, Data Entry, File Formats
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -132,15 +132,15 @@ Write the formula or describe the action that produces the required result.
 |---|--------|-------------|
 | 1 | **D** | Both Shift+click and Name Box entry select a range. |
 | 2 | **B** | Excel auto-converts short date entries to the current year. |
-| 3 | **B** | `$A$1` is absolute — it doesn't shift when copied. |
+| 3 | **B** | `$A$1` is absolute - it doesn't shift when copied. |
 | 4 | **B** | `Ctrl+;` inserts today's date; `Ctrl+Shift+;` inserts time. |
-| 5 | **B** | `#####` means the column is too narrow — widen it. |
+| 5 | **B** | `#####` means the column is too narrow - widen it. |
 | 6 | **C** | `.xlsm` is the macro-enabled format that preserves VBA. |
 | 7 | **B** | Ctrl+click for non-contiguous selection, then Ctrl+Enter fills all. |
 | 8 | **B** | Tab moves right after data entry; Enter moves down. |
 | 9 | **D** | `Ctrl+End` goes to last used cell; `Ctrl+↓` goes to last filled cell in column. |
 | 10 | **B** | General format drops leading zeros. Use Text or custom format `00000`. |
-| 11 | **C** | `$A1` locks the column but not the row — that's mixed. |
+| 11 | **C** | `$A1` locks the column but not the row - that's mixed. |
 | 12 | **B** | Sheet protection allows granular control per sheet. |
 | 13 | **B** | The Name Box navigates to any cell or named range. |
 | 14 | **C** | Ctrl+J represents a line break in Find & Replace; use it to create a delimiter, then split. |

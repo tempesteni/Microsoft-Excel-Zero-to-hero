@@ -1,4 +1,4 @@
-# Quiz 07 — VBA Macros
+# Quiz 07 - VBA Macros
 
 **Module:** VBA Macros, Loops, UserForms, Error Handling
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -16,7 +16,7 @@
 
 **2.** You record a macro that formats cell A1 bold. You then run it. Cell B5:
 - A) Also becomes bold
-- B) Stays unchanged — the macro only affects A1
+- B) Stays unchanged - the macro only affects A1
 - C) Gets deleted
 - D) Shows an error
 
@@ -36,7 +36,7 @@
 - A) `For i = 1 To 100: Cells(i, 1).Value = ... : Next i`
 - B) `For Each cell In Range("A1:A100"): cell.Value = ... : Next`
 - C) Both A and B
-- D) Neither — you must use `Do While`
+- D) Neither - you must use `Do While`
 
 **6.** What does `Application.ScreenUpdating = False` do?
 - A) Hides Excel completely
@@ -131,7 +131,7 @@ Write the VBA code that accomplishes the task.
 | # | Answer | Explanation |
 |---|--------|-------------|
 | 1 | **A** | `Alt+F11` opens VBA Editor; `Alt+F8` opens the macro list dialog. |
-| 2 | **B** | Recorded macros use absolute references by default — only the recorded cells are affected. |
+| 2 | **B** | Recorded macros use absolute references by default - only the recorded cells are affected. |
 | 3 | **B** | MsgBox displays a modal dialog box to the user. |
 | 4 | **C** | `Do...Loop While` executes the body first, then checks the condition. |
 | 5 | **C** | Both `For i` with `Cells()` and `For Each` with a range work. |
@@ -145,11 +145,11 @@ Write the VBA code that accomplishes the task.
 | 13 | **B** | Starting from the bottom of column A and pressing Ctrl+Up gives the last used row. |
 | 14 | **B** | ComboBox (editable dropdown) or ListBox (scrollable list) provides dropdown behavior. |
 | 15 | **B** | `Err.Number` is the numeric error code (e.g., 1004 for application-defined errors). |
-| 16 | ```vba Sub BoldOver100() Dim cell As Range For Each cell In Range("A1:A10") If cell.Value > 100 Then cell.Font.Bold = True Next cell End Sub``` | — |
-| 17 | ```vba Sub ClearTBD() Dim cell As Range For Each cell In Range("B2:B50") If cell.Value = "TBD" Then cell.ClearContents Next cell End Sub``` | — |
-| 18 | ```vba Function DoubleIt(num As Double) As Double DoubleIt = num * 2 End Function``` | — |
-| 19 | ```vba Sub MyMacro() On Error GoTo ErrHandler ' ... code ... Exit Sub ErrHandler: MsgBox "Error " & Err.Number & ": " & Err.Description, vbCritical Exit Sub End Sub``` | — |
-| 20 | ```vba Sub CreateSummary() Dim ws As Worksheet On Error Resume Next Set ws = ThisWorkbook.Sheets("Summary") On Error GoTo 0 If ws Is Nothing Then Set ws = ThisWorkbook.Sheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count)) ws.Name = "Summary" End If End Sub``` | — |
+| 16 | ```vba Sub BoldOver100() Dim cell As Range For Each cell In Range("A1:A10") If cell.Value > 100 Then cell.Font.Bold = True Next cell End Sub``` | - |
+| 17 | ```vba Sub ClearTBD() Dim cell As Range For Each cell In Range("B2:B50") If cell.Value = "TBD" Then cell.ClearContents Next cell End Sub``` | - |
+| 18 | ```vba Function DoubleIt(num As Double) As Double DoubleIt = num * 2 End Function``` | - |
+| 19 | ```vba Sub MyMacro() On Error GoTo ErrHandler ' ... code ... Exit Sub ErrHandler: MsgBox "Error " & Err.Number & ": " & Err.Description, vbCritical Exit Sub End Sub``` | - |
+| 20 | ```vba Sub CreateSummary() Dim ws As Worksheet On Error Resume Next Set ws = ThisWorkbook.Sheets("Summary") On Error GoTo 0 If ws Is Nothing Then Set ws = ThisWorkbook.Sheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count)) ws.Name = "Summary" End If End Sub``` | - |
 
 ---
 

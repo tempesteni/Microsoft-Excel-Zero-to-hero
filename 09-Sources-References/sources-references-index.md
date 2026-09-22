@@ -33,7 +33,7 @@ All sources used in the creation of this learning package. Organized by category
 | Excel Easy - VBA | https://www.excel-easy.com/vba.html | Module 7 |
 | Corporate Finance Institute (CFI) | https://corporatefinanceinstitute.com/resources/excel/ | Modules 2-5 |
 | GCFGlobal - Excel Tutorials | https://edu.gcfglobal.org/en/excel/ | Module 1 |
-| Chandoo.org | https://chandoo.org/wp/ | All Modules |
+| Chandoo.org | https://chandoo.org/?s=excel | All Modules |
 | TrumpExcel | https://trumpexcel.com/ | Modules 1-4, 8 |
 | Contextures | https://www.contextures.com/ | Modules 3-4 |
 | MyOnlineTrainingHub | https://www.myonlinetraininghub.com/ | Modules 3, 5-6 |
@@ -70,7 +70,7 @@ All sources used in the creation of this learning package. Organized by category
 **Intermediate:**
 - Excel PivotTables - Leila Gharani: https://www.youtube.com/watch?v=qu-Acm0tSag
 - VLOOKUP vs INDEX MATCH vs XLOOKUP - Leila Gharani: https://www.youtube.com/watch?v=H1NQhMsMb_0
-- Conditional Formatting Deep Dive - ExcelIsFun: https://www.youtube.com/watch?v=3IylWNdHB4E
+- Conditional Formatting Deep Dive - ExcelIsFun (search on YouTube): https://www.youtube.com/results?search_query=excelisfun+conditional+formatting
 
 **Advanced:**
 - Dynamic Arrays Masterclass - ExcelIsFun: https://www.youtube.com/watch?v=0P6wMb8GXoI
@@ -137,7 +137,7 @@ All sources used in the creation of this learning package. Organized by category
 | Power Pivot (built-in) | Data modeling with DAX | Included in Excel 2016+ |
 | Solver (built-in add-in) | Optimization | Enable via File > Options > Add-ins |
 | Analysis ToolPak | Statistical analysis | Enable via File > Options > Add-ins |
-| Fuzzy Lookup Add-in | Fuzzy matching | https://www.microsoft.com/en-us/excel |
+| Fuzzy Lookup Add-in | Fuzzy matching | https://support.microsoft.com/en-us/excel |
 | XLSTAT | Statistical analysis | https://www.xlstat.com/ |
 | Power BI Desktop | Advanced visualization | https://powerbi.microsoft.com/ |
 
@@ -170,8 +170,8 @@ These articles and blog posts were referenced during the creation of this learni
 |---------|--------------|-----|---------|
 | "Financial Modeling in Excel" | Wall Street Prep | https://wallstreetprep.com/ | Module 8 |
 | "Excel for Data Analysis" | Corporate Finance Institute | https://corporatefinanceinstitute.com/resources/excel/ | Modules 4-5 |
-| "Building Dashboards in Excel" | Chandoo | https://chandoo.org/wp/excel-dashboards/ | Module 3 |
-| "Excel vs Google Sheets: Key Differences" | Spreadsheeto | https://spreadsheeto.com/excel-vs-google-sheets | Module 1 |
+| "Building Dashboards in Excel" | Chandoo | https://chandoo.org/?s=excelexcel-dashboards/ | Module 3 |
+| "Excel vs Google Sheets: Key Differences" | Spreadsheeto | https://spreadsheeto.com/ | Module 1 |
 
 ### Certification & Career
 | Article | Author/Source | URL | Used In |

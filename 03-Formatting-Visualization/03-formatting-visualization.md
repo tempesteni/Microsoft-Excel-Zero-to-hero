@@ -28,8 +28,8 @@ Font formatting controls the appearance of text in cells. Access via **Home → 
 
 | Property | Description | Shortcut |
 |----------|-------------|----------|
-| **Font Family** | Typeface (Calibri, Arial, Times New Roman, etc.) | — |
-| **Font Size** | Point size (default: 11pt) | — |
+| **Font Family** | Typeface (Calibri, Arial, Times New Roman, etc.) | - |
+| **Font Size** | Point size (default: 11pt) | - |
 | **Bold** | Makes text thicker | **Ctrl+B** |
 | **Italic** | Slants text | **Ctrl+I** |
 | **Underline** | Adds underline | **Ctrl+U** |
@@ -199,11 +199,11 @@ Cell Styles are predefined formatting combinations that you can apply with one c
 **Access:** Home → Styles group → Cell Styles
 
 **Built-in Style Categories:**
-- **Good, Bad, Neutral** — green, red, gray backgrounds
-- **Data and Model** — input, calculation, check cell, linked cell
-- **Titles and Headings** — Heading 1-4, Title, Total
-- **Themed Cell Styles** — Accent 1-6 (20% and 40% lighter/darker variants)
-- **Number Format** — Comma, Currency, Percent
+- **Good, Bad, Neutral** - green, red, gray backgrounds
+- **Data and Model** - input, calculation, check cell, linked cell
+- **Titles and Headings** - Heading 1-4, Title, Total
+- **Themed Cell Styles** - Accent 1-6 (20% and 40% lighter/darker variants)
+- **Number Format** - Comma, Currency, Percent
 
 **Creating a Custom Cell Style:**
 ```
@@ -507,13 +507,13 @@ Tables use structured references instead of cell addresses.
    - Hover to preview
    - Click to apply
 3. In Table Style Options:
-   ☑ Header Row     — Show/hide header formatting
-   ☑ Total Row      — Show/hide total row
-   ☑ Banded Rows    — Alternating row colors
-   ☑ First Column   — Bold first column
-   ☑ Last Column    — Bold last column
-   ☑ Banded Columns — Alternating column colors
-   ☑ Filter Button  — Show/hide filter dropdowns
+   ☑ Header Row     - Show/hide header formatting
+   ☑ Total Row      - Show/hide total row
+   ☑ Banded Rows    - Alternating row colors
+   ☑ First Column   - Bold first column
+   ☑ Last Column    - Bold last column
+   ☑ Banded Columns - Alternating column colors
+   ☑ Filter Button  - Show/hide filter dropdowns
 ```
 
 ### 6.5 Total Row
@@ -587,7 +587,7 @@ Data Layout:
 
 ### 7.4 Bar Charts
 
-Bar charts are horizontal columns — ideal when:
+Bar charts are horizontal columns - ideal when:
 - Category labels are long
 - You're comparing rankings
 - You want a different visual style
@@ -624,7 +624,7 @@ Data Layout:
 
 **Subtypes:**
 - **Pie:** Standard 2D
-- **3D Pie:** Adds depth (avoid — distorts perception)
+- **3D Pie:** Adds depth (avoid - distorts perception)
 - **Pie of Pie:** Separates small slices into a second pie
 - **Bar of Pie:** Separates small slices into a bar chart
 - **Doughnut:** Multiple rings for multiple data series
@@ -857,12 +857,12 @@ Sparklines are small, cell-sized charts that show data trends in a compact forma
 
 **Key Options:**
 ```
-☑ High Point    — Highlights the maximum value
-☑ Low Point     — Highlights the minimum value
-☑ First Point   — Highlights the first data point
-☑ Last Point    — Highlights the last data point
-☑ Negative Points — Highlights negative values
-☑ Markers       — Shows all data points
+☑ High Point    - Highlights the maximum value
+☑ Low Point     - Highlights the minimum value
+☑ First Point   - Highlights the first data point
+☑ Last Point    - Highlights the last data point
+☑ Negative Points - Highlights negative values
+☑ Markers       - Shows all data points
 ```
 
 ---
@@ -929,14 +929,14 @@ A dashboard is a single-page visual display of the most important information, d
 
 | Principle | Description |
 |-----------|-------------|
-| **Know your audience** | Executive vs. operational — adjust detail level |
+| **Know your audience** | Executive vs. operational - adjust detail level |
 | **Single page** | Fits on one screen; no scrolling |
 | **Key metrics first** | Most important KPIs in the top-left (reading order) |
 | **Consistent formatting** | Same fonts, colors, sizes throughout |
 | **Minimal text** | Use numbers and visuals, not paragraphs |
 | **Color coding** | Red = bad, Yellow = caution, Green = good |
 | **Interactive elements** | Slicers, dropdowns, buttons for filtering |
-| **White space** | Don't overcrowd — give elements breathing room |
+| **White space** | Don't overcrowd - give elements breathing room |
 | **Actionable** | Shows what needs attention, not just what happened |
 
 ### 12.3 Dashboard Building Blocks in Excel
@@ -1106,30 +1106,30 @@ Create KPI summary cards using cell formatting:
 ## 14. Video References
 
 ### Conditional Formatting
-- **Excel Conditional Formatting in 10 Minutes** — https://www.youtube.com/watch?v=yVixz6pMk8Q
-- **Conditional Formatting with Formulas** — https://www.youtube.com/watch?v=9NUjHBNWe2E
-- **Excel Conditional Formatting - Complete Guide** — https://www.youtube.com/watch?v=7Fj4Qb_b7Tw
+- **Excel Conditional Formatting in 10 Minutes** - https://www.youtube.com/watch?v=yVixz6pMk8Q
+- **Conditional Formatting with Formulas** - https://www.youtube.com/watch?v=9NUjHBNWe2E
+- **Excel Conditional Formatting - Complete Guide** - https://www.youtube.com/watch?v=7Fj4Qb_b7Tw
 
 ### Charts & Visualization
-- **Excel Charts - The Complete Guide** — https://www.youtube.com/watch?v=ewYorxOGwTk
-- **Excel Combo Charts Tutorial** — https://www.youtube.com/watch?v=3k7ZsT3Gk5Y
-- **Excel Chart Formatting Tips** — https://www.youtube.com/watch?v=K79UMRWKDF8
+- **Excel Charts - The Complete Guide** - https://www.youtube.com/watch?v=ewYorxOGwTk
+- **Excel Combo Charts Tutorial** - https://www.youtube.com/watch?v=3k7ZsT3Gk5Y
+- **Excel Chart Formatting Tips** - https://www.youtube.com/watch?v=K79UMRWKDF8
 
 ### Tables
-- **Excel Tables - Complete Guide** — https://www.youtube.com/watch?v=2G4r2r_1T9Y
-- **Structured References in Excel Tables** — https://www.youtube.com/watch?v=3b4nF1BFwBg
+- **Excel Tables - Complete Guide** - https://www.youtube.com/watch?v=2G4r2r_1T9Y
+- **Structured References in Excel Tables** - https://www.youtube.com/watch?v=3b4nF1BFwBg
 
 ### Sparklines & Slicers
-- **Excel Sparklines Tutorial** — https://www.youtube.com/watch?v=9vJRopuVJ9Q
-- **Excel Slicers - Tables & PivotTables** — https://www.youtube.com/watch?v=Zb2h2nUOZuE
+- **Excel Sparklines Tutorial** - https://www.youtube.com/watch?v=9vJRopuVJ9Q
+- **Excel Slicers - Tables & PivotTables** - https://www.youtube.com/watch?v=Zb2h2nUOZuE
 
 ### Dashboard Design
-- **Excel Dashboard Tutorial** — https://www.youtube.com/watch?v=M2NH_PQuWnE
-- **Excel Dashboard Design Tips** — https://www.youtube.com/watch?v=LjWPUqEBZ2E
+- **Excel Dashboard Tutorial** - https://www.youtube.com/watch?v=M2NH_PQuWnE
+- **Excel Dashboard Design Tips** - https://www.youtube.com/watch?v=LjWPUqEBZ2E
 
 ### Number Formatting
-- **Custom Number Formats in Excel** — https://www.youtube.com/watch?v=2f1mSq2sGMk
-- **Excel Format Cells Tutorial** — https://www.youtube.com/watch?v=VlIHvXNJKUQ
+- **Custom Number Formats in Excel** - https://www.youtube.com/watch?v=2f1mSq2sGMk
+- **Excel Format Cells Tutorial** - https://www.youtube.com/watch?v=VlIHvXNJKUQ
 
 ---
 
@@ -1137,65 +1137,65 @@ Create KPI summary cards using cell formatting:
 
 ### Primary Sources
 
-1. **Microsoft Support — Format Cells**
-   https://support.microsoft.com/en-us/office/format-cells-in-excel-d1ef9e09-e6fc-4e47-8b41-4a4da1e0b2d8
+1. **Microsoft Support - Format Cells**
+   https://support.microsoft.com/en-us/excel
 
-2. **Microsoft Support — Conditional Formatting**
+2. **Microsoft Support - Conditional Formatting**
    https://support.microsoft.com/en-us/office/use-conditional-formatting-to-highlight-information-fed60dfa-1d3f-4e13-9ecb-f1951ff89d7f
 
-3. **Microsoft Support — Excel Tables**
-   https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c3-22e398b75ce7
+3. **Microsoft Support - Excel Tables**
+   https://support.microsoft.com/en-us/excel
 
-4. **Microsoft Support — Charts**
-   https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4c55-b073-5e5a5c8b5df3
+4. **Microsoft Support - Charts**
+   https://support.microsoft.com/en-us/excel
 
-5. **Microsoft Support — Sparklines**
-   https://support.microsoft.com/en-us/office/use-sparklines-to-show-data-trends-1474e169-f971-46cd-b357-1fe608f3b0e3
+5. **Microsoft Support - Sparklines**
+   https://support.microsoft.com/en-us/excel
 
-6. **Microsoft Support — Slicers**
+6. **Microsoft Support - Slicers**
    https://support.microsoft.com/en-us/office/use-slicers-to-filter-data-249f966b-a9d5-4b0f-b31a-12651785d29d
 
-7. **Excel Easy — Format Cells**
+7. **Excel Easy - Format Cells**
    https://www.excel-easy.com/basics/format-cells.html
 
-8. **Excel Easy — Custom Number Format**
+8. **Excel Easy - Custom Number Format**
    https://www.excel-easy.com/examples/custom-number-format.html
 
-9. **Excel Easy — Format Painter**
+9. **Excel Easy - Format Painter**
    https://www.excel-easy.com/examples/format-painter.html
 
-10. **Excel Easy — Cell Styles**
+10. **Excel Easy - Cell Styles**
     https://www.excel-easy.com/examples/cell-styles.html
 
-11. **Excel Easy — Conditional Formatting**
+11. **Excel Easy - Conditional Formatting**
     https://www.excel-easy.com/data-analysis/conditional-formatting.html
 
-12. **Excel Easy — Tables**
+12. **Excel Easy - Tables**
     https://www.excel-easy.com/data-analysis/tables.html
 
-13. **Excel Easy — Charts**
-    https://www.excel-easy.com/introduction/charts.html
+13. **Excel Easy - Charts**
+    https://www.excel-easy.com/
 
-14. **Exceljet — Conditional Formatting**
+14. **Exceljet - Conditional Formatting**
     https://exceljet.net/conditional-formatting
 
-15. **Exceljet — Excel Charts**
+15. **Exceljet - Excel Charts**
     https://exceljet.net/charts
 
-16. **Exceljet — Pivot Table Examples**
+16. **Exceljet - Pivot Table Examples**
     https://exceljet.net/pivot-tables
 
-17. **CFI — Conditional Formatting**
+17. **CFI - Conditional Formatting**
     https://corporatefinanceinstitute.com/resources/excel/conditional-formatting/
 
-18. **Chandoo — Excel Charts**
-    https://chandoo.org/wp/excel-charts/
+18. **Chandoo - Excel Charts**
+    https://chandoo.org/?s=excel+charts
 
-19. **Contextures — Conditional Formatting**
-    https://www.contextures.com/excelconditionalformatting.html
+19. **Contextures - Conditional Formatting**
+    https://www.contextures.com/
 
-20. **Peltier Tech Blog — Chart Types**
-    https://peltiertech.com/Excel/Charts/ChartType.html
+20. **Peltier Tech Blog - Chart Types**
+    https://peltiertech.com/
 
 ---
 

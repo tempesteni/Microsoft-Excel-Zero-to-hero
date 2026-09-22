@@ -1,4 +1,4 @@
-# Power Query Cheat Sheet — M Language & Transformations
+# Power Query Cheat Sheet - M Language & Transformations
 
 > **Quick Reference** | Print on A4/Letter | 1-2 pages
 
@@ -163,9 +163,9 @@ in
 
 | Tip | Why |
 |-----|-----|
-| **Filter early** | Remove rows/columns as first steps — reduces data flowing through pipeline |
+| **Filter early** | Remove rows/columns as first steps - reduces data flowing through pipeline |
 | **Disable auto data type detection** | File → Options → uncheck "Auto-detect column types" (prevents auto-changes) |
-| **Use `Table.Buffer`** | `= Table.Buffer(Source)` — caches result in memory to avoid re-evaluation |
+| **Use `Table.Buffer`** | `= Table.Buffer(Source)` - caches result in memory to avoid re-evaluation |
 | **Fold queries** | Ensure filters push to source (check via View → Query Dependencies → right-click → View native query) |
 | **Avoid row-by-row** | Prefer column-level transforms over `Table.AddColumn` with expensive per-row logic |
 | **Reference, don't duplicate** | Base new queries on existing steps rather than re-loading source data |
@@ -176,7 +176,7 @@ in
 
 - **`fx` button** in formula bar: Insert step → write M code
 - **Applied Steps pane** (right): Click any step to preview at that point
-- **Advanced Editor**: Home → Advanced Editor — see/edit full M code
+- **Advanced Editor**: Home → Advanced Editor - see/edit full M code
 - **Duplicate query**: Right-click query → Duplicate (for variations without reloading)
 - **`Ctrl+Click`** column headers to select multiple columns for batch transforms
 - All M functions are **case-sensitive**: `Table.Group` ≠ `table.group`

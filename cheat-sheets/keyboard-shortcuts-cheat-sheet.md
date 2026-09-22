@@ -1,4 +1,4 @@
-# Excel Keyboard Shortcuts Cheat Sheet — 60+ Essential Shortcuts
+# Excel Keyboard Shortcuts Cheat Sheet - 60+ Essential Shortcuts
 
 > **Quick Reference** | Print on A4/Letter | 1-2 pages
 

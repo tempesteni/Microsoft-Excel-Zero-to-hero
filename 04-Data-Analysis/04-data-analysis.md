@@ -53,7 +53,7 @@ Throughout this module, we'll use the following **Sales Data** table. Create thi
 
 ## 1. Sorting Data
 
-Sorting rearranges rows based on the values in one or more columns. It does **not** change your data — it reorders it.
+Sorting rearranges rows based on the values in one or more columns. It does **not** change your data - it reorders it.
 
 ### 1.1 Single-Column Sort
 
@@ -68,9 +68,9 @@ Sorting rearranges rows based on the values in one or more columns. It does **no
 - Result: Order 1018 ($1,200.00) appears first, Order 1020 ($212.50) appears last
 
 > **Keyboard Shortcuts:**
-> - `Alt + D, S, S` — Quick ascending sort
-> - `Alt + D, S, O` — Quick descending sort
-> - `Ctrl + Shift + L` — Toggle AutoFilter on/off
+> - `Alt + D, S, S` - Quick ascending sort
+> - `Alt + D, S, O` - Quick descending sort
+> - `Ctrl + Shift + L` - Toggle AutoFilter on/off
 
 ### 1.2 Multi-Level Sort
 
@@ -80,9 +80,9 @@ When two rows have the same value in the primary sort column, a secondary sort b
 1. Click any cell in your data range
 2. Go to **Data** tab → **Sort** (the larger Sort button, not the A→Z icon)
 3. The Sort dialog box opens:
-   - **Sort by:** Select `Region` — Sort On: `Cell Values` — Order: `A to Z`
+   - **Sort by:** Select `Region` - Sort On: `Cell Values` - Order: `A to Z`
    - Click **Add Level**
-   - **Then by:** Select `Total` — Sort On: `Cell Values` — Order: `Largest to Smallest`
+   - **Then by:** Select `Total` - Sort On: `Cell Values` - Order: `Largest to Smallest`
 4. Click **OK**
 
 **Result:** All East records are grouped together (sorted by Total descending within East), then North, South, West.
@@ -133,7 +133,7 @@ Normally Excel sorts by rows, but you can sort columns:
 
 ## 2. Filtering Data
 
-Filtering **hides** rows that don't match your criteria — the data stays intact, but you only see what's relevant.
+Filtering **hides** rows that don't match your criteria - the data stays intact, but you only see what's relevant.
 
 ### 2.1 Enable AutoFilter
 
@@ -157,26 +157,26 @@ Click the dropdown arrow on the `Region` column:
 3. Click **OK**
 
 **Advanced Text Filters** (click the dropdown → Text Filters):
-- **Equals...** — exact match (e.g., `East`)
-- **Does Not Equal...** — exclude a value
-- **Begins With...** — e.g., `W` → matches "West"
-- **Ends With...** — e.g., `th` → matches "North", "South"
-- **Contains...** — e.g., `ou` → matches "South"
-- **Does Not Contain...** — exclude rows with a substring
+- **Equals...** - exact match (e.g., `East`)
+- **Does Not Equal...** - exclude a value
+- **Begins With...** - e.g., `W` → matches "West"
+- **Ends With...** - e.g., `th` → matches "North", "South"
+- **Contains...** - e.g., `ou` → matches "South"
+- **Does Not Contain...** - exclude rows with a substring
 
 ### 2.4 Number Filters
 
 Click the dropdown arrow on the `Total` column:
 
 - **Equals / Does Not Equal**
-- **Greater Than...** — e.g., `500` → shows only totals above $500
+- **Greater Than...** - e.g., `500` → shows only totals above $500
 - **Less Than...**
-- **Between...** — e.g., `300` to `700`
-- **Top 10...** — shows the top/bottom N items or top/bottom N%
+- **Between...** - e.g., `300` to `700`
+- **Top 10...** - shows the top/bottom N items or top/bottom N%
 - **Above Average / Below Average**
-- **Custom Filter...** — combine two conditions with AND/OR
+- **Custom Filter...** - combine two conditions with AND/OR
 
-**Example — Top 5 Sales:**
+**Example - Top 5 Sales:**
 1. Click dropdown on `Total`
 2. Number Filters → Top 10...
 3. Set: `Top` `5` `Items`
@@ -188,8 +188,8 @@ Click the dropdown on the `Date` column:
 
 - Date filters offer a **calendar picker** for selecting dates
 - **Dynamic filters:** Today, Yesterday, Tomorrow, This Week, Last Month, Next Quarter, This Year, Year to Date...
-- **Between...** — specify a date range (e.g., 2025-03-01 to 2025-06-30)
-- **Custom Filter...** — combine conditions (e.g., After 2025-03-01 AND Before 2025-09-01)
+- **Between...** - specify a date range (e.g., 2025-03-01 to 2025-06-30)
+- **Custom Filter...** - combine conditions (e.g., After 2025-03-01 AND Before 2025-09-01)
 
 ### 2.6 Search Filter
 
@@ -197,7 +197,7 @@ When you click any column dropdown, there's a **search box** at the top:
 
 1. Click the dropdown on `SalesRep`
 2. Type `Alice` in the search box
-3. Only "Alice" is shown in the checkbox list — check it → **OK**
+3. Only "Alice" is shown in the checkbox list - check it → **OK**
 
 ### 2.7 Clear Filters
 
@@ -216,7 +216,7 @@ In the search box or custom filter, use wildcards:
 
 ## 3. Advanced Filtering
 
-Advanced Filtering lets you use a **criteria range** — a separate area of the sheet where you define complex conditions with AND/OR logic.
+Advanced Filtering lets you use a **criteria range** - a separate area of the sheet where you define complex conditions with AND/OR logic.
 
 ### 3.1 Setting Up a Criteria Range
 
@@ -226,7 +226,7 @@ Advanced Filtering lets you use a **criteria range** — a separate area of the 
 - **Same row** = AND logic (both conditions must be true)
 - **Different row** = OR logic (either condition can be true)
 
-**Example — Set up in cells K1:M4:**
+**Example - Set up in cells K1:M4:**
 
 | Region | Category    | Total     |
 |--------|-------------|-----------|
@@ -241,8 +241,8 @@ This means:
 
 1. Go to **Data** tab → **Advanced** (in the Sort & Filter group)
 2. **Action:** Choose one:
-   - **Filter the list, in-place** — hides non-matching rows (like AutoFilter)
-   - **Copy to another location** — outputs matching rows to a different area
+   - **Filter the list, in-place** - hides non-matching rows (like AutoFilter)
+   - **Copy to another location** - outputs matching rows to a different area
 3. **List range:** Select your data including headers (e.g., `A1:I21`)
 4. **Criteria range:** Select your criteria including headers (e.g., `K1:M4`)
 5. If copying to another location: set **Copy to** (e.g., `K10`)
@@ -293,7 +293,7 @@ Data Validation controls what users can enter in a cell. It prevents bad data be
 #### Whole Number
 Restricts to whole numbers only.
 
-**Example — Units column must be 1–1000:**
+**Example - Units column must be 1–1000:**
 1. Select the Units column (e.g., G2:G100)
 2. Data → Data Validation → Settings tab
 3. Allow: `Whole number`
@@ -304,7 +304,7 @@ Restricts to whole numbers only.
 #### Decimal
 Allows decimal numbers.
 
-**Example — Unit Price must be 0.01 to 9999.99:**
+**Example - Unit Price must be 0.01 to 9999.99:**
 1. Select the UnitPrice column (H2:H100)
 2. Allow: `Decimal`
 3. Data: `between`
@@ -314,7 +314,7 @@ Allows decimal numbers.
 #### List (Drop-down)
 Creates a dropdown menu in the cell.
 
-**Example — Region dropdown:**
+**Example - Region dropdown:**
 1. Select the Region column (C2:C100)
 2. Allow: `List`
 3. Source: `North,South,East,West`
@@ -331,7 +331,7 @@ Creates a dropdown menu in the cell.
 #### Date
 Restricts to valid dates within a range.
 
-**Example — Date must be in 2025:**
+**Example - Date must be in 2025:**
 1. Allow: `Date`
 2. Data: `between`
 3. Start date: `2025-01-01`
@@ -340,7 +340,7 @@ Restricts to valid dates within a range.
 #### Time
 Restricts to times.
 
-**Example — Business hours only:**
+**Example - Business hours only:**
 1. Allow: `Time`
 2. Data: `between`
 3. Start: `9:00:00 AM`
@@ -349,7 +349,7 @@ Restricts to times.
 #### Text Length
 Restricts by character count.
 
-**Example — Product code must be exactly 5 characters:**
+**Example - Product code must be exactly 5 characters:**
 1. Allow: `Text length`
 2. Data: `equal to`
 3. Length: `5`
@@ -358,17 +358,17 @@ Restricts by character count.
 
 Use a formula for the most flexible validation.
 
-**Example — Total column must equal Units × Unit Price:**
+**Example - Total column must equal Units × Unit Price:**
 1. Select the Total column (I2:I100)
 2. Allow: `Custom`
 3. Formula: `=I2=G2*H2`
 
-**Example — No duplicate Order IDs:**
+**Example - No duplicate Order IDs:**
 1. Select the OrderID column (A2:A100)
 2. Allow: `Custom`
 3. Formula: `=COUNTIF($A:$A,A2)<=1`
 
-**Example — Date must be a weekday (Mon–Fri):**
+**Example - Date must be a weekday (Mon–Fri):**
 1. Allow: `Custom`
 2. Formula: `=WEEKDAY(B2,2)<=5`
 
@@ -388,9 +388,9 @@ Controls what happens when invalid data is entered.
 1. Go to the **Error Alert** tab
 2. Check **Show error alert after invalid data is entered**
 3. Style: Choose one:
-   - **Stop** 🛑 — Prevents the entry entirely (default)
-   - **Warning** ⚠️ — Warns but allows the user to proceed
-   - **Information** ℹ️ — Notifies but accepts the entry
+   - **Stop** 🛑 - Prevents the entry entirely (default)
+   - **Warning** ⚠️ - Warns but allows the user to proceed
+   - **Information** ℹ️ - Notifies but accepts the entry
 4. Title: `Invalid Entry`
 5. Message: `Please enter a value between 1 and 1000.`
 
@@ -410,7 +410,7 @@ What-If Analysis tools let you experiment with different input values to see how
 
 ### 5.1 Goal Seek
 
-Goal Seek works **backwards** from a desired result. It asks: "I know what answer I want — what input value gives me that answer?"
+Goal Seek works **backwards** from a desired result. It asks: "I know what answer I want - what input value gives me that answer?"
 
 **Scenario:** You have a formula `Total = Units × 10`. You want Total to equal $750. How many units do you need?
 
@@ -433,13 +433,13 @@ Excel iterates and finds: G2 = 75 (i.e., you need 75 units). Click **OK** to kee
 
 Scenarios let you save and compare multiple sets of input values for the same model.
 
-**Example — Best Case, Worst Case, Expected Case for a profit model:**
+**Example - Best Case, Worst Case, Expected Case for a profit model:**
 
 Suppose you have:
 - B2: Units Sold (input)
 - B3: Price per Unit (input)
 - B4: Cost per Unit (input)
-- B5: `=B2*(B3-B4)` — Profit formula
+- B5: `=B2*(B3-B4)` - Profit formula
 
 **Create Scenarios:**
 1. Go to **Data** tab → **What-If Analysis** → **Scenario Manager**
@@ -527,7 +527,7 @@ Solver finds the **optimal** value for a formula cell subject to constraints. It
 3. Check **Solver Add-in** → **OK**
 4. Now find it under **Data** tab → **Solver**
 
-**Example — Maximize Profit with Constraints:**
+**Example - Maximize Profit with Constraints:**
 
 Setup:
 - B2: Units of Product A (variable)
@@ -564,8 +564,8 @@ PivotTables are the **most powerful** data analysis tool in Excel. They summariz
 3. In the dialog:
    - **Table/Range:** Excel auto-detects your data range (e.g., `SalesData!$A$1:$I$21`)
    - **Choose where to place the PivotTable:**
-     - `New Worksheet` (recommended) — creates a new sheet
-     - `Existing Worksheet` — place it on the current sheet at a specific cell
+     - `New Worksheet` (recommended) - creates a new sheet
+     - `Existing Worksheet` - place it on the current sheet at a specific cell
 4. Click **OK**
 
 A blank PivotTable appears on a new sheet with the **PivotTable Fields** pane on the right.
@@ -581,7 +581,7 @@ The PivotTable Fields pane has four areas:
 | **Rows** | Creates row labels down the left side | `SalesRep` → each rep as a row |
 | **Values** | The data to calculate (aggregated) | `Sum of Total` → sum of sales for each intersection |
 
-**Example — Build your first PivotTable:**
+**Example - Build your first PivotTable:**
 1. Drag `SalesRep` to the **Rows** area
 2. Drag `Total` to the **Values** area
 3. You now see: each sales rep with their total sales
@@ -618,7 +618,7 @@ Click on the value in the Values area (e.g., "Sum of Total") → **Value Field S
 
 ### 6.4 Show Values As (Display Type)
 
-This powerful feature shows values as **percentages, rankings, running totals**, and more — without extra formulas.
+This powerful feature shows values as **percentages, rankings, running totals**, and more - without extra formulas.
 
 **Access:** Right-click a value → **Show Values As** → choose:
 
@@ -636,12 +636,12 @@ This powerful feature shows values as **percentages, rankings, running totals**,
 | **% Difference From** | % change vs. a base item | Month-over-month % change |
 | **Index** | Relative importance of each value | Weighted comparison |
 
-**Example — Show each rep's sales as % of Grand Total:**
+**Example - Show each rep's sales as % of Grand Total:**
 1. Add `SalesRep` to Rows, `Total` to Values
 2. Right-click any value cell → **Show Values As** → `% of Grand Total`
 3. Alice now shows `13.2%` (her share of all sales)
 
-**Example — Running Total by Date:**
+**Example - Running Total by Date:**
 1. Add `Date` (grouped by month) to Rows, `Total` to Values
 2. Right-click → **Show Values As** → **Running Total In** → select the Date field
 3. Each month now shows cumulative sales from January onward
@@ -656,7 +656,7 @@ Grouping collapses detailed data into meaningful categories.
 2. Right-click any date in the PivotTable
 3. Select **Group...**
 4. In the Grouping dialog, select the levels:
-   - `Months`, `Quarters`, `Years` — can select multiple
+   - `Months`, `Quarters`, `Years` - can select multiple
 5. Click **OK**
 
 **Result:** Instead of 20 individual dates, you see:
@@ -690,7 +690,7 @@ Right-click a grouped item → **Ungroup** (or select and press `Alt + Shift + L
 
 A **Calculated Field** creates a new field using a formula based on existing fields.
 
-**Example — Create a "Commission" field (5% of Total):**
+**Example - Create a "Commission" field (5% of Total):**
 1. Click anywhere in the PivotTable
 2. Go to **PivotTable Analyze** tab (or **Analyze** tab) → **Fields, Items & Sets** → **Calculated Field...**
 3. Name: `Commission`
@@ -703,7 +703,7 @@ A new "Commission" column appears in your PivotTable, calculated for each row/co
 
 A **Calculated Item** creates a new item within an existing field.
 
-**Example — Create a "Coastal" item combining East and West:**
+**Example - Create a "Coastal" item combining East and West:**
 1. Click a cell in the `Region` field in the PivotTable
 2. PivotTable Analyze → Fields, Items & Sets → **Calculated Item...**
 3. Name: `Coastal`
@@ -771,10 +771,10 @@ When you reference a PivotTable cell in a formula, Excel uses `GETPIVOTDATA`:
 This extracts Alice's Electronics total from the PivotTable.
 
 **Arguments:**
-- `"Total"` — the data field name
-- `$A$3` — reference to any cell in the PivotTable
-- `"SalesRep","Alice"` — field/item pair (filter)
-- `"Category","Electronics"` — another field/item pair
+- `"Total"` - the data field name
+- `$A$3` - reference to any cell in the PivotTable
+- `"SalesRep","Alice"` - field/item pair (filter)
+- `"Category","Electronics"` - another field/item pair
 
 **Toggle GETPIVOTDATA:**
 If you prefer regular cell references instead:
@@ -782,7 +782,7 @@ If you prefer regular cell references instead:
 
 ### 6.11 PivotCharts
 
-A PivotChart is a chart linked to a PivotTable — it updates automatically when the PivotTable changes.
+A PivotChart is a chart linked to a PivotTable - it updates automatically when the PivotTable changes.
 
 **Create a PivotChart:**
 1. Click inside your PivotTable
@@ -816,7 +816,7 @@ Subtotals automatically insert summary rows (SUM, AVERAGE, COUNT, etc.) at group
 
 ### 7.2 Automatic Subtotals
 
-**Example — Total sales by Region:**
+**Example - Total sales by Region:**
 
 1. Sort your data by `Region` (Data → Sort A to Z on Region column)
 2. Click any cell in the data
@@ -827,7 +827,7 @@ Subtotals automatically insert summary rows (SUM, AVERAGE, COUNT, etc.) at group
    - **Add subtotal to:** check `Total` (and `Units` if desired)
    - Check **Summary below data** (default)
    - Check **Replace current subtotals** (if re-applying)
-   - Check **Page break between groups** (optional — for printing)
+   - Check **Page break between groups** (optional - for printing)
 5. Click **OK**
 
 **Result:**
@@ -844,13 +844,13 @@ Diana    North    Widget C    35    12.00    420.00
 ### 7.3 Other Subtotal Functions
 
 Besides `Sum`, you can use:
-- **Count** — number of items per group
-- **Average** — average per group
-- **Max** — maximum per group
-- **Min** — minimum per group
-- **Product** — product of all values
-- **StdDev / StdDevp** — standard deviation
-- **Var / Varp** — variance
+- **Count** - number of items per group
+- **Average** - average per group
+- **Max** - maximum per group
+- **Min** - minimum per group
+- **Product** - product of all values
+- **StdDev / StdDevp** - standard deviation
+- **Var / Varp** - variance
 
 ### 7.4 Nesting Subtotals (Multiple Levels)
 
@@ -859,7 +859,7 @@ You can add subtotals at multiple levels. For example, subtotal by Region, then 
 1. Sort by `Region` first, then by `Category` (multi-level sort)
 2. Apply subtotals: At each change in `Region`, Sum of `Total` → OK
 3. Apply subtotals again: At each change in `Category`, Sum of `Total`
-4. **⚠️ UNCHECK** "Replace current subtotals" — this adds the second level on top of the first
+4. **⚠️ UNCHECK** "Replace current subtotals" - this adds the second level on top of the first
 
 ### 7.5 Group and Ungroup (Outline)
 
@@ -892,7 +892,7 @@ Consolidation combines data from multiple ranges, worksheets, or workbooks into 
 
 Use when data is organized differently across sources but has **matching labels** (e.g., same product names in different regional reports).
 
-**Example — Consolidate quarterly sales:**
+**Example - Consolidate quarterly sales:**
 
 Imagine three sheets: `Q1_Sales`, `Q2_Sales`, `Q3_Sales`, each with:
 
@@ -936,14 +936,14 @@ In the Consolidate dialog, check **Create links to source data**.
 - When source data changes, the consolidation updates automatically
 - Creates an outline similar to Subtotals that you can expand/collapse
 
-> **Note:** When linking is enabled, you cannot edit the consolidated cells directly — they are formulas.
+> **Note:** When linking is enabled, you cannot edit the consolidated cells directly - they are formulas.
 
 ### 8.4 Consolidation Tips
 
-- **Different workbooks:** You can consolidate data from files that are not open — browse to the file path
+- **Different workbooks:** You can consolidate data from files that are not open - browse to the file path
 - **Named ranges:** Use named ranges for cleaner references
 - **Multiple functions:** You can run consolidation multiple times with different functions (Sum, Average, Count) and place them side by side
-- **3D References:** An alternative to Consolidate — use formulas like `=SUM(Q1_Sales:Q3_Sales!B2)` to sum the same cell across multiple sheets
+- **3D References:** An alternative to Consolidate - use formulas like `=SUM(Q1_Sales:Q3_Sales!B2)` to sum the same cell across multiple sheets
 
 ---
 
@@ -995,7 +995,7 @@ Create a simple pricing model:
 Using the SalesData:
 
 1. Create a PivotTable showing **Total Sales by SalesRep**
-2. Add `Category` to Columns — now see sales per rep per category
+2. Add `Category` to Columns - now see sales per rep per category
 3. Change the value display to **% of Column Total**
 4. Group the dates by **Quarters**
 5. Create a **Calculated Field** called "AvgPrice" = Total / Units
@@ -1006,13 +1006,13 @@ Using the SalesData:
 
 ### Exercise 6: Subtotals & Consolidation (Intermediate)
 
-**Part A — Subtotals:**
+**Part A - Subtotals:**
 1. Sort SalesData by `Region`, then by `Category`
 2. Apply **nested subtotals**: Sum of Total at each Region change, then Sum of Total at each Category change
 3. Collapse to Level 2 to see only subtotals
 4. Remove all subtotals
 
-**Part B — Consolidation:**
+**Part B - Consolidation:**
 1. Create three sheets: `Store_A`, `Store_B`, `Store_C` each with the same products but different sales numbers
 2. Use Consolidate (Sum, by category) to create a combined total on a `Summary` sheet
 3. Try consolidating with "Create links to source data" checked
@@ -1023,39 +1023,39 @@ Using the SalesData:
 ## 10. Video References
 
 ### Sorting & Filtering
-- Excel Sorting and Filtering — Leila Gharani
+- Excel Sorting and Filtering - Leila Gharani
   https://www.youtube.com/watch?v=ylI8uHb_gmg
-- Advanced Filter in Excel — Leila Gharani
+- Advanced Filter in Excel - Leila Gharani
   https://www.youtube.com/watch?v=HK1UOB2bPBI
 
 ### Data Validation
-- Excel Data Validation Drop-down List — Leila Gharani
+- Excel Data Validation Drop-down List - Leila Gharani
   https://www.youtube.com/watch?v=7moKWkCKbzE
-- Dynamic Drop-down List with Data Validation — ExcelJet
+- Dynamic Drop-down List with Data Validation - ExcelJet
   https://www.youtube.com/watch?v=5sD2CBLSMkU
 
 ### What-If Analysis
-- Goal Seek, Scenario Manager, Data Tables — Leila Gharani
+- Goal Seek, Scenario Manager, Data Tables - Leila Gharani
   https://www.youtube.com/watch?v=SfGkEGvq4JE
-- Excel Solver Explained — Leila Gharani
+- Excel Solver Explained - Leila Gharani
   https://www.youtube.com/watch?v=kOO_PQ7VSzQ
 
 ### PivotTables
-- PivotTable Tutorial — Leila Gharani
+- PivotTable Tutorial - Leila Gharani
   https://www.youtube.com/watch?v=qu-Acm06sVY
-- PivotTable Master Class — Chandoo
+- PivotTable Master Class - Chandoo
   https://www.youtube.com/watch?v=S2PFMBons0A
-- PivotTable Grouping (Dates, Numbers) — Leila Gharani
+- PivotTable Grouping (Dates, Numbers) - Leila Gharani
   https://www.youtube.com/watch?v=bWpGPYctav4
-- PivotTable Show Values As — Leila Gharani
+- PivotTable Show Values As - Leila Gharani
   https://www.youtube.com/watch?v=Cz0VBjApM0M
-- Calculated Fields in PivotTables — MyOnlineTrainingHub
+- Calculated Fields in PivotTables - MyOnlineTrainingHub
   https://www.youtube.com/watch?v=nOkTIL8K3GM
 
 ### Subtotals & Consolidation
-- Excel Subtotals — MyOnlineTrainingHub
+- Excel Subtotals - MyOnlineTrainingHub
   https://www.youtube.com/watch?v=3CJzmYUMgE0
-- Consolidate Data from Multiple Sheets — Leila Gharani
+- Consolidate Data from Multiple Sheets - Leila Gharani
   https://www.youtube.com/watch?v=HK1UOB2bPBI
 
 ---
@@ -1064,59 +1064,59 @@ Using the SalesData:
 
 ### Microsoft Support
 - Sort data in a range or table
-  https://support.microsoft.com/en-us/office/sort-data-in-a-range-or-table-62d0b95d-2a90-4610-a6ae-2d5f4fc2e0cd
+  https://support.microsoft.com/en-us/excel
 - Filter data in a range or table
-  https://support.microsoft.com/en-us/office/filter-data-in-a-range-or-table-01832226-31b5-4568-8e54-f14b5bf57d6b
+  https://support.microsoft.com/en-us/excel
 - Advanced Filter
-  https://support.microsoft.com/en-us/office/filter-by-using-advanced-criteria-4c9222f3-0086-4600-b144-1a32d0d3f0e6
+  https://support.microsoft.com/en-us/excel
 - Apply data validation to cells
   https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249
 - Introduction to What-If Analysis
-  https://support.microsoft.com/en-us/office/introduction-to-what-if-analysis-8d7e21e2-4e85-489c-8f3a-1e1e70d8baf5
+  https://support.microsoft.com/en-us/excel
 - Goal Seek
-  https://support.microsoft.com/en-us/office/use-goal-seek-to-find-the-result-you-want-by-inputting-an-expected-value-1ed0b933-7b4f-469e-8f3a-88f2e3f75b0a
+  https://support.microsoft.com/en-us/excel
 - Create a PivotTable
-  https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e5-f5712fcf3178
+  https://support.microsoft.com/en-us/excel
 - Group or Ungroup data in a PivotTable
-  https://support.microsoft.com/en-us/office/group-or-ungroup-data-in-a-pivottable-c9d1b1b0-0e52-4d8c-b0e4-7b17a4d34d1d
+  https://support.microsoft.com/en-us/excel
 - Insert subtotals in a list of data
-  https://support.microsoft.com/en-us/office/insert-subtotals-in-a-list-of-data-597b7e0e-0b84-49c5-853c-c23832557e97
+  https://support.microsoft.com/en-us/excel
 - Consolidate data from multiple ranges
-  https://support.microsoft.com/en-us/office/consolidate-data-from-multiple-areas-in-a-worksheet-3c0c2e6c-4af1-4e44-9e2a-4f0f7b03b4c0
+  https://support.microsoft.com/en-us/excel
 
 ### ExcelJet.net
-- Excel PivotTable — Detailed Guide
-  https://exceljet.net/pivottables
+- Excel PivotTable - Detailed Guide
+  https://exceljet.net/
 - Excel Sorting Guide
-  https://exceljet.net/sorting
+  https://exceljet.net/
 - Excel Filtering Guide
-  https://exceljet.net/filtering
+  https://exceljet.net/
 - Data Validation Guide
-  https://exceljet.net/data-validation
+  https://exceljet.net/
 - Goal Seek
-  https://exceljet.net/functions/goal-seek
+  https://exceljet.net/
 
 ### Chandoo.org
-- Pivot Tables — Comprehensive Guide
-  https://chandoo.org/wp/pivot-tables/
+- Pivot Tables - Comprehensive Guide
+  https://chandoo.org/?s=excelpivot-tables/
 - Sorting and Filtering Tips
-  https://chandoo.org/wp/sorting-filtering-excel/
+  https://chandoo.org/?s=sorting+filtering
 - Data Validation Tricks
-  https://chandoo.org/wp/data-validation-in-excel/
+  https://chandoo.org/?s=data+validation
 
 ### Contextures.com
 - Excel Pivot Table Tutorial
-  https://www.contextures.com/xlpivottables.html
+  https://www.contextures.com/
 - Excel Data Validation Examples
   https://www.contextures.com/xlDataVal01.html
 - Excel Subtotals
-  https://www.contextures.com/xlSubtotals.html
+  https://www.contextures.com/
 - Advanced Filter Examples
   https://www.contextures.com/xladvfilter01.html
 
 ### Corporate Finance Institute (CFI)
 - PivotTable Guide
-  https://corporatefinanceinstitute.com/resources/excel/pivot-tables-in-excel/
+  https://corporatefinanceinstitute.com/resources/excel/
 - What-If Analysis
   https://corporatefinanceinstitute.com/resources/excel/what-if-analysis/
 - Data Tables in Excel
@@ -1124,4 +1124,4 @@ Using the SalesData:
 
 ---
 
-> **Next Module:** [Module 5 — Advanced Functions](../05-Advanced-Functions/05-advanced-functions.md) covers XLOOKUP, INDEX/MATCH, dynamic arrays, LAMBDA, and more.
+> **Next Module:** [Module 5 - Advanced Functions](../05-Advanced-Functions/05-advanced-functions.md) covers XLOOKUP, INDEX/MATCH, dynamic arrays, LAMBDA, and more.

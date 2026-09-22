@@ -187,9 +187,9 @@ Sums values in a range that meet a single criterion.
 
 **Syntax:** `=SUMIF(range, criteria, [sum_range])`
 
-- `range` — the range to evaluate (check against the criteria)
-- `criteria` — the condition (e.g., `"Marketing"`, `">50000"`, `"A*"`)
-- `sum_range` — the range to sum (optional; if omitted, sums the `range`)
+- `range` - the range to evaluate (check against the criteria)
+- `criteria` - the condition (e.g., `"Marketing"`, `">50000"`, `"A*"`)
+- `sum_range` - the range to sum (optional; if omitted, sums the `range`)
 
 **Examples using the sample data above:**
 ```
@@ -222,7 +222,7 @@ Counts cells that meet a single criterion.
 =COUNTIF(B2:B7,"Marketing")       → 2
 =COUNTIF(B2:B7,"Sales")           → 2
 =COUNTIF(C2:C7,">60000")          → 3
-=COUNTIF(A2:A7,"A*")              → 1 (starts with "A" — Alice)
+=COUNTIF(A2:A7,"A*")              → 1 (starts with "A" - Alice)
 ```
 
 ### 3.4 COUNTIFS
@@ -323,7 +323,7 @@ Returns TRUE if **ANY** condition is true.
 
 ### 4.4 NOT Function
 
-Reverses the logical value — TRUE becomes FALSE and vice versa.
+Reverses the logical value - TRUE becomes FALSE and vice versa.
 
 **Syntax:** `=NOT(logical)`
 
@@ -335,14 +335,14 @@ Reverses the logical value — TRUE becomes FALSE and vice versa.
 
 ### 4.5 Combining Logical Functions with IF
 
-**Real-world Example — Performance Bonus:**
+**Real-world Example - Performance Bonus:**
 ```
 =IF(AND(C2>50000,D2>10000),"Bonus: $2000","No Bonus")
 ```
 - Alice (Salary 55000, Sales 12000): **Bonus: $2000** ✅
 - Bob (Salary 48000, Sales 18500): **No Bonus** ❌ (salary ≤ 50000)
 
-**Another Example — Eligibility Check:**
+**Another Example - Eligibility Check:**
 ```
 =IF(OR(B2="Sales",B2="Marketing"),"Revenue Team","Support Team")
 ```
@@ -357,7 +357,7 @@ Reverses the logical value — TRUE becomes FALSE and vice versa.
 
 Nesting multiple IF functions for multi-condition logic.
 
-**Example — Letter Grades:**
+**Example - Letter Grades:**
 ```
 =IF(C2>=90000,"A",IF(C2>=80000,"B",IF(C2>=70000,"C",IF(C2>=60000,"D","F"))))
 ```
@@ -370,7 +370,7 @@ Tests multiple conditions and returns the value for the first TRUE condition.
 
 **Syntax:** `=IFS(condition1, value1, condition2, value2, ..., TRUE, default_value)`
 
-**Example — Salary Band:**
+**Example - Salary Band:**
 ```
 =IFS(C2>=70000,"Senior",C2>=55000,"Mid-Level",C2>=40000,"Junior",TRUE,"Entry-Level")
 ```
@@ -386,7 +386,7 @@ Compares a value against a list of values and returns the first match.
 
 **Syntax:** `=SWITCH(expression, value1, result1, value2, result2, ..., default)`
 
-**Example — Department Codes:**
+**Example - Department Codes:**
 ```
 =SWITCH(B2,"Marketing","MKT","Sales","SLS","IT","IT","FIN")
 ```
@@ -421,9 +421,9 @@ Compares a value against a list of values and returns the first match.
 Extract characters from a text string.
 
 **Syntax:**
-- `=LEFT(text, num_chars)` — Extract from the **left**
-- `=RIGHT(text, num_chars)` — Extract from the **right**
-- `=MID(text, start_num, num_chars)` — Extract from the **middle**
+- `=LEFT(text, num_chars)` - Extract from the **left**
+- `=RIGHT(text, num_chars)` - Extract from the **right**
+- `=MID(text, start_num, num_chars)` - Extract from the **middle**
 
 **Examples:**
 ```
@@ -461,9 +461,9 @@ Removes extra spaces from text (leading, trailing, and multiple spaces between w
 Change text case.
 
 **Syntax:**
-- `=UPPER(text)` — ALL CAPS
-- `=LOWER(text)` — all lowercase
-- `=PROPER(text)` — Title Case
+- `=UPPER(text)` - ALL CAPS
+- `=LOWER(text)` - all lowercase
+- `=PROPER(text)` - Title Case
 
 **Examples:**
 ```
@@ -477,9 +477,9 @@ Change text case.
 Joins two or more text strings together.
 
 **Syntax:**
-- `=CONCATENATE(text1, text2, ...)` — Legacy function
-- `=CONCAT(text1, text2, ...)` — Modern replacement (Excel 2016+)
-- `=text1 & text2 & ...` — Ampersand operator (most common)
+- `=CONCATENATE(text1, text2, ...)` - Legacy function
+- `=CONCAT(text1, text2, ...)` - Modern replacement (Excel 2016+)
+- `=text1 & text2 & ...` - Ampersand operator (most common)
 
 **Examples:**
 ```
@@ -506,8 +506,8 @@ Joins text with a specified delimiter.
 Find the position of text within a string.
 
 **Syntax:**
-- `=FIND(find_text, within_text, [start_num])` — Case-sensitive
-- `=SEARCH(find_text, within_text, [start_num])` — Case-insensitive, supports wildcards
+- `=FIND(find_text, within_text, [start_num])` - Case-sensitive
+- `=SEARCH(find_text, within_text, [start_num])` - Case-insensitive, supports wildcards
 
 **Examples:**
 ```
@@ -522,8 +522,8 @@ Find the position of text within a string.
 Replace text within a string.
 
 **Syntax:**
-- `=SUBSTITUTE(text, old_text, new_text, [instance_num])` — Replace by content
-- `=REPLACE(old_text, start_num, num_chars, new_text)` — Replace by position
+- `=SUBSTITUTE(text, old_text, new_text, [instance_num])` - Replace by content
+- `=REPLACE(old_text, start_num, num_chars, new_text)` - Replace by position
 
 **Examples:**
 ```
@@ -536,8 +536,8 @@ Replace text within a string.
 Convert between text and numbers.
 
 **Syntax:**
-- `=VALUE(text)` — Converts text to number
-- `=TEXT(value, format_text)` — Converts number to text with a format
+- `=VALUE(text)` - Converts text to number
+- `=TEXT(value, format_text)` - Converts number to text with a format
 
 **Examples:**
 ```
@@ -553,8 +553,8 @@ Convert between text and numbers.
 ### 7.1 TODAY and NOW
 
 **Syntax:**
-- `=TODAY()` — Returns today's date (updates when the sheet recalculates)
-- `=NOW()` — Returns today's date AND current time
+- `=TODAY()` - Returns today's date (updates when the sheet recalculates)
+- `=NOW()` - Returns today's date AND current time
 
 **Examples:**
 ```
@@ -562,7 +562,7 @@ Convert between text and numbers.
 =NOW()                → 9/10/2026 2:30 PM (or current date and time)
 ```
 
-**Note:** These are volatile functions — they recalculate every time the worksheet changes.
+**Note:** These are volatile functions - they recalculate every time the worksheet changes.
 
 ### 7.2 DATE Function
 
@@ -581,9 +581,9 @@ Creates a date from individual year, month, and day values.
 Extract components from a date.
 
 **Syntax:**
-- `=YEAR(date)` — Returns the year (e.g., 2026)
-- `=MONTH(date)` — Returns the month (1-12)
-- `=DAY(date)` — Returns the day (1-31)
+- `=YEAR(date)` - Returns the year (e.g., 2026)
+- `=MONTH(date)` - Returns the month (1-12)
+- `=DAY(date)` - Returns the day (1-31)
 
 **Examples:**
 ```
@@ -681,10 +681,10 @@ Searches for a value in the **first column** of a range and returns a value from
 
 **Syntax:** `=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])`
 
-- `lookup_value` — The value to search for
-- `table_array` — The range containing the data (first column must contain the lookup value)
-- `col_index_num` — The column number to return from (1 = first column)
-- `range_lookup` — `FALSE` for exact match (most common), `TRUE` for approximate match
+- `lookup_value` - The value to search for
+- `table_array` - The range containing the data (first column must contain the lookup value)
+- `col_index_num` - The column number to return from (1 = first column)
+- `range_lookup` - `FALSE` for exact match (most common), `TRUE` for approximate match
 
 **Examples:**
 ```
@@ -781,11 +781,11 @@ Catches only `#N/A` errors (useful when you want other errors to still show).
 
 ### 9.4 ISERROR and ISNA
 
-Return TRUE/FALSE — useful inside IF statements.
+Return TRUE/FALSE - useful inside IF statements.
 
 **Syntax:**
-- `=ISERROR(value)` — Returns TRUE if ANY error
-- `=ISNA(value)` — Returns TRUE only if #N/A
+- `=ISERROR(value)` - Returns TRUE if ANY error
+- `=ISNA(value)` - Returns TRUE only if #N/A
 
 **Example:**
 ```
@@ -826,7 +826,7 @@ A **named range** is a descriptive name assigned to a cell or range of cells. In
 1. Select a range that includes headers
 2. Go to **Formulas** tab → **Create from Selection**
 3. Check where the names are (e.g., "Top row", "Left column")
-4. Click **OK** — Excel creates names from the headers
+4. Click **OK** - Excel creates names from the headers
 
 ### 10.3 Naming Rules
 
@@ -852,7 +852,7 @@ A **named range** is a descriptive name assigned to a cell or range of cells. In
 
 **Benefits:**
 - Formulas are easier to read and understand
-- Easier to maintain — update the range once, all formulas update
+- Easier to maintain - update the range once, all formulas update
 - Named ranges appear in the Name Box for quick navigation
 
 ### 10.5 Managing Named Ranges
@@ -886,7 +886,7 @@ Toggle between showing formulas and their results:
 - **Formulas** tab → **Show Formulas** button
 - Or press **Ctrl+`** (backtick, the key above Tab)
 
-This is extremely useful for auditing — all cells show their formulas instead of results.
+This is extremely useful for auditing - all cells show their formulas instead of results.
 
 ### 11.3 Evaluate Formula
 
@@ -940,8 +940,8 @@ Add cells to a floating watch window that stays visible even when you scroll to 
 
 Using the same data:
 
-1. Create a "Performance" column in E1: In E2, write: `=IF(D2>15000,"High","Low")` — copy down to E9
-2. In F1, header "Bonus": In F2, write: `=IF(AND(D2>15000,B2="North"),D2*0.1,0)` — copy down
+1. Create a "Performance" column in E1: In E2, write: `=IF(D2>15000,"High","Low")` - copy down to E9
+2. In F1, header "Bonus": In F2, write: `=IF(AND(D2>15000,B2="North"),D2*0.1,0)` - copy down
 3. Sum all bonuses: `=SUM(F2:F9)`
 
 ### Exercise Set C: Text Functions
@@ -1020,75 +1020,75 @@ Using the same data:
 
 > **Note:** These are recommended YouTube videos for visual learners. Open the links in your browser to watch.
 
-- **Excel Formulas and Functions Tutorial** — by ExcelIsFun
+- **Excel Formulas and Functions Tutorial** - by ExcelIsFun
   - https://www.youtube.com/watch?v=V2V0GcMYbmo
 
-- **VLOOKUP Tutorial for Beginners** — by ExcelIsFun
+- **VLOOKUP Tutorial for Beginners** - by ExcelIsFun
   - https://www.youtube.com/watch?v=1Ej-5V7wMOk
 
-- **IF Function Excel Tutorial** — by Leila Gharani
+- **IF Function Excel Tutorial** - by Leila Gharani
   - https://www.youtube.com/watch?v=g7h8DfOBPRQ
 
-- **SUMIF and COUNTIF Functions Explained** — by ExcelJet
+- **SUMIF and COUNTIF Functions Explained** - by ExcelJet
   - https://www.youtube.com/watch?v=QkGHzJhJ3kA
 
-- **Excel Text Functions Tutorial** — by ExcelIsFun
+- **Excel Text Functions Tutorial** - by ExcelIsFun
   - https://www.youtube.com/watch?v=CyBV7FkKBOk
 
-- **Excel Date Functions Explained** — by Leila Gharani
+- **Excel Date Functions Explained** - by Leila Gharani
   - https://www.youtube.com/watch?v=ZO5jDaVfDhE
 
-- **XLOOKUP vs VLOOKUP — Why XLOOKUP is Better** — by Leila Gharani
+- **XLOOKUP vs VLOOKUP - Why XLOOKUP is Better** - by Leila Gharani
   - https://www.youtube.com/watch?v=Hn1JlSjvKkI
 
-- **Named Ranges in Excel — Complete Guide** — by ExcelJet
+- **Named Ranges in Excel - Complete Guide** - by ExcelJet
   - https://www.youtube.com/watch?v=kOO31qFmi9A
 
-- **Excel Error Handling: IFERROR, IFNA** — by ExcelIsFun
+- **Excel Error Handling: IFERROR, IFNA** - by ExcelIsFun
   - https://www.youtube.com/watch?v=6h0GN2eH2kY
 
 ---
 
 ## 15. Sources
 
-1. Microsoft Support — "Excel Functions (by category)"
-   - https://support.microsoft.com/en-us/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-836b0d5e8b09
+1. Microsoft Support - "Excel Functions (by category)"
+   - https://support.microsoft.com/en-us/excel
 
-2. Microsoft Support — "VLOOKUP function"
+2. Microsoft Support - "VLOOKUP function"
    - https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1
 
-3. Microsoft Support — "IF function"
+3. Microsoft Support - "IF function"
    - https://support.microsoft.com/en-us/office/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2
 
-4. Excel Easy — "Formulas and Functions"
+4. Excel Easy - "Formulas and Functions"
    - https://www.excel-easy.com/introduction/formulas-functions.html
 
-5. Excel Easy — "Functions"
+5. Excel Easy - "Functions"
    - https://www.excel-easy.com/functions.html
 
-6. ExcelJet — "Excel Functions"
+6. ExcelJet - "Excel Functions"
    - https://exceljet.net/functions
 
-7. ExcelJet — "Excel Formulas"
+7. ExcelJet - "Excel Formulas"
    - https://exceljet.net/formulas
 
-8. Corporate Finance Institute — "Excel Functions"
+8. Corporate Finance Institute - "Excel Functions"
    - https://corporatefinanceinstitute.com/resources/excel/study/excel-functions/
 
-9. GCFGlobal — "Excel 2016: Working with Multiple Worksheets"
-   - https://edu.gcfglobal.org/en/excel2016/working-with-multiple-worksheets/1/
+9. GCFGlobal - "Excel 2016: Working with Multiple Worksheets"
+   - https://edu.gcfglobal.org/en/excel/
 
-10. Chandoo — "Excel Formulas"
-    - https://chandoo.org/wp/excel-formulas/
+10. Chandoo - "Excel Formulas"
+    - https://chandoo.org/?s=excelexcel-formulas/
 
-11. TrumpExcel — "Excel Formulas"
+11. TrumpExcel - "Excel Formulas"
     - https://trumpexcel.com/excel-formulas/
 
-12. Excel Easy — "VLOOKUP"
+12. Excel Easy - "VLOOKUP"
     - https://www.excel-easy.com/functions/lookup-reference-functions.html
 
-13. Microsoft Support — "XLOOKUP function"
-    - https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d14-489e-8e64-f20dbb6e6dfb
+13. Microsoft Support - "XLOOKUP function"
+    - https://support.microsoft.com/en-us/excel
 
 ---
 

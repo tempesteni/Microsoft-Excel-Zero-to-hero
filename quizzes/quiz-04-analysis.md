@@ -1,4 +1,4 @@
-# Quiz 04 — Data Analysis & PivotTables
+# Quiz 04 - Data Analysis & PivotTables
 
 **Module:** Sorting, Filtering, PivotTables, What-If Analysis, Data Validation
 **Total Questions:** 20 (15 Multiple Choice + 5 Formula Challenges)
@@ -129,7 +129,7 @@
 | # | Answer | Explanation |
 |---|--------|-------------|
 | 1 | **B** | PivotTables are designed exactly for this cross-tabulation. |
-| 2 | **A** | Filters hide rows but don't change row numbers — you see gaps. |
+| 2 | **A** | Filters hide rows but don't change row numbers - you see gaps. |
 | 3 | **A** | Numeric fields default to SUM in PivotTable Values. |
 | 4 | **B** | Data Validation restricts input; conditional formatting only visualizes. |
 | 5 | **A** | Goal Seek adjusts one input to reach a target output. |
@@ -145,9 +145,9 @@
 | 15 | **A** | Solver handles multiple variables, constraints, and optimization types. |
 | 16 | `=B1>A1` | Apply to the validation range; B1 is the first cell in the range being validated. |
 | 17 | `=GETPIVOTDATA("Sales",PivotTable1,"Region","East")` | Extracts a specific value from a PivotTable. |
-| 18 | Select range containing PMT formula + rate column → Data tab → What-If Analysis → Data Table → Column input cell = the interest rate cell used in the PMT formula. Leave Row input cell blank. | — |
+| 18 | Select range containing PMT formula + rate column → Data tab → What-If Analysis → Data Table → Column input cell = the interest rate cell used in the PMT formula. Leave Row input cell blank. | - |
 | 19 | `=SUBTOTAL(1,B2:B100)` | Function 1 = AVERAGE; SUBTOTAL ignores filtered-out rows. |
-| 20 | PivotTable Analyze tab → Fields, Items & Sets → Calculated Field → Name: "Unit Price" → Formula: `=Sales/Quantity` → OK. | — |
+| 20 | PivotTable Analyze tab → Fields, Items & Sets → Calculated Field → Name: "Unit Price" → Formula: `=Sales/Quantity` → OK. | - |
 
 ---
 

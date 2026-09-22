@@ -1,4 +1,4 @@
-# Excel PivotTable Cheat Sheet — Quick Reference
+# Excel PivotTable Cheat Sheet - Quick Reference
 
 > **Printable Reference** | Print on A4/Letter | 1-2 pages
 
@@ -11,7 +11,7 @@
 | 1 | Click anywhere in your data range |
 | 2 | **Insert → PivotTable** (or `Alt + N + V`) |
 | 3 | Confirm data range and choose location (New/Existing Worksheet) |
-| 4 | Click **OK** — empty PivotTable + Field List appears |
+| 4 | Click **OK** - empty PivotTable + Field List appears |
 
 > **Prerequisite**: Data must have headers in row 1, no blank rows/columns, no merged cells.
 
@@ -142,7 +142,7 @@ Right-click grouped items → **Ungroup**
 | Refresh all PivotTables | **PivotTable Analyze → Refresh → Refresh All** |
 | Auto-refresh on open | **PivotTable Analyze → Options → Data → Refresh data when opening the file** |
 | Change data source | **PivotTable Analyze → Change Data Source** |
-| Use Tables as source | Convert data to **Table** (`Ctrl+T`) first — auto-expands on refresh |
+| Use Tables as source | Convert data to **Table** (`Ctrl+T`) first - auto-expands on refresh |
 
 ---
 
@@ -163,9 +163,9 @@ Right-click grouped items → **Ungroup**
 
 1. **Start with clean data** → convert to Table (`Ctrl+T`) first
 2. **Rows** = categories going down, **Columns** = categories going across
-3. **Right-click** is your best friend — nearly every setting is accessible from context menu
-4. **Number Format** via right-click pivot value (not Format Cells) — survives refresh
-5. **Group dates** immediately after adding — saves dozens of individual date entries
-6. **Slicers > Filters** — more visual and easier for end users
+3. **Right-click** is your best friend - nearly every setting is accessible from context menu
+4. **Number Format** via right-click pivot value (not Format Cells) - survives refresh
+5. **Group dates** immediately after adding - saves dozens of individual date entries
+6. **Slicers > Filters** - more visual and easier for end users
 7. **Double-click any number** in a pivot to see the raw data behind it
 8. **PivotTable Analyze → Options → Totals & Filters** → uncheck "Show grand totals" to remove

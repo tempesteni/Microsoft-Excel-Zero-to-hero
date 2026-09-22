@@ -1,4 +1,4 @@
-# Module 7: VBA & Macros — Excel Automation Mastery
+# Module 7: VBA & Macros - Excel Automation Mastery
 
 > **Module Goal:** Master Visual Basic for Applications (VBA) to automate repetitive Excel tasks, build custom functions, create interactive forms, and develop professional-grade automation solutions.
 
@@ -31,11 +31,11 @@
 
 VBA allows you to:
 
-- **Automate repetitive tasks** — Format reports, clean data, generate summaries with one click
-- **Create custom functions** — Build functions that don't exist in Excel's built-in library
-- **Build interactive applications** — Create UserForms for data entry, dashboards, and mini-apps
-- **Control other Office apps** — Send emails via Outlook, create Word documents, interact with Access databases
-- **Extend Excel's capabilities** — Perform tasks impossible with formulas alone
+- **Automate repetitive tasks** - Format reports, clean data, generate summaries with one click
+- **Create custom functions** - Build functions that don't exist in Excel's built-in library
+- **Build interactive applications** - Create UserForms for data entry, dashboards, and mini-apps
+- **Control other Office apps** - Send emails via Outlook, create Word documents, interact with Access databases
+- **Extend Excel's capabilities** - Perform tasks impossible with formulas alone
 
 ### Why Automate Excel?
 
@@ -67,7 +67,7 @@ VBA allows you to:
 | User interaction | ❌ | ❌ | ✅ |
 | Learning curve | Low | Medium | Medium-High |
 
-> **Key Insight:** VBA is not a replacement for formulas or Power Query — it complements them. Use formulas for calculations, Power Query for data transformation, and VBA for automation and interaction.
+> **Key Insight:** VBA is not a replacement for formulas or Power Query - it complements them. Use formulas for calculations, Power Query for data transformation, and VBA for automation and interaction.
 
 ---
 
@@ -135,7 +135,7 @@ Developer Tab
 | Disable all macros except digitally signed | Only trusted macros | Corporate environments |
 | Enable all macros | Runs everything (not recommended) | Development only |
 
-> **Best Practice:** Use "Disable all macros with notification" — you'll see a yellow security bar when opening files with macros, and can choose to enable them.
+> **Best Practice:** Use "Disable all macros with notification" - you'll see a yellow security bar when opening files with macros, and can choose to enable them.
 
 ---
 
@@ -143,7 +143,7 @@ Developer Tab
 
 ### What is Macro Recording?
 
-Macro recording captures your actions in Excel and converts them into VBA code. It's the easiest way to start learning VBA — record actions, then examine the generated code.
+Macro recording captures your actions in Excel and converts them into VBA code. It's the easiest way to start learning VBA - record actions, then examine the generated code.
 
 ### Step-by-Step: Recording Your First Macro
 
@@ -275,9 +275,9 @@ End Sub
 
 1. **Plan your actions** before recording
 2. **Use relative references** when needed (Developer → Use Relative References)
-3. **Keep recordings short** — break complex tasks into multiple macros
+3. **Keep recordings short** - break complex tasks into multiple macros
 4. **Always examine and clean** the generated code
-5. **Remove unnecessary `.Select` statements** — they slow down execution
+5. **Remove unnecessary `.Select` statements** - they slow down execution
 6. **Test immediately** after recording
 7. **Add comments** to explain what the macro does
 
@@ -418,17 +418,17 @@ VBAProject (Book1.xlsm)
 ### Properties Window (F4)
 
 Displays properties of the selected object. You can change:
-- **Name** — The code name of the object
-- **Visible** — Show/hide sheets (xlSheetVisible, xlSheetHidden, xlSheetVeryHidden)
-- **Tab Color** — Sheet tab color
+- **Name** - The code name of the object
+- **Visible** - Show/hide sheets (xlSheetVisible, xlSheetHidden, xlSheetVeryHidden)
+- **Tab Color** - Sheet tab color
 
 ### Code Window
 
 Where you write and edit VBA code. Features:
-- **Syntax highlighting** — Keywords, comments, strings in different colors
-- **Auto-complete** — Type `Range("` and see suggestions
-- **Procedure dropdown** — Jump to any Sub/Function in the module
-- **Split bar** — Divide the window to view two code sections
+- **Syntax highlighting** - Keywords, comments, strings in different colors
+- **Auto-complete** - Type `Range("` and see suggestions
+- **Procedure dropdown** - Jump to any Sub/Function in the module
+- **Split bar** - Divide the window to view two code sections
 
 ### Immediate Window (Ctrl+G)
 
@@ -1251,8 +1251,8 @@ End Sub
 3. **Use specific error handling** (Resume Next) sparingly
 4. **Clear errors** after handling with `Err.Clear`
 5. **Log errors** for debugging
-6. **Don't ignore errors** — at minimum, log them
-7. **Test error paths** — don't just test the happy path
+6. **Don't ignore errors** - at minimum, log them
+7. **Test error paths** - don't just test the happy path
 
 ---
 
@@ -1983,12 +1983,12 @@ End Sub
 
 ### Websites
 
-- **TrumpExcel** — Excel VBA Programming: https://trumpexcel.com/excel-vba/
-- **ExcelMacroMastery** — VBA Articles: https://excelmacromastery.com/vba-articles/
-- **Chandoo.org** — VBA Tutorials: https://chandoo.org/wp/vba/
-- **Microsoft Docs** — VBA Language Reference: https://docs.microsoft.com/en-us/office/vba/api/overview/excel
-- **Excel Easy** — VBA Tutorial: https://www.excel-easy.com/vba.html
-- **Automate Excel** — VBA Tutorials: https://www.automateexcel.com/vba/
+- **TrumpExcel** - Excel VBA Programming: https://trumpexcel.com/excel-vba/
+- **ExcelMacroMastery** - VBA Articles: https://excelmacromastery.com/vba-articles/
+- **Chandoo.org** - VBA Tutorials: https://chandoo.org/?s=vba
+- **Microsoft Docs** - VBA Language Reference: https://docs.microsoft.com/en-us/office/vba/api/overview/excel
+- **Excel Easy** - VBA Tutorial: https://www.excel-easy.com/vba.html
+- **Automate Excel** - VBA Tutorials: https://www.automateexcel.com/vba/
 
 ### Books
 
@@ -2000,9 +2000,9 @@ End Sub
 ### Free Resources
 
 - ExcelMacroMastery VBA Cheat Sheet: https://excelmacromastery.com/
-- Chandoo.org VBA Classes: https://chandoo.org/wp/vba-classes/
+- Chandoo.org VBA Classes: https://chandoo.org/?s=vba
 - TrumpExcel Free VBA Course: https://trumpexcel.com/excel-vba/
 
 ---
 
-> **Next Module:** [Module 8: Real-World Projects](../08-Real-World-Projects/08-real-world-projects.md) — Apply everything you've learned in practical, industry-relevant projects.
+> **Next Module:** [Module 8: Real-World Projects](../08-Real-World-Projects/08-real-world-projects.md) - Apply everything you've learned in practical, industry-relevant projects.

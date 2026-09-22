@@ -63,7 +63,7 @@
 - **Microsoft 365 (Subscription):** Always up-to-date with the latest features, cloud storage (OneDrive), and AI-powered Copilot
 - **Excel 2024 (One-time purchase):** Perpetual license, feature set frozen at release
 - **Excel 2021 (One-time purchase):** Previous perpetual license version
-- **Excel Online (Free):** Browser-based version at [office.com](https://www.office.com) — limited features but free with a Microsoft account
+- **Excel Online (Free):** Browser-based version at [office.com](https://www.office.com) - limited features but free with a Microsoft account
 
 ---
 
@@ -163,7 +163,7 @@ Workbook: "2026 Budget.xlsx"
 
 | Element | Description | Count |
 |---------|-------------|-------|
-| **Cell** | The intersection of a row and a column — the basic unit of a spreadsheet | Over 17 billion per sheet |
+| **Cell** | The intersection of a row and a column - the basic unit of a spreadsheet | Over 17 billion per sheet |
 | **Row** | A horizontal line of cells, numbered 1 to 1,048,576 | 1,048,576 |
 | **Column** | A vertical line of cells, lettered A to XFD | 16,384 |
 
@@ -235,7 +235,7 @@ You can also click **Special...** to go to specific types of cells (blanks, form
 
 **Tips:**
 - Text aligns to the **left** by default
-- If your text is longer than the column width, it will overflow into the next cell(s) — unless those cells contain data
+- If your text is longer than the column width, it will overflow into the next cell(s) - unless those cells contain data
 - To start a new line **within** a cell, press **Alt+Enter**
 
 ### 7.2 Entering Numbers
@@ -334,7 +334,7 @@ A **mixed reference** locks either the column OR the row, but not both.
 | `$A1` | **Locked** (always column A) | Relative | Row changes, column stays A |
 | `A$1` | Relative | **Locked** (always row 1) | Column changes, row stays 1 |
 
-**Practical Example — Multiplication Table:**
+**Practical Example - Multiplication Table:**
 
 | | A | B | C |
 |---|---|---|---|
@@ -347,8 +347,8 @@ In cell B2, enter:
 =$A2*B$1
 ```
 
-- `$A2` — column is locked to A, row adjusts when copied down
-- `B$1` — row is locked to 1, column adjusts when copied right
+- `$A2` - column is locked to A, row adjusts when copied down
+- `B$1` - row is locked to 1, column adjusts when copied right
 
 When copied across B2:C3, this produces a perfect multiplication table.
 
@@ -383,15 +383,15 @@ To change the format of a cell:
 1. Select the cell(s)
 2. Right-click → **Format Cells** (or press **Ctrl+1**)
 3. Choose from categories:
-   - **General** — default, no specific format
-   - **Number** — decimal places, thousands separator
-   - **Currency** — adds currency symbol
-   - **Accounting** — aligns currency symbols in a column
-   - **Date** — various date display formats
-   - **Time** — various time display formats
-   - **Percentage** — multiplies by 100 and adds %
-   - **Text** — treats content as text
-   - **Special** — Zip Code, Phone Number, SSN
+   - **General** - default, no specific format
+   - **Number** - decimal places, thousands separator
+   - **Currency** - adds currency symbol
+   - **Accounting** - aligns currency symbols in a column
+   - **Date** - various date display formats
+   - **Time** - various time display formats
+   - **Percentage** - multiplies by 100 and adds %
+   - **Text** - treats content as text
+   - **Special** - Zip Code, Phone Number, SSN
 
 **Quick Number Format Shortcuts:**
 
@@ -504,11 +504,11 @@ Using the data from Exercise 1:
 
 ### Exercise 3: Navigation Practice
 
-1. Press **Ctrl+G** (Go To), type `Z50`, press Enter — Excel jumps to Z50
-2. Press **Ctrl+Home** — returns to A1
-3. Click the **Name Box**, type `A1:D5`, press Enter — selects the range
-4. Press **Ctrl+End** — jumps to the last used cell
-5. Press **Ctrl+Home** again — returns to A1
+1. Press **Ctrl+G** (Go To), type `Z50`, press Enter - Excel jumps to Z50
+2. Press **Ctrl+Home** - returns to A1
+3. Click the **Name Box**, type `A1:D5`, press Enter - selects the range
+4. Press **Ctrl+End** - jumps to the last used cell
+5. Press **Ctrl+Home** again - returns to A1
 
 ### Exercise 4: Formatting Practice
 
@@ -524,8 +524,8 @@ Using the data from Exercise 1:
 1. Save the workbook as `Practice_Exercises.xlsx` (Ctrl+S)
 2. Save a copy as `Practice_Exercises.csv` (File → Save As → CSV)
 3. Close the workbook (Ctrl+W)
-4. Reopen the .csv file — notice that all formatting and formulas are gone (only values remain)
-5. Open the .xlsx file — notice everything is preserved
+4. Reopen the .csv file - notice that all formatting and formulas are gone (only values remain)
+5. Open the .xlsx file - notice everything is preserved
 
 ---
 
@@ -533,56 +533,56 @@ Using the data from Exercise 1:
 
 > **Note:** These are recommended YouTube videos for visual learners. Open the links in your browser to watch.
 
-- **Excel for Beginners | Excel Tutorial** — by ExcelIsFun
+- **Excel for Beginners | Excel Tutorial** - by ExcelIsFun
   - https://www.youtube.com/watch?v=rwbho0CgEAE
 
-- **Microsoft Excel Tutorial for Beginners - Full Course** — by freeCodeCamp.org
+- **Microsoft Excel Tutorial for Beginners - Full Course** - by freeCodeCamp.org
   - https://www.youtube.com/watch?v=Vl0H-qTcl3s
 
-- **Excel Basics - Getting Started with Excel** — by ExcelJet
+- **Excel Basics - Getting Started with Excel** - by ExcelJet
   - https://www.youtube.com/watch?v=kOO31qFmi9A
 
-- **Excel Interface Explained (Ribbon, Tabs, Quick Access Toolbar)** — by Leila Gharani
+- **Excel Interface Explained (Ribbon, Tabs, Quick Access Toolbar)** - by Leila Gharani
   - https://www.youtube.com/watch?v=ywYD6vMI1Bk
 
-- **Absolute vs Relative Cell References in Excel** — by ExcelIsFun
+- **Absolute vs Relative Cell References in Excel** - by ExcelIsFun
   - https://www.youtube.com/watch?v=dB9s1hGEKkY
 
-- **Excel Keyboard Shortcuts You MUST Know** — by Leila Gharani
+- **Excel Keyboard Shortcuts You MUST Know** - by Leila Gharani
   - https://www.youtube.com/watch?v=m5qjSW_M3gQ
 
 ---
 
 ## 14. Sources
 
-1. Microsoft Support — "Excel Quick Start Guide"
-   - https://support.microsoft.com/en-us/office/excel-quick-start-guide-d40e5082-c128-4598-85e0-1d290461c580
+1. Microsoft Support - "Excel Quick Start Guide"
+   - https://support.microsoft.com/en-us/excel
 
-2. Microsoft Support — "What's new in Excel"
-   - https://support.microsoft.com/en-us/office/what-s-new-in-excel-d73d9d74-9e7c-4e5a-9db3-5f06f6f3b3e1
+2. Microsoft Support - "What's new in Excel"
+   - https://support.microsoft.com/en-us/excel
 
-3. Excel Easy — "Introduction to Excel"
+3. Excel Easy - "Introduction to Excel"
    - https://www.excel-easy.com/introduction.html
 
-4. Excel Easy — "Basics of Excel"
+4. Excel Easy - "Basics of Excel"
    - https://www.excel-easy.com/basics.html
 
-5. ExcelJet — "Excel Shortcuts"
+5. ExcelJet - "Excel Shortcuts"
    - https://exceljet.net/shortcuts
 
-6. GCFGlobal — "Excel 2016: Getting Started with Excel"
-   - https://edu.gcfglobal.org/en/excel2016/getting-started-with-excel/1/
+6. GCFGlobal - "Excel 2016: Getting Started with Excel"
+   - https://edu.gcfglobal.org/en/excel/
 
-7. Corporate Finance Institute — "Excel Shortcuts Overview"
+7. Corporate Finance Institute - "Excel Shortcuts Overview"
    - https://corporatefinanceinstitute.com/resources/excel/study/excel-shortcuts/
 
-8. TrumpExcel — "Excel Basics"
+8. TrumpExcel - "Excel Basics"
    - https://trumpexcel.com/learn-excel/
 
-9. Chandoo — "Excel Basics"
-   - https://chandoo.org/wp/excel-basics/
+9. Chandoo - "Excel Basics"
+   - https://chandoo.org/?s=excelexcel-basics/
 
-10. Excel Easy — "Format Cells"
+10. Excel Easy - "Format Cells"
     - https://www.excel-easy.com/basics/format-cells.html
 
 ---
